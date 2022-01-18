@@ -11,9 +11,6 @@ theme = ["docsy"]
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
-custom_css = ["css/tabler.min.css", "css/tabler-flags.min.css", "css/tabler-payments.min.css", "css/tabler-vendors.min.css", "css/demo.min.css" ]
-custom_js = []
-
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
@@ -115,6 +112,9 @@ section = ["HTML", "print", "RSS"]
 [params]
 copyright = "The Docsy Authors"
 privacy_policy = "https://policies.google.com/privacy"
+
+custom_css = ["css/tabler.min.css", "css/tabler-flags.min.css", "css/tabler-payments.min.css", "css/tabler-vendors.min.css", "css/demo.min.css" ]
+custom_js = []
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
