@@ -2354,4 +2354,232 @@ This is a warning.
 This is a warning with a title.
 &lt;/div>
 &lt;/p>
-&lt;h2 id="another-heading">Another Heading&lt;/h2></description></item></channel></rss>
+&lt;h2 id="another-heading">Another Heading&lt;/h2></description></item><item><title>Docs: Colors</title><link>/RoverCoreDocs/docs/theme/content/colors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/colors/</guid><description>
+&lt;h2 id="base-colors">Base colors&lt;/h2>
+&lt;p>Choose one of the available colors from the basic color palette and make your design attractive for users. You can use the colors to customize the design of components, indicate different states or suggest actions you want users to take.&lt;/p>
+&lt;div class="example">
+&lt;div class="mb-n3">
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-blue text-white">B&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Blue&lt;/span>&lt;br>
+&lt;code>bg-blue&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-azure text-white">A&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Azure&lt;/span>&lt;br>
+&lt;code>bg-azure&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-indigo text-white">I&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Indigo&lt;/span>&lt;br>
+&lt;code>bg-indigo&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-purple text-white">P&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Purple&lt;/span>&lt;br>
+&lt;code>bg-purple&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-pink text-white">P&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Pink&lt;/span>&lt;br>
+&lt;code>bg-pink&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-red text-white">R&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Red&lt;/span>&lt;br>
+&lt;code>bg-red&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-orange text-white">O&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Orange&lt;/span>&lt;br>
+&lt;code>bg-orange&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-yellow text-white">Y&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Yellow&lt;/span>&lt;br>
+&lt;code>bg-yellow&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-lime text-white">L&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Lime&lt;/span>&lt;br>
+&lt;code>bg-lime&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-green text-white">G&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Green&lt;/span>&lt;br>
+&lt;code>bg-green&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-teal text-white">T&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Teal&lt;/span>&lt;br>
+&lt;code>bg-teal&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-cyan text-white">C&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Cyan&lt;/span>&lt;br>
+&lt;code>bg-cyan&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="light-colors">Light colors&lt;/h2>
+&lt;p>All available colors can come in pastel shades, which are perfect for more subtle designs and can be easily combined with the basic palette to create eye-cathing designs.&lt;/p>
+&lt;div class="example">
+&lt;div class="mb-n3">
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-blue-lt">B&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Blue&lt;/span>&lt;br>
+&lt;code>bg-blue-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-azure-lt">A&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Azure&lt;/span>&lt;br>
+&lt;code>bg-azure-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-indigo-lt">I&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Indigo&lt;/span>&lt;br>
+&lt;code>bg-indigo-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-purple-lt">P&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Purple&lt;/span>&lt;br>
+&lt;code>bg-purple-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-pink-lt">P&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Pink&lt;/span>&lt;br>
+&lt;code>bg-pink-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-red-lt">R&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Red&lt;/span>&lt;br>
+&lt;code>bg-red-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-orange-lt">O&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Orange&lt;/span>&lt;br>
+&lt;code>bg-orange-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-yellow-lt">Y&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Yellow&lt;/span>&lt;br>
+&lt;code>bg-yellow-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-lime-lt">L&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Lime&lt;/span>&lt;br>
+&lt;code>bg-lime-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-green-lt">G&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Green&lt;/span>&lt;br>
+&lt;code>bg-green-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-teal-lt">T&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Teal&lt;/span>&lt;br>
+&lt;code>bg-teal-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;div class="row g-2 mb-3 align-items-center">
+&lt;div class="col-auto">
+&lt;div class="avatar bg-cyan-lt">C&lt;/div>
+&lt;/div>
+&lt;div class="col">
+&lt;span class="font-weight-semibold">Cyan&lt;/span>&lt;br>
+&lt;code>bg-cyan-lt&lt;/code>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
