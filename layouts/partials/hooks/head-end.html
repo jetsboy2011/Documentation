@@ -1,5 +1,10 @@
-    <link href="https://preview.tabler.io/dist/css/tabler.min.css?1641761692" rel="stylesheet"/>
-    <link href="https://preview.tabler.io/dist/css/tabler-flags.min.css?1641761692" rel="stylesheet"/>
-    <link href="https://preview.tabler.io/dist/css/tabler-payments.min.css?1641761692" rel="stylesheet"/>
-    <link href="https://preview.tabler.io/dist/css/tabler-vendors.min.css?1641761692" rel="stylesheet"/>
-    <link href="https://preview.tabler.io/dist/css/demo.min.css?1641761692" rel="stylesheet"/>
+// css 
+{{ range .Site.Params.custom_css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
+
+// javascript
+{{ range .Site.Params.custom_js -}}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}
+

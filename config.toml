@@ -11,6 +11,9 @@ theme = ["docsy"]
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
+custom_css = ["css/tabler.min.css", "css/tabler-flags.min.css", "css/tabler-payments.min.css", "css/tabler-vendors.min.css", "css/demo.min.css" ]
+custom_js = []
+
 # Language settings
 contentDir = "content/en"
 defaultContentLanguage = "en"
