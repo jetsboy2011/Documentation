@@ -1,20 +1,114 @@
-{% assign colors = include.colors | default: site.colors %}
-{% assign light = include.light %}
-
 <div class="example">
-   <div class="mb-n3">
-      {% for color in colors %}
-      <div class="row g-2 mb-3 align-items-center">
-         <div class="col-auto">
-            <div class="avatar bg-{{ color[0] }}{% if light %}-lt{% else %} text-white{% endif %}">{{ color[0] | capitalize | first_letter }}</div>
-         </div>
-         <div class="col">
-            <span class="font-weight-semibold">{{ color[1].title }}</span><br/>
-            <code>bg-{{ color[0] }}{% if light %}-lt{% endif %}</code>
-         </div>
-      </div>
-      {% endfor %}
-   </div>
-</div>
+                        <div class="mb-n3">
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-blue text-white">B</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Blue</span><br>
+                              <code>bg-blue</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-azure text-white">A</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Azure</span><br>
+                              <code>bg-azure</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-indigo text-white">I</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Indigo</span><br>
+                              <code>bg-indigo</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-purple text-white">P</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Purple</span><br>
+                              <code>bg-purple</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-pink text-white">P</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Pink</span><br>
+                              <code>bg-pink</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-red text-white">R</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Red</span><br>
+                              <code>bg-red</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-orange text-white">O</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Orange</span><br>
+                              <code>bg-orange</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-yellow text-white">Y</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Yellow</span><br>
+                              <code>bg-yellow</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-lime text-white">L</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Lime</span><br>
+                              <code>bg-lime</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-green text-white">G</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Green</span><br>
+                              <code>bg-green</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-teal text-white">T</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Teal</span><br>
+                              <code>bg-teal</code>
+                            </div>
+                          </div>
+                          <div class="row g-2 mb-3 align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar bg-cyan text-white">C</div>
+                            </div>
+                            <div class="col">
+                              <span class="font-weight-semibold">Cyan</span><br>
+                              <code>bg-cyan</code>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
 
