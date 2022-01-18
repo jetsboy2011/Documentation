@@ -113,7 +113,7 @@ section = ["HTML", "print", "RSS"]
 copyright = "The Docsy Authors"
 privacy_policy = "https://policies.google.com/privacy"
 
-custom_css = ["css/tabler.min.css", "css/tabler-flags.min.css", "css/tabler-payments.min.css", "css/tabler-vendors.min.css", "css/demo.min.css" ]
+custom_css = ["/css/tabler.min.css", "/css/tabler-flags.min.css", "/css/tabler-payments.min.css", "/css/tabler-vendors.min.css", "/css/demo.min.css" ]
 custom_js = []
 
 # First one is picked as the Twitter card image if not set on page.
