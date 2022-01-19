@@ -1843,7 +1843,6 @@ This is a warning with a title.
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
-&lt;h1 class="m-0">Form elements&lt;/h1>
 &lt;p class="ms-auto">
 &lt;a href="https://getbootstrap.com/docs/5.0/components/forms/" target="_blank" class="d-flex align-items-center">
 &lt;!-- Download SVG icon from http://tabler-icons.io/i/external-link -->
@@ -1852,7 +1851,6 @@ Bootstrap documentation
 &lt;/a>
 &lt;/p>
 &lt;/div>
-&lt;p>Forms are one of the most important types of interaction with a website or app. Since their aim is to enable users to make a purchase, subscribe to a service or sign up to create an account, it's important to make sure they are easy to complete and help increase conversion rates. Use the available elements to create forms which are well-structured and user-friendly.&lt;/p>
 &lt;/div>
 &lt;h2 id="classic-inputs">Classic inputs&lt;/h2>
 &lt;p>Use classic, user-friendly inputs, label them appropriately and include input placeholders that will help users avoid confusion when completing a form.&lt;/p>
@@ -2677,27 +2675,22 @@ https://tabler.io/users/
 &lt;/div>
 &lt;/div></description></item><item><title>Docs: Form Helpers</title><link>/RoverCoreDocs/docs/theme/formcomponents/helpers/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/helpers/</guid><description>
 &lt;div class="markdown">
-&lt;div>
-&lt;div class="d-flex mb-3">
-&lt;h1 class="m-0">Form helpers&lt;/h1>
-&lt;/div>
-&lt;p>A form helper can be used to provide users with additional information about the elements of a form that may be unclear.&lt;/p>
-&lt;/div>
-&lt;h2 id="input-help">Input help&lt;/h2>
-&lt;p>Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.&lt;/p>
-&lt;div class="example no_toc_section">
-&lt;div class="example-content">
-&lt;span class="form-help" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true" data-bs-content="&lt;p>ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&lt;/p>&lt;p class='mb-0'>&lt;a href=''>USP ZIP codes lookup tools&lt;/a>&lt;/p>" data-bs-original-title="" title="" aria-describedby="popover541127">?&lt;/span>
-&lt;/div>
-&lt;/div>
-&lt;div class="example-code">
-&lt;figure class="highlight">
-&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-help"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"popover"&lt;/span> &lt;span class="na">data-bs-placement=&lt;/span>&lt;span class="s">"top"&lt;/span> &lt;span class="na">data-bs-html=&lt;/span>&lt;span class="s">"true"&lt;/span> &lt;span class="na">data-bs-content=&lt;/span>&lt;span class="s">"&amp;lt;p&amp;gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&amp;lt;/p&amp;gt;
-&amp;lt;p class='mb-0'&amp;gt;&amp;lt;a href=''&amp;gt;USP ZIP codes lookup tools&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>?&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;pre>&lt;code> &amp;lt;h2 id=&amp;quot;input-help&amp;quot;&amp;gt;Input help&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.&amp;lt;/p&amp;gt;
+&amp;lt;div class=&amp;quot;example no_toc_section&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;example-content&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-help&amp;quot; data-bs-toggle=&amp;quot;popover&amp;quot; data-bs-placement=&amp;quot;top&amp;quot; data-bs-html=&amp;quot;true&amp;quot; data-bs-content=&amp;quot;&amp;lt;p&amp;gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&amp;lt;/p&amp;gt;&amp;lt;p class='mb-0'&amp;gt;&amp;lt;a href=''&amp;gt;USP ZIP codes lookup tools&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;quot; data-bs-original-title=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot; aria-describedby=&amp;quot;popover541127&amp;quot;&amp;gt;?&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;example-code&amp;quot;&amp;gt;
+&amp;lt;figure class=&amp;quot;highlight&amp;quot;&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-html&amp;quot; data-lang=&amp;quot;html&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;lt;span&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;class=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;form-help&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;data-bs-toggle=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;popover&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;data-bs-placement=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;top&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;data-bs-html=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;true&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;data-bs-content=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;&amp;amp;lt;p&amp;amp;gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&amp;amp;lt;/p&amp;amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&amp;lt;p class=&amp;lsquo;mb-0&amp;rsquo;&amp;gt;&amp;lt;a href=''&amp;gt;USP ZIP codes lookup tools&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;ldquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>?&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>
-&lt;/div></description></item><item><title>Docs: Icons</title><link>/RoverCoreDocs/docs/theme/content/icons/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/icons/</guid><description>
+&lt;/div>&lt;/p></description></item><item><title>Docs: Icons</title><link>/RoverCoreDocs/docs/theme/content/icons/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/icons/</guid><description>
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
@@ -2798,169 +2791,164 @@ https://tabler.io/users/
 &lt;/div>
 &lt;/div></description></item><item><title>Docs: Image Check</title><link>/RoverCoreDocs/docs/theme/formcomponents/imagecheck/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/imagecheck/</guid><description>
 &lt;div class="markdown">
-&lt;div>
-&lt;div class="d-flex mb-3">
-&lt;h1 class="m-0">Image check&lt;/h1>
-&lt;/div>
-&lt;/div>
-&lt;p>Add an image check to your form and give users visually attractive options to choose from.&lt;/p>
-&lt;div class="example no_toc_section">
-&lt;div class="example-content">
-&lt;div style="max-width: 25rem">
-&lt;div class="mb-3">
-&lt;label class="form-label">Image Check&lt;/label>
-&lt;div class="row g-2">
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/1b73704b282a8ec6.jpg" alt="Breakfast served with tea, bread and eggs" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" checked="">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/3d2998219313cd37.jpg" alt="Book, fairy lights" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/6ab3200b14549f8a.jpg" alt="Healthy Dinner" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="4" class="form-imagecheck-input" checked="">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/6d35d9a2bd6c63c2.jpg" alt="Aperol Spritz is a cocktail consisting of prosecco, aperitif and soda water" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="5" class="form-imagecheck-input">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/8a26974ee6444acd.jpg" alt="Beautiful blonde woman on a wooden pier by the lake" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="6" class="form-imagecheck-input">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/8c13ad59f739558c.jpg" alt="Still life of mandarin oranges with leaves" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="7" class="form-imagecheck-input" checked="">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/8fdeb4785d2b82ef.jpg" alt="Blonde woman having a healthy snack at the wooden pier" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="8" class="form-imagecheck-input">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/9f36332564ca271d.jpg" alt="Woman working on a laptop while enjoying a breakfast coffee and chocolate in bed" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;div class="col-6 col-sm-4">
-&lt;label class="form-imagecheck mb-2">
-&lt;input name="form-imagecheck" type="checkbox" value="9" class="form-imagecheck-input">
-&lt;span class="form-imagecheck-figure">
-&lt;img src="../photos/35b88fc04a518c1b.jpg" alt="Overhead view of macarons on a marble slab" class="form-imagecheck-image">
-&lt;/span>
-&lt;/label>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="example-code">
-&lt;figure class="highlight">
-&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Image Check&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row g-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"1"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Breakfast served with tea, bread and eggs"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;pre>&lt;code> &amp;lt;div class=&amp;quot;example no_toc_section&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;example-content&amp;quot;&amp;gt;
+&amp;lt;div style=&amp;quot;max-width: 25rem&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;mb-3&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-label&amp;quot;&amp;gt;Image Check&amp;lt;/label&amp;gt;
+&amp;lt;div class=&amp;quot;row g-2&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;1&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/1b73704b282a8ec6.jpg&amp;quot; alt=&amp;quot;Breakfast served with tea, bread and eggs&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;2&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot; checked=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/3d2998219313cd37.jpg&amp;quot; alt=&amp;quot;Book, fairy lights&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;3&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/6ab3200b14549f8a.jpg&amp;quot; alt=&amp;quot;Healthy Dinner&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;4&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot; checked=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/6d35d9a2bd6c63c2.jpg&amp;quot; alt=&amp;quot;Aperol Spritz is a cocktail consisting of prosecco, aperitif and soda water&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;5&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/8a26974ee6444acd.jpg&amp;quot; alt=&amp;quot;Beautiful blonde woman on a wooden pier by the lake&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;6&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/8c13ad59f739558c.jpg&amp;quot; alt=&amp;quot;Still life of mandarin oranges with leaves&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;7&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot; checked=&amp;quot;&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/8fdeb4785d2b82ef.jpg&amp;quot; alt=&amp;quot;Blonde woman having a healthy snack at the wooden pier&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;8&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/9f36332564ca271d.jpg&amp;quot; alt=&amp;quot;Woman working on a laptop while enjoying a breakfast coffee and chocolate in bed&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-6 col-sm-4&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-imagecheck mb-2&amp;quot;&amp;gt;
+&amp;lt;input name=&amp;quot;form-imagecheck&amp;quot; type=&amp;quot;checkbox&amp;quot; value=&amp;quot;9&amp;quot; class=&amp;quot;form-imagecheck-input&amp;quot;&amp;gt;
+&amp;lt;span class=&amp;quot;form-imagecheck-figure&amp;quot;&amp;gt;
+&amp;lt;img src=&amp;quot;/photos/35b88fc04a518c1b.jpg&amp;quot; alt=&amp;quot;Overhead view of macarons on a marble slab&amp;quot; class=&amp;quot;form-imagecheck-image&amp;quot;&amp;gt;
+&amp;lt;/span&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;example-code&amp;quot;&amp;gt;
+&amp;lt;figure class=&amp;quot;highlight&amp;quot;&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-html&amp;quot; data-lang=&amp;quot;html&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;lt;div&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;class=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;mb-3&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;gt;&amp;lt;/span&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-label&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Image Check&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;row g-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;1&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Breakfast served with tea, bread and eggs&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"2"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Book, fairy lights"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;2&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Book, fairy lights&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"3"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Healthy Dinner"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;3&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Healthy Dinner&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"4"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Aperol Spritz is a cocktail consisting of prosecco, aperitif and soda water"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;4&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Aperol Spritz is a cocktail consisting of prosecco, aperitif and soda water&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"5"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Beautiful blonde woman on a wooden pier by the lake"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;5&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Beautiful blonde woman on a wooden pier by the lake&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"6"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Still life of mandarin oranges with leaves"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;6&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Still life of mandarin oranges with leaves&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"7"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Blonde woman having a healthy snack at the wooden pier"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;7&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Blonde woman having a healthy snack at the wooden pier&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"8"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Woman working on a laptop while enjoying a breakfast coffee and chocolate in bed"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;8&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Woman working on a laptop while enjoying a breakfast coffee and chocolate in bed&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"9"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Overhead view of macarons on a marble slab"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-6 col-sm-4&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;9&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">&amp;quot;&amp;hellip;&amp;quot;&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">&amp;ldquo;Overhead view of macarons on a marble slab&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
@@ -3069,95 +3057,95 @@ https://tabler.io/users/
 &lt;/div>
 &lt;div class="example-code">
 &lt;figure class="highlight">
-&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Person Check&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row g-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"1"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;mb-3&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-label&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Person Check&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;row g-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;1&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">&amp;ldquo;background-image: url(&amp;hellip;)&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"2"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>HS&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;2&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>HS&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"3"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;3&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">&amp;ldquo;background-image: url(&amp;hellip;)&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"4"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;4&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">&amp;ldquo;background-image: url(&amp;hellip;)&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"5"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;5&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">&amp;ldquo;background-image: url(&amp;hellip;)&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"6"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>SA&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;6&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>SA&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"7"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;7&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">&amp;ldquo;background-image: url(&amp;hellip;)&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"8"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;8&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">&amp;ldquo;background-image: url(&amp;hellip;)&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"9"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;col-auto&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck mb-2&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck&amp;rdquo;&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;checkbox&amp;rdquo;&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">&amp;ldquo;9&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-input&amp;rdquo;&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-figure&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-imagecheck-image&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;avatar avatar-md&amp;rdquo;&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">&amp;ldquo;background-image: url(&amp;hellip;)&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
@@ -3166,7 +3154,7 @@ https://tabler.io/users/
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>
-&lt;/div></description></item><item><title>Docs: Page headers</title><link>/RoverCoreDocs/docs/theme/layout/headers/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/layout/headers/</guid><description>
+&lt;/div>&lt;/p></description></item><item><title>Docs: Page headers</title><link>/RoverCoreDocs/docs/theme/layout/headers/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/layout/headers/</guid><description>
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
@@ -3839,29 +3827,24 @@ Dolor sit amet.&lt;span class="nt">&amp;lt;/p&amp;gt;&lt;/span>&lt;/code>&lt;/pr
 &lt;/div>
 &lt;/div></description></item><item><title>Docs: Validation States</title><link>/RoverCoreDocs/docs/theme/formcomponents/validationstates/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/validationstates/</guid><description>
 &lt;div class="markdown">
-&lt;div>
-&lt;div class="d-flex mb-3">
-&lt;h1 class="m-0">Validation states&lt;/h1>
-&lt;/div>
-&lt;p>To inform users whether the entered value is correct or not, use either of the validation states. Thanks to that, users will immediately know which form elements they need to correct and, if the state displays as invalid, why the value is incorrect.&lt;/p>
-&lt;/div>
-&lt;div class="example no_toc_section">
-&lt;div class="example-content">
-&lt;div class="mb-3">
-&lt;label class="form-label">Validation States&lt;/label>
-&lt;input type="text" class="form-control is-valid mb-2" placeholder="Valid State..">
-&lt;input type="text" class="form-control is-invalid" placeholder="Invalid State..">
-&lt;div class="invalid-feedback">Invalid feedback&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="example-code">
-&lt;figure class="highlight">
-&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-valid mb-2"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Valid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-invalid"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Invalid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"invalid-feedback"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Invalid feedback&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;pre>&lt;code> &amp;lt;div class=&amp;quot;example no_toc_section&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;example-content&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;mb-3&amp;quot;&amp;gt;
+&amp;lt;label class=&amp;quot;form-label&amp;quot;&amp;gt;Validation States&amp;lt;/label&amp;gt;
+&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control is-valid mb-2&amp;quot; placeholder=&amp;quot;Valid State..&amp;quot;&amp;gt;
+&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control is-invalid&amp;quot; placeholder=&amp;quot;Invalid State..&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;invalid-feedback&amp;quot;&amp;gt;Invalid feedback&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;example-code&amp;quot;&amp;gt;
+&amp;lt;figure class=&amp;quot;highlight&amp;quot;&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-html&amp;quot; data-lang=&amp;quot;html&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;lt;div&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;class=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;mb-3&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;gt;&amp;lt;/span&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-label&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;text&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-control is-valid mb-2&amp;rdquo;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;ldquo;Valid State..&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;text&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-control is-invalid&amp;rdquo;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;ldquo;Invalid State..&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;invalid-feedback&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Invalid feedback&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>
@@ -3878,14 +3861,14 @@ Dolor sit amet.&lt;span class="nt">&amp;lt;/p&amp;gt;&lt;/span>&lt;/code>&lt;/pr
 &lt;/div>
 &lt;div class="example-code">
 &lt;figure class="highlight">
-&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-valid is-valid-lite mb-2"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Valid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-invalid is-invalid-lite"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Invalid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;mb-3&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-label&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;text&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-control is-valid is-valid-lite mb-2&amp;rdquo;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;ldquo;Valid State..&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;text&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-control is-invalid is-invalid-lite&amp;rdquo;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;ldquo;Invalid State..&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>
-&lt;/div></description></item><item><title>Docs: Example Page</title><link>/RoverCoreDocs/docs/getting-started/example-page/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/getting-started/example-page/</guid><description>
+&lt;/div>&lt;/p></description></item><item><title>Docs: Example Page</title><link>/RoverCoreDocs/docs/getting-started/example-page/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/getting-started/example-page/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
 &lt;/div>
