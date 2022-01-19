@@ -1,8 +1,11 @@
 ---
-title: Typography
-menu: docs.content.typography
-description: Typography plays an important role in creating an attractive and clear interface design. Good typography will make the content easy to follow and improve the usability of your website.
-bootstrap-link: content/typography/
+categories: ["Content"]
+tags: ["typography", "style"]
+title: "Typography"
+linkTitle: "Typography"
+date: 2022-01-18
+description: >
+  Typography plays an important role in creating an attractive and clear interface design. Good typography will make the content easy to follow and improve the usability of your website.
 ---
 
 
