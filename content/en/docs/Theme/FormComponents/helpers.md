@@ -12,7 +12,7 @@ description: >
                       <p>Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.</p>
                       <div class="example no_toc_section">
                         <div class="example-content">
-                          <span class="form-help" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true" data-bs-content="<p>ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.</p><p class='mb-0'><a href=''>USP ZIP codes lookup tools</a></p>" data-bs-original-title="" title="" aria-describedby="popover541127">?</span>
+                          <span class="form-help" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true" data-bs-content="<p>ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.</p><p class='mb-0'><a href=''>USP ZIP codes lookup tools</a></p>" data-bs-original-title="" title="">?</span>
                         </div>
                       </div>
                       <div class="example-code">
