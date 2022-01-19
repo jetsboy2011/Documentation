@@ -12,7 +12,7 @@ description: >
 <div class="markdown">
                       <div>
                         <div class="d-flex mb-3">
-                          <h1 class="m-0">Typography</h1>
+                          <h1 class="m-0"></h1>
                           <p class="ms-auto">
                             <a href="https://getbootstrap.com/docs/5.0/content/typography/" target="_blank" class="d-flex align-items-center">
                               <!-- Download SVG icon from http://tabler-icons.io/i/external-link -->
@@ -21,7 +21,7 @@ description: >
                             </a>
                           </p>
                         </div>
-                        <p>Typography plays an important role in creating an attractive and clear interface design. Good typography will make the content easy to follow and improve the usability of your website.</p>
+                        <p>The Tabler theme is built on top of Bootstrap 5.0, so you can also utilize framework styles from the Bootstrap 5 documentation.</p>
                       </div>
                       <h2 id="headings">Headings</h2>
                       <p>Use HTML headings to organize content on your website and make the structure clear and user-friendly.</p>
