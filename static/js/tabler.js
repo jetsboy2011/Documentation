@@ -1,13 +1,13 @@
 //Vendor
 
-import './src/autosize';
-import './src/input-mask';
-import './src/dropdown';
-import './src/tooltip';
-import './src/popover';
-import './src/switch-icon';
-import { EnableActivationTabsFromLocationHash } from './src/tab';
-import './src/toast';
+import '/js/src/autosize';
+import '/js/src/input-mask';
+import '/js/src/dropdown';
+import '/js/src/tooltip';
+import '/js/src/popover';
+import '/js/src/switch-icon';
+import { EnableActivationTabsFromLocationHash } from '/js/src/tab';
+import '/js/src/toast';
 import * as bootstrap from 'bootstrap';
 
 window.bootstrap = bootstrap;
