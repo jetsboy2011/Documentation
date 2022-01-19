@@ -8,11 +8,10 @@ description: >
 
 
 <div class="markdown">
-                      <div>
+<div>
                         <div class="d-flex mb-3">
-                          <h1 class="m-0">Page headers</h1>
+                          <h1 class="m-0"></h1>
                         </div>
-                        <p>Page heading examples for Tabler</p>
                       </div>
                       <h2 id="simple-header">Simple header</h2>
                       <div class="example no_toc_section example-bg">

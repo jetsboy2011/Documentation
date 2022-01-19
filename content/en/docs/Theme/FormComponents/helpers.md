@@ -7,7 +7,11 @@ description: >
 ---
 
 <div class="markdown">
-
+<div>
+                        <div class="d-flex mb-3">
+                          <h1 class="m-0"></h1>
+                        </div>
+                      </div>
                       <h2 id="input-help">Input help</h2>
                       <p>Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.</p>
                       <div class="example no_toc_section">
