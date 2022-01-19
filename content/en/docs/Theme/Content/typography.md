@@ -10,14 +10,19 @@ description: >
 
 
 <div class="markdown">
-					<div class="d-flex mb-3">
-
-					<p class="">
-					<a href="https://getbootstrap.com/docs/5.0/content/typography/" target="_blank" class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" class="icon pe-1 text-blue" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M11 7H6A2 2 0 004 9v9a2 2 0 002 2h9a2 2 0 002-2v-5"></path><line x1="10" y1="14" x2="20" y2="4"></line><polyline points="15 4 20 4 20 9"></polyline></svg>
-					Bootstrap documentation
-					</a>
-					</p>
-					</div>
+                      <div>
+                        <div class="d-flex mb-3">
+                          <h1 class="m-0">Typography</h1>
+                          <p class="ms-auto">
+                            <a href="https://getbootstrap.com/docs/5.0/content/typography/" target="_blank" class="d-flex align-items-center">
+                              <!-- Download SVG icon from http://tabler-icons.io/i/external-link -->
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon pe-1 text-blue" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5"></path><line x1="10" y1="14" x2="20" y2="4"></line><polyline points="15 4 20 4 20 9"></polyline></svg>
+                              Bootstrap documentation
+                            </a>
+                          </p>
+                        </div>
+                        <p>Typography plays an important role in creating an attractive and clear interface design. Good typography will make the content easy to follow and improve the usability of your website.</p>
+                      </div>
                       <h2 id="headings">Headings</h2>
                       <p>Use HTML headings to organize content on your website and make the structure clear and user-friendly.</p>
                       <div class="example no_toc_section">
