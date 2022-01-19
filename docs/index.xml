@@ -3475,7 +3475,7 @@ Create new report
 &lt;div class="page-header">
 &lt;div class="row align-items-center">
 &lt;div class="col-auto">
-&lt;span class="avatar avatar-md" style="background-image: url(../static/avatars/000m.jpg)">&lt;/span>
+&lt;span class="avatar avatar-md" style="background-image: url(/RoverCoreDocs/avatars/000m.jpg)">&lt;/span>
 &lt;/div>
 &lt;div class="col">
 &lt;h2 class="page-title">Paweł Kuna&lt;/h2>
