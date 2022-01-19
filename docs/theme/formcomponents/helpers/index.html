@@ -23,12 +23,12 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="/RoverCoreDocs/docs/theme/formcomponents/helpers/"><meta property="article:section" content="docs">
 <meta property="article:published_time" content="2022-01-18T00:00:00+00:00">
-<meta property="article:modified_time" content="2022-01-18T22:45:36-05:00"><meta property="og:site_name" content="RoverCore Docs">
+<meta property="article:modified_time" content="2022-01-18T22:49:10-05:00"><meta property="og:site_name" content="RoverCore Docs">
 <meta itemprop=name content="Form Helpers">
 <meta itemprop=description content="A form helper can be used to provide users with additional information about the elements of a form that may be unclear.
 "><meta itemprop=datePublished content="2022-01-18T00:00:00+00:00">
-<meta itemprop=dateModified content="2022-01-18T22:45:36-05:00">
-<meta itemprop=wordCount content="117">
+<meta itemprop=dateModified content="2022-01-18T22:49:10-05:00">
+<meta itemprop=wordCount content="111">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Form Helpers">
 <meta name=twitter:description content="A form helper can be used to provide users with additional information about the elements of a form that may be unclear.
@@ -230,22 +230,27 @@
 <header class=article-meta>
 </header>
 <div class=markdown>
-<pre><code>                  &lt;h2 id=&quot;input-help&quot;&gt;Input help&lt;/h2&gt;
-                  &lt;p&gt;Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.&lt;/p&gt;
-                  &lt;div class=&quot;example no_toc_section&quot;&gt;
-                    &lt;div class=&quot;example-content&quot;&gt;
-                      &lt;span class=&quot;form-help&quot; data-bs-toggle=&quot;popover&quot; data-bs-placement=&quot;top&quot; data-bs-html=&quot;true&quot; data-bs-content=&quot;&lt;p&gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&lt;/p&gt;&lt;p class='mb-0'&gt;&lt;a href=''&gt;USP ZIP codes lookup tools&lt;/a&gt;&lt;/p&gt;&quot; data-bs-original-title=&quot;&quot; title=&quot;&quot;&gt;?&lt;/span&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                  &lt;div class=&quot;example-code&quot;&gt;
-                    &lt;figure class=&quot;highlight&quot;&gt;
-                      &lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;form-help&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-bs-toggle=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;popover&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-bs-placement=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;top&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-bs-html=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-bs-content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;p&amp;gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&amp;lt;/p&amp;gt;
-</code></pre>
-<p>&lt;p class=&lsquo;mb-0&rsquo;>&lt;a href=''>USP ZIP codes lookup tools&lt;/a>&lt;/p>
-&ldquo;</span><span class=nt>></span>?<span class=nt>&lt;/span></span></code></pre>
+<div>
+<div class="d-flex mb-3">
+<h1 class=m-0>Form helpers</h1>
+</div>
+<p>A form helper can be used to provide users with additional information about the elements of a form that may be unclear.</p>
+</div>
+<h2 id=input-help>Input help</h2>
+<p>Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.</p>
+<div class="example no_toc_section">
+<div class=example-content>
+<span class=form-help data-bs-toggle=popover data-bs-placement=top data-bs-html=true data-bs-content="<p>ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.</p><p class='mb-0'><a href=''>USP ZIP codes lookup tools</a></p>" data-bs-original-title title>?</span>
+</div>
+</div>
+<div class=example-code>
+<figure class=highlight>
+<pre><code class=language-html data-lang=html><span class=nt>&lt;span</span> <span class=na>class=</span><span class=s>"form-help"</span> <span class=na>data-bs-toggle=</span><span class=s>"popover"</span> <span class=na>data-bs-placement=</span><span class=s>"top"</span> <span class=na>data-bs-html=</span><span class=s>"true"</span> <span class=na>data-bs-content=</span><span class=s>"&lt;p&gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&lt;/p&gt;
+&lt;p class='mb-0'&gt;&lt;a href=''&gt;USP ZIP codes lookup tools&lt;/a&gt;&lt;/p&gt;
+"</span><span class=nt>&gt;</span>?<span class=nt>&lt;/span&gt;</span></code></pre>
 </figure>
 </div>
-</div></p>
+</div>
 <style>.feedback--answer{display:inline-block}.feedback--answer-no{margin-left:1em}.feedback--response{display:none;margin-top:1em}.feedback--response__visible{display:block}</style>
 <div class=d-print-none>
 <h2 class=feedback--title>Feedback</h2>
@@ -262,7 +267,7 @@ Sorry to hear that. Please <a href=https://github.com/eahs/rovercoredocs/issues/
 <script>const yesButton=document.querySelector('.feedback--answer-yes'),noButton=document.querySelector('.feedback--answer-no'),yesResponse=document.querySelector('.feedback--response-yes'),noResponse=document.querySelector('.feedback--response-no'),disableButtons=()=>{yesButton.disabled=!0,noButton.disabled=!0},sendFeedback=b=>{if(typeof ga!='function')return;const a={command:'send',hitType:'event',category:'Helpful',action:'click',label:window.location.pathname,value:b};ga(a.command,a.hitType,a.category,a.action,a.label,a.value)};yesButton.addEventListener('click',()=>{yesResponse.classList.add('feedback--response__visible'),disableButtons(),sendFeedback(1)}),noButton.addEventListener('click',()=>{noResponse.classList.add('feedback--response__visible'),disableButtons(),sendFeedback(0)})</script>
 <br>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified January 18, 2022: <a href=https://github.com/eahs/rovercoredocs/commit/1e3c7bce82ea90e654ad429a92f4871a606a6f5a>Updated helpers (1e3c7bc)</a>
+Last modified January 18, 2022: <a href=https://github.com/eahs/rovercoredocs/commit/017914bbc4bedd2e6e600186fe7caa319ee37978>Reverted helpers and imagecheck (017914b)</a>
 </div>
 </div>
 </main>
