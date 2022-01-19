@@ -2903,22 +2903,26 @@ https://tabler.io/users/
 &lt;/div>
 &lt;/div></description></item><item><title>Docs: Form Helpers</title><link>/RoverCoreDocs/docs/theme/formcomponents/helpers/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/helpers/</guid><description>
 &lt;div class="markdown">
-&lt;pre>&lt;code> &amp;lt;h2 id=&amp;quot;input-help&amp;quot;&amp;gt;Input help&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.&amp;lt;/p&amp;gt;
-&amp;lt;div class=&amp;quot;example no_toc_section&amp;quot;&amp;gt;
-&amp;lt;div class=&amp;quot;example-content&amp;quot;&amp;gt;
-&amp;lt;span class=&amp;quot;form-help&amp;quot; data-bs-toggle=&amp;quot;popover&amp;quot; data-bs-placement=&amp;quot;top&amp;quot; data-bs-html=&amp;quot;true&amp;quot; data-bs-content=&amp;quot;&amp;lt;p&amp;gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&amp;lt;/p&amp;gt;&amp;lt;p class='mb-0'&amp;gt;&amp;lt;a href=''&amp;gt;USP ZIP codes lookup tools&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;quot; data-bs-original-title=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot;&amp;gt;?&amp;lt;/span&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&amp;quot;example-code&amp;quot;&amp;gt;
-&amp;lt;figure class=&amp;quot;highlight&amp;quot;&amp;gt;
-&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-html&amp;quot; data-lang=&amp;quot;html&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;lt;span&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;class=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;form-help&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;data-bs-toggle=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;popover&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;data-bs-placement=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;top&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;data-bs-html=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;true&amp;quot;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;data-bs-content=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;&amp;amp;lt;p&amp;amp;gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&amp;amp;lt;/p&amp;amp;gt;
-&lt;/code>&lt;/pre>
-&lt;p>&amp;lt;p class=&amp;lsquo;mb-0&amp;rsquo;&amp;gt;&amp;lt;a href=''&amp;gt;USP ZIP codes lookup tools&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
-&amp;ldquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>?&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">&lt;/h1>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="input-help">Input help&lt;/h2>
+&lt;p>Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;span class="form-help" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true" data-bs-content="&lt;p>ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&lt;/p>&lt;p class='mb-0'>&lt;a href=''>USP ZIP codes lookup tools&lt;/a>&lt;/p>" data-bs-original-title="" title="">?&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-help"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"popover"&lt;/span> &lt;span class="na">data-bs-placement=&lt;/span>&lt;span class="s">"top"&lt;/span> &lt;span class="na">data-bs-html=&lt;/span>&lt;span class="s">"true"&lt;/span> &lt;span class="na">data-bs-content=&lt;/span>&lt;span class="s">"&amp;lt;p&amp;gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&amp;lt;/p&amp;gt;
+&amp;lt;p class='mb-0'&amp;gt;&amp;lt;a href=''&amp;gt;USP ZIP codes lookup tools&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>?&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>
-&lt;/div>&lt;/p></description></item><item><title>Docs: Icons</title><link>/RoverCoreDocs/docs/theme/content/icons/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/icons/</guid><description>
+&lt;/div></description></item><item><title>Docs: Icons</title><link>/RoverCoreDocs/docs/theme/content/icons/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/icons/</guid><description>
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
@@ -3390,9 +3394,8 @@ https://tabler.io/users/
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
-&lt;h1 class="m-0">Page headers&lt;/h1>
+&lt;h1 class="m-0">&lt;/h1>
 &lt;/div>
-&lt;p>Page heading examples for Tabler&lt;/p>
 &lt;/div>
 &lt;h2 id="simple-header">Simple header&lt;/h2>
 &lt;div class="example no_toc_section example-bg">
@@ -4059,24 +4062,28 @@ Dolor sit amet.&lt;span class="nt">&amp;lt;/p&amp;gt;&lt;/span>&lt;/code>&lt;/pr
 &lt;/div>
 &lt;/div></description></item><item><title>Docs: Validation States</title><link>/RoverCoreDocs/docs/theme/formcomponents/validationstates/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/validationstates/</guid><description>
 &lt;div class="markdown">
-&lt;pre>&lt;code> &amp;lt;div class=&amp;quot;example no_toc_section&amp;quot;&amp;gt;
-&amp;lt;div class=&amp;quot;example-content&amp;quot;&amp;gt;
-&amp;lt;div class=&amp;quot;mb-3&amp;quot;&amp;gt;
-&amp;lt;label class=&amp;quot;form-label&amp;quot;&amp;gt;Validation States&amp;lt;/label&amp;gt;
-&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control is-valid mb-2&amp;quot; placeholder=&amp;quot;Valid State..&amp;quot;&amp;gt;
-&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control is-invalid&amp;quot; placeholder=&amp;quot;Invalid State..&amp;quot;&amp;gt;
-&amp;lt;div class=&amp;quot;invalid-feedback&amp;quot;&amp;gt;Invalid feedback&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;div class=&amp;quot;example-code&amp;quot;&amp;gt;
-&amp;lt;figure class=&amp;quot;highlight&amp;quot;&amp;gt;
-&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-html&amp;quot; data-lang=&amp;quot;html&amp;quot;&amp;gt;&amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;lt;div&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;quot;na&amp;quot;&amp;gt;class=&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;s&amp;quot;&amp;gt;&amp;quot;mb-3&amp;quot;&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;quot;nt&amp;quot;&amp;gt;&amp;amp;gt;&amp;lt;/span&amp;gt;
-&lt;/code>&lt;/pre>
-&lt;p>&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-label&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;text&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-control is-valid mb-2&amp;rdquo;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;ldquo;Valid State..&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;text&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-control is-invalid&amp;rdquo;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;ldquo;Invalid State..&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;invalid-feedback&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Invalid feedback&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">&lt;/h1>
+&lt;/div>
+&lt;/div>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Validation States&lt;/label>
+&lt;input type="text" class="form-control is-valid mb-2" placeholder="Valid State..">
+&lt;input type="text" class="form-control is-invalid" placeholder="Invalid State..">
+&lt;div class="invalid-feedback">Invalid feedback&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-valid mb-2"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Valid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-invalid"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Invalid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"invalid-feedback"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Invalid feedback&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>
@@ -4093,14 +4100,14 @@ Dolor sit amet.&lt;span class="nt">&amp;lt;/p&amp;gt;&lt;/span>&lt;/code>&lt;/pr
 &lt;/div>
 &lt;div class="example-code">
 &lt;figure class="highlight">
-&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;mb-3&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-label&amp;rdquo;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;text&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-control is-valid is-valid-lite mb-2&amp;rdquo;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;ldquo;Valid State..&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
-&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">&amp;ldquo;text&amp;rdquo;&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">&amp;ldquo;form-control is-invalid is-invalid-lite&amp;rdquo;&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">&amp;ldquo;Invalid State..&amp;quot;&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-valid is-valid-lite mb-2"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Valid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-invalid is-invalid-lite"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Invalid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>
-&lt;/div>&lt;/p></description></item><item><title>Docs: Example Page</title><link>/RoverCoreDocs/docs/getting-started/example-page/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/getting-started/example-page/</guid><description>
+&lt;/div></description></item><item><title>Docs: Example Page</title><link>/RoverCoreDocs/docs/getting-started/example-page/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/getting-started/example-page/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
 &lt;/div>

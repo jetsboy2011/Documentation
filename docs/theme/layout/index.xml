@@ -2,9 +2,8 @@
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
-&lt;h1 class="m-0">Page headers&lt;/h1>
+&lt;h1 class="m-0">&lt;/h1>
 &lt;/div>
-&lt;p>Page heading examples for Tabler&lt;/p>
 &lt;/div>
 &lt;h2 id="simple-header">Simple header&lt;/h2>
 &lt;div class="example no_toc_section example-bg">
