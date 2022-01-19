@@ -1,4 +1,103 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – style</title><link>/RoverCoreDocs/tags/style/</link><description>Recent content in style on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/RoverCoreDocs/tags/style/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Typography</title><link>/RoverCoreDocs/docs/theme/content/typography/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/typography/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – style</title><link>/RoverCoreDocs/tags/style/</link><description>Recent content in style on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/RoverCoreDocs/tags/style/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Icons</title><link>/RoverCoreDocs/docs/theme/content/icons/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/icons/</guid><description>
+&lt;div class="markdown">
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">Icons&lt;/h1>
+&lt;/div>
+&lt;/div>
+&lt;p>All icons come from the Tabler Icons set and are MIT-licensed. Visit &lt;a href="https://tabler-icons.io" target="_blank">tabler-icons.io&lt;/a>, download the icons you need in SVG, PNG or React and use them in your favourite design tools. You can show all icons and SVG codes &lt;a href="../icons.html">here&lt;/a>.&lt;/p>
+&lt;h2 id="base-icon">Base icon&lt;/h2>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7">&lt;/path>&lt;line x1="10" y1="10" x2="10.01" y2="10">&lt;/line>&lt;line x1="14" y1="10" x2="14.01" y2="10">&lt;/line>&lt;path d="M10 14a3.5 3.5 0 0 0 4 0">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/star -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/bike -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="5" cy="18" r="3">&lt;/circle>&lt;circle cx="19" cy="18" r="3">&lt;/circle>&lt;polyline points="12 19 12 15 9 12 14 8 16 11 19 11">&lt;/polyline>&lt;circle cx="17" cy="5" r="1">&lt;/circle>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/heart --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/ghost --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/star --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/bike --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="filled-icons">Filled icons&lt;/h2>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/circle -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="12" cy="12" r="9">&lt;/circle>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/star -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/square -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;rect x="4" y="4" width="16" height="16" rx="2">&lt;/rect>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/heart --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/circle --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/star --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/square --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="icon-colors">Icon colors&lt;/h2>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;span class="text-red">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">&lt;/path>&lt;/svg>
+&lt;/span>
+&lt;span class="text-yellow">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/star -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">&lt;/path>&lt;/svg>
+&lt;/span>
+&lt;span class="text-blue">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/circle -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="12" cy="12" r="9">&lt;/circle>&lt;/svg>
+&lt;/span>
+&lt;span class="text-green">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/square -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;rect x="4" y="4" width="16" height="16" rx="2">&lt;/rect>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-red"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/heart --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-yellow"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/star --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-blue"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/circle --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-green"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/square --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;/div></description></item><item><title>Docs: Typography</title><link>/RoverCoreDocs/docs/theme/content/typography/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/typography/</guid><description>
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">

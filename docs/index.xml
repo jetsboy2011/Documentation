@@ -1839,7 +1839,1689 @@ This is a warning with a title.
 &lt;h3 id="external-links">External Links&lt;/h3>
 &lt;p>Stumptown PBR&amp;amp;B keytar plaid street art, forage XOXO pitchfork selvage affogato green juice listicle pickled everyday carry hashtag. Organic sustainable letterpress sartorial scenester intelligentsia swag bushwick. Put a bird on it stumptown neutra locavore. IPhone typewriter messenger bag narwhal. Ennui cold-pressed seitan flannel keytar, single-origin coffee adaptogen occupy yuccie williamsburg chillwave shoreditch forage waistcoat.&lt;/p>
 &lt;pre tabindex="0">&lt;code>This is the final element on the page and there should be no margin below this.
-&lt;/code>&lt;/pre></description></item><item><title>Docs: Typography</title><link>/RoverCoreDocs/docs/theme/content/typography/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/typography/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Docs: Form Elements</title><link>/RoverCoreDocs/docs/theme/formcomponents/elements/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/elements/</guid><description>
+&lt;div class="markdown">
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">Form elements&lt;/h1>
+&lt;p class="ms-auto">
+&lt;a href="https://getbootstrap.com/docs/5.0/components/forms/" target="_blank" class="d-flex align-items-center">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/external-link -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon pe-1 text-blue" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5">&lt;/path>&lt;line x1="10" y1="14" x2="20" y2="4">&lt;/line>&lt;polyline points="15 4 20 4 20 9">&lt;/polyline>&lt;/svg>
+Bootstrap documentation
+&lt;/a>
+&lt;/p>
+&lt;/div>
+&lt;p>Forms are one of the most important types of interaction with a website or app. Since their aim is to enable users to make a purchase, subscribe to a service or sign up to create an account, it's important to make sure they are easy to complete and help increase conversion rates. Use the available elements to create forms which are well-structured and user-friendly.&lt;/p>
+&lt;/div>
+&lt;h2 id="classic-inputs">Classic inputs&lt;/h2>
+&lt;p>Use classic, user-friendly inputs, label them appropriately and include input placeholders that will help users avoid confusion when completing a form.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Text&lt;/label>
+&lt;input type="text" class="form-control" name="example-text-input" placeholder="Input placeholder">
+&lt;/div>
+&lt;div class="mb-3">
+&lt;label class="form-label">Password&lt;/label>
+&lt;input type="text" class="form-control" name="example-password-input" placeholder="Input placeholder">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Text&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"example-text-input"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Input placeholder"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Password&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"example-password-input"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Input placeholder"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="form-control-rounded">Form control rounded&lt;/h2>
+&lt;p>Use the &lt;code class="language-plaintext highlighter-rouge">form-control-rounded&lt;/code> class if you prefer form controls with rounded corners.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Form control rounded&lt;/label>
+&lt;input type="text" class="form-control form-control-rounded mb-2" name="Form control rounded" placeholder="Text..">
+&lt;div class="input-icon">
+&lt;input type="text" class="form-control form-control-rounded" placeholder="Search…">
+&lt;span class="input-icon-addon">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/search -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="10" cy="10" r="7">&lt;/circle>&lt;line x1="21" y1="21" x2="15" y2="15">&lt;/line>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Form control rounded&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control form-control-rounded mb-2"&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"Form control rounded"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Text.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control form-control-rounded"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Search…"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon-addon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/search --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="form-control-flush">Form control flush&lt;/h2>
+&lt;p>You can remove borders from your form control by adding the &lt;code class="language-plaintext highlighter-rouge">form-control-flush&lt;/code> class.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Form control flush&lt;/label>
+&lt;input type="text" class="form-control form-control-flush" name="Form control flush" placeholder="Text..">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Form control flush&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control form-control-flush"&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"Form control flush"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Text.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="input-with-icon">Input with icon&lt;/h2>
+&lt;p>Add icons to your input controls to suggest users what they should enter or inform them of the current state of a form element.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Icon input&lt;/label>
+&lt;div class="input-icon mb-3">
+&lt;input type="text" class="form-control" placeholder="Search…">
+&lt;span class="input-icon-addon">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/search -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="10" cy="10" r="7">&lt;/circle>&lt;line x1="21" y1="21" x2="15" y2="15">&lt;/line>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;div class="input-icon mb-3">
+&lt;span class="input-icon-addon">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/user -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="12" cy="7" r="4">&lt;/circle>&lt;path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2">&lt;/path>&lt;/svg>
+&lt;/span>
+&lt;input type="text" class="form-control" placeholder="Username">
+&lt;/div>
+&lt;/div>
+&lt;div class="mb-3">
+&lt;label class="form-label">Loader input&lt;/label>
+&lt;div class="input-icon mb-3">
+&lt;input type="text" class="form-control" placeholder="Loading…">
+&lt;span class="input-icon-addon">
+&lt;div class="spinner-border spinner-border-sm text-muted" role="status">&lt;/div>
+&lt;/span>
+&lt;/div>
+&lt;div class="input-icon mb-3">
+&lt;span class="input-icon-addon">
+&lt;div class="spinner-border spinner-border-sm text-muted" role="status">&lt;/div>
+&lt;/span>
+&lt;input type="text" class="form-control" placeholder="Loading…">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Icon input&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Search…"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon-addon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/search --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon-addon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/user --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Username"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Loader input&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Loading…"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon-addon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"spinner-border spinner-border-sm text-muted"&lt;/span> &lt;span class="na">role=&lt;/span>&lt;span class="s">"status"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon-addon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"spinner-border spinner-border-sm text-muted"&lt;/span> &lt;span class="na">role=&lt;/span>&lt;span class="s">"status"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Loading…"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="separated-inputs">Separated inputs&lt;/h2>
+&lt;p>Include an additional element in your input section, such as a button which can be used to submit the information enetered in the input control.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Separated inputs&lt;/label>
+&lt;div class="row g-2">
+&lt;div class="col">
+&lt;input type="text" class="form-control" placeholder="Search for…">
+&lt;/div>
+&lt;div class="col-auto">
+&lt;a href="javascript:void(0)" class="btn btn-white btn-icon" aria-label="Button">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/search -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="10" cy="10" r="7">&lt;/circle>&lt;line x1="21" y1="21" x2="15" y2="15">&lt;/line>&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Separated inputs&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row g-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Search for…"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-white btn-icon"&lt;/span> &lt;span class="na">aria-label=&lt;/span>&lt;span class="s">"Button"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/search --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="textarea-and-select">Textarea and select&lt;/h2>
+&lt;p>Use a multi-line text input control to enable users to enter longer pieces of text. The control will automatically adjust to the length of the text entered.&lt;/p>
+&lt;p>Add one of the available selects - either a dropdown or a multiple choice select - to let users choose from a predefined set of options.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Textarea&lt;/label>
+&lt;textarea class="form-control" name="example-textarea" placeholder="Textarea placeholder">&lt;/textarea>
+&lt;/div>
+&lt;div class="mb-3">
+&lt;div class="form-label">Select&lt;/div>
+&lt;select class="form-select">
+&lt;option value="1">One&lt;/option>
+&lt;option value="2">Two&lt;/option>
+&lt;option value="3">Three&lt;/option>
+&lt;/select>
+&lt;/div>
+&lt;div class="mb-3">
+&lt;div class="form-label">Select multiple&lt;/div>
+&lt;select class="form-select" multiple="">
+&lt;option value="1">One&lt;/option>
+&lt;option value="2">Two&lt;/option>
+&lt;option value="3">Three&lt;/option>
+&lt;/select>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Textarea&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;textarea&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"example-textarea"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Textarea placeholder"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/textarea&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Select&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;select&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-select"&lt;/span> &lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"1"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>One&lt;span class="nt">&amp;lt;/option&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Two&lt;span class="nt">&amp;lt;/option&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Three&lt;span class="nt">&amp;lt;/option&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/select&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Select multiple&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;select&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-select"&lt;/span> &lt;span class="na">multiple&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"1"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>One&lt;span class="nt">&amp;lt;/option&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Two&lt;span class="nt">&amp;lt;/option&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Three&lt;span class="nt">&amp;lt;/option&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/select&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="input-size">Input size&lt;/h2>
+&lt;p>Choose the size of an input control that will go well with your form design. Apart from the default size, you can also use small and large input controls.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Input sizing&lt;/label>
+&lt;input class="form-control form-control-lg mb-2" type="text" placeholder=".form-control-lg">
+&lt;input class="form-control mb-2" type="text" placeholder="Default input">
+&lt;input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Input sizing&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control form-control-lg mb-2"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">".form-control-lg"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control mb-2"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Default input"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control form-control-sm"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">".form-control-sm"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="datalists">Datalists&lt;/h2>
+&lt;p>Use the &lt;code class="language-plaintext highlighter-rouge">datalist&lt;/code> element to add an autocomplete feature to your input control. The list of available options will display once a user starts to type and will make it quicker to complete form sections.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Datalist example&lt;/label>
+&lt;input class="form-control" list="datalistOptions" placeholder="Type to search...">
+&lt;datalist id="datalistOptions">
+&lt;option value="Aruba">
+&lt;/option>&lt;option value="Afghanistan">
+&lt;/option>&lt;option value="Angola">
+&lt;/option>&lt;option value="Anguilla">
+&lt;/option>&lt;option value="Albania">
+&lt;/option>&lt;option value="Andorra">
+&lt;/option>&lt;option value="United Arab Emirates">
+&lt;/option>&lt;option value="Argentina">
+&lt;/option>&lt;option value="Armenia">
+&lt;/option>&lt;option value="American Samoa">
+&lt;/option>&lt;/datalist>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Datalist example&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">list=&lt;/span>&lt;span class="s">"datalistOptions"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Type to search..."&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;datalist&lt;/span> &lt;span class="na">id=&lt;/span>&lt;span class="s">"datalistOptions"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"Aruba"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"Afghanistan"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"Angola"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"Anguilla"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"Albania"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"Andorra"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"United Arab Emirates"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"Argentina"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"Armenia"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;option&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"American Samoa"&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/datalist&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="toggle-switches">Toggle switches&lt;/h2>
+&lt;p>Use toggle switches for the elements of your form which require choosing between two opposing states.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;div class="form-label">Toggle switches&lt;/div>
+&lt;label class="form-check form-switch">
+&lt;input class="form-check-input" type="checkbox" checked="">
+&lt;span class="form-check-label">Option 1&lt;/span>
+&lt;/label>
+&lt;label class="form-check form-switch">
+&lt;input class="form-check-input" type="checkbox">
+&lt;span class="form-check-label">Option 2&lt;/span>
+&lt;/label>
+&lt;label class="form-check form-switch">
+&lt;input class="form-check-input" type="checkbox">
+&lt;span class="form-check-label">Option 3&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="mb-3">
+&lt;div class="form-label">Single switch&lt;/div>
+&lt;label class="form-check form-switch">
+&lt;input class="form-check-input" type="checkbox">
+&lt;span class="form-check-label">I agree with terms and conditions&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Toggle switches&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-switch"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 1&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-switch"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 2&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-switch"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 3&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Single switch&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-switch"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>I agree with terms and conditions&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="radios">Radios&lt;/h2>
+&lt;p>Use radio buttons for the parts of your form which require users to choose one option from a set of two or more mutually exclusive options.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;div class="form-label">Radios&lt;/div>
+&lt;div>
+&lt;label class="form-check">
+&lt;input class="form-check-input" type="radio" checked="">
+&lt;span class="form-check-label">Option 1&lt;/span>
+&lt;/label>
+&lt;label class="form-check">
+&lt;input class="form-check-input" type="radio">
+&lt;span class="form-check-label">Option 2&lt;/span>
+&lt;/label>
+&lt;label class="form-check">
+&lt;input class="form-check-input" type="radio" disabled="">
+&lt;span class="form-check-label">Option 3&lt;/span>
+&lt;/label>
+&lt;label class="form-check">
+&lt;input class="form-check-input" type="radio" checked="" disabled="">
+&lt;span class="form-check-label">Option 4&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;div class="mb-3">
+&lt;div class="form-label">Inline Radios&lt;/div>
+&lt;div>
+&lt;label class="form-check form-check-inline">
+&lt;input class="form-check-input" type="radio" checked="">
+&lt;span class="form-check-label">Option 1&lt;/span>
+&lt;/label>
+&lt;label class="form-check form-check-inline">
+&lt;input class="form-check-input" type="radio">
+&lt;span class="form-check-label">Option 2&lt;/span>
+&lt;/label>
+&lt;label class="form-check form-check-inline">
+&lt;input class="form-check-input" type="radio" disabled="">
+&lt;span class="form-check-label">Option 3&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Radios&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"radio"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 1&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"radio"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 2&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"radio"&lt;/span> &lt;span class="na">disabled&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 3&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"radio"&lt;/span> &lt;span class="na">checked&lt;/span> &lt;span class="na">disabled&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 4&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Inline Radios&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-check-inline"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"radio"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 1&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-check-inline"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"radio"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 2&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-check-inline"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"radio"&lt;/span> &lt;span class="na">disabled&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 3&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="checkboxes">Checkboxes&lt;/h2>
+&lt;p>Use checkoxes if you want to allow users to select more than one option from a set of predefined options or to turn an option on or off.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;div class="form-label">Checkboxes&lt;/div>
+&lt;div>
+&lt;label class="form-check">
+&lt;input class="form-check-input" type="checkbox">
+&lt;span class="form-check-label">Checkbox input&lt;/span>
+&lt;/label>
+&lt;label class="form-check">
+&lt;input class="form-check-input" type="checkbox" disabled="">
+&lt;span class="form-check-label">Disabled checkbox input&lt;/span>
+&lt;/label>
+&lt;label class="form-check">
+&lt;input class="form-check-input" type="checkbox" checked="">
+&lt;span class="form-check-label">Checked checkbox input&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;div class="mb-3">
+&lt;div class="form-label">Inline Checkboxes&lt;/div>
+&lt;div>
+&lt;label class="form-check form-check-inline">
+&lt;input class="form-check-input" type="checkbox">
+&lt;span class="form-check-label">Option 1&lt;/span>
+&lt;/label>
+&lt;label class="form-check form-check-inline">
+&lt;input class="form-check-input" type="checkbox" disabled="">
+&lt;span class="form-check-label">Option 2&lt;/span>
+&lt;/label>
+&lt;label class="form-check form-check-inline">
+&lt;input class="form-check-input" type="checkbox" checked="">
+&lt;span class="form-check-label">Option 3&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Checkboxes&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Checkbox input&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">disabled&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Disabled checkbox input&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Checked checkbox input&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Inline Checkboxes&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-check-inline"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 1&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-check-inline"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">disabled&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 2&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check form-check-inline"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Option 3&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="range-input">Range input&lt;/h2>
+&lt;p>Add a range slider to make it possible for users to set a value or range, such as a price range or a time frame.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Range input&lt;/label>
+&lt;input type="range" class="form-range mb-2" value="40" min="0" max="100" step="10">
+&lt;div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-simple">&lt;div class="noUi-base">&lt;div class="noUi-connects">&lt;div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.2, 1);">&lt;/div>&lt;/div>&lt;div class="noUi-origin" style="transform: translate(-80%, 0px); z-index: 4;">&lt;div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="20.0" aria-valuetext="20.00">&lt;div class="noUi-touch-area">&lt;/div>&lt;/div>&lt;/div>&lt;/div>&lt;/div>
+&lt;div class="form-range mb-2 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-connect">&lt;div class="noUi-base">&lt;div class="noUi-connects">&lt;div class="noUi-connect" style="transform: translate(60%, 0px) scale(0.3, 1);">&lt;/div>&lt;/div>&lt;div class="noUi-origin" style="transform: translate(-40%, 0px); z-index: 5;">&lt;div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="90.0" aria-valuenow="60.0" aria-valuetext="60.00">&lt;div class="noUi-touch-area">&lt;/div>&lt;/div>&lt;/div>&lt;div class="noUi-origin" style="transform: translate(-10%, 0px); z-index: 4;">&lt;div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="60.0" aria-valuemax="100.0" aria-valuenow="90.0" aria-valuetext="90.00">&lt;div class="noUi-touch-area">&lt;/div>&lt;/div>&lt;/div>&lt;/div>&lt;/div>
+&lt;div class="form-range mb-2 text-green noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr" id="range-color">&lt;div class="noUi-base">&lt;div class="noUi-connects">&lt;div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.4, 1);">&lt;/div>&lt;/div>&lt;div class="noUi-origin" style="transform: translate(-60%, 0px); z-index: 4;">&lt;div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="100.0" aria-valuenow="40.0" aria-valuetext="40.00">&lt;div class="noUi-touch-area">&lt;/div>&lt;/div>&lt;/div>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Range input&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"range"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-range mb-2"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"40"&lt;/span> &lt;span class="na">min=&lt;/span>&lt;span class="s">"0"&lt;/span> &lt;span class="na">max=&lt;/span>&lt;span class="s">"100"&lt;/span> &lt;span class="na">step=&lt;/span>&lt;span class="s">"10"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-range mb-2"&lt;/span> &lt;span class="na">id=&lt;/span>&lt;span class="s">"range-simple"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-range mb-2"&lt;/span> &lt;span class="na">id=&lt;/span>&lt;span class="s">"range-connect"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-range mb-2 text-green"&lt;/span> &lt;span class="na">id=&lt;/span>&lt;span class="s">"range-color"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;script&amp;gt;&lt;/span>
+&lt;span class="nx">noUiSlider&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">create&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="s1">range-color&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">start&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">40&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">connect&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;span class="na">step&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">range&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">min&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">max&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="nt">&amp;lt;/script&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="input-group">Input group&lt;/h2>
+&lt;p>Create a group of input controls and place add-ons on either side of an input.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Input group&lt;/label>
+&lt;div class="input-group mb-2">
+&lt;span class="input-group-text">
+@
+&lt;/span>
+&lt;input type="text" class="form-control" placeholder="username" autocomplete="off">
+&lt;/div>
+&lt;div class="input-group mb-2">
+&lt;input type="text" class="form-control" placeholder="subdomain" autocomplete="off">
+&lt;span class="input-group-text">
+.tabler.io
+&lt;/span>
+&lt;/div>
+&lt;div class="input-group">
+&lt;span class="input-group-text">
+https://
+&lt;/span>
+&lt;input type="text" class="form-control" placeholder="subdomain" autocomplete="off">
+&lt;span class="input-group-text">
+.tabler.io
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Input group&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+@
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"username"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"subdomain"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+.tabler.io
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+https://
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"subdomain"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+.tabler.io
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;script&amp;gt;&lt;/span>
+&lt;span class="nx">noUiSlider&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">create&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="s1">range-color&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">start&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">40&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">connect&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;span class="na">step&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">range&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">min&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">max&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="nt">&amp;lt;/script&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="input-with-checkboxes-or-radios">Input with checkboxes or radios&lt;/h2>
+&lt;p>Add checkboxes or radio buttons on either side of your input control.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Input with checkbox or radios&lt;/label>
+&lt;div class="input-group mb-2">
+&lt;span class="input-group-text">
+&lt;input class="form-check-input m-0" type="checkbox" checked="">
+&lt;/span>
+&lt;input type="text" class="form-control" autocomplete="off">
+&lt;/div>
+&lt;div class="input-group">
+&lt;input type="text" class="form-control" autocomplete="off">
+&lt;span class="input-group-text">
+&lt;input class="form-check-input m-0" type="radio" checked="">
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Input with checkbox or radios&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input m-0"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-check-input m-0"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"radio"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;script&amp;gt;&lt;/span>
+&lt;span class="nx">noUiSlider&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">create&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="s1">range-color&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">start&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">40&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">connect&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;span class="na">step&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">range&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">min&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">max&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="nt">&amp;lt;/script&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="input-with-prepended-or-appended-text">Input with prepended or appended text&lt;/h2>
+&lt;p>Add text to your input control, either before or after the text which is to be entered by a user.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Input with prepended text&lt;/label>
+&lt;div class="input-group input-group-flat mb-2">
+&lt;span class="input-group-text">
+https://tabler.io/users/
+&lt;/span>
+&lt;input type="text" class="form-control ps-0" value="yourfancyusername" autocomplete="off">
+&lt;/div>
+&lt;div class="input-group input-group-flat">
+&lt;input type="text" class="form-control text-end pe-0" value="yourfancydomain" autocomplete="off">
+&lt;span class="input-group-text">
+.tabler.io
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Input with prepended text&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group input-group-flat mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+https://tabler.io/users/
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control ps-0"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"yourfancyusername"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group input-group-flat"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control text-end pe-0"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"yourfancydomain"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+.tabler.io
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;script&amp;gt;&lt;/span>
+&lt;span class="nx">noUiSlider&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">create&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="s1">range-color&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">start&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">40&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">connect&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;span class="na">step&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">range&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">min&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">max&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="nt">&amp;lt;/script&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="input-with-appended-link">Input with appended link&lt;/h2>
+&lt;p>Include a link in your input control to add a clickable element within the control.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Input with appended link&lt;/label>
+&lt;div class="input-group input-group-flat">
+&lt;input type="password" class="form-control" value="ultrastrongpassword" autocomplete="off">
+&lt;span class="input-group-text">
+&lt;a href="javascript:void(0)" class="input-group-link">Show password&lt;/a>
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Input with appended link&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group input-group-flat"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"password"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"ultrastrongpassword"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-link"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Show password&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;script&amp;gt;&lt;/span>
+&lt;span class="nx">noUiSlider&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">create&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="s1">range-color&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">start&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">40&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">connect&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;span class="na">step&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">range&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">min&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">max&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="nt">&amp;lt;/script&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="input-with-appended-icon-links">Input with appended icon links&lt;/h2>
+&lt;p>Add an icon link which you want to display at the end of your input control to visually represent actions which a user can take.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Input with appended icon links&lt;/label>
+&lt;div class="input-group input-group-flat">
+&lt;input type="text" class="form-control" autocomplete="off">
+&lt;span class="input-group-text">
+&lt;a href="javascript:void(0)" class="link-secondary" title="" data-bs-toggle="tooltip" data-bs-original-title="Clear search">&lt;!-- Download SVG icon from http://tabler-icons.io/i/x -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="18" y1="6" x2="6" y2="18">&lt;/line>&lt;line x1="6" y1="6" x2="18" y2="18">&lt;/line>&lt;/svg>
+&lt;/a>
+&lt;a href="javascript:void(0)" class="link-secondary ms-2" title="" data-bs-toggle="tooltip" data-bs-original-title="Search settings">&lt;!-- Download SVG icon from http://tabler-icons.io/i/adjustments -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="6" cy="10" r="2">&lt;/circle>&lt;line x1="6" y1="4" x2="6" y2="8">&lt;/line>&lt;line x1="6" y1="12" x2="6" y2="20">&lt;/line>&lt;circle cx="12" cy="16" r="2">&lt;/circle>&lt;line x1="12" y1="4" x2="12" y2="14">&lt;/line>&lt;line x1="12" y1="18" x2="12" y2="20">&lt;/line>&lt;circle cx="18" cy="7" r="2">&lt;/circle>&lt;line x1="18" y1="4" x2="18" y2="5">&lt;/line>&lt;line x1="18" y1="9" x2="18" y2="20">&lt;/line>&lt;/svg>
+&lt;/a>
+&lt;a href="javascript:void(0)" class="link-secondary ms-2 disabled" title="" data-bs-toggle="tooltip" data-bs-original-title="Add notification">&lt;!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6">&lt;/path>&lt;path d="M9 17v1a3 3 0 0 0 6 0v-1">&lt;/path>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Input with appended icon links&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group input-group-flat"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">autocomplete=&lt;/span>&lt;span class="s">"off"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-group-text"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"link-secondary"&lt;/span> &lt;span class="na">title=&lt;/span>&lt;span class="s">"Clear search"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"tooltip"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/x --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"link-secondary ms-2"&lt;/span> &lt;span class="na">title=&lt;/span>&lt;span class="s">"Search settings"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"tooltip"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/adjustments --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"link-secondary ms-2 disabled"&lt;/span> &lt;span class="na">title=&lt;/span>&lt;span class="s">"Add notification"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"tooltip"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/bell --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;script&amp;gt;&lt;/span>
+&lt;span class="nx">noUiSlider&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">create&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getElementById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="s1">range-color&lt;/span>&lt;span class="dl">'&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">start&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">40&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">connect&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;span class="na">step&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">range&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="na">min&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="na">max&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">100&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="p">});&lt;/span>
+&lt;span class="nt">&amp;lt;/script&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;/div></description></item><item><title>Docs: Form Helpers</title><link>/RoverCoreDocs/docs/theme/formcomponents/helpers/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/helpers/</guid><description>
+&lt;div class="markdown">
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">Form helpers&lt;/h1>
+&lt;/div>
+&lt;p>A form helper can be used to provide users with additional information about the elements of a form that may be unclear.&lt;/p>
+&lt;/div>
+&lt;h2 id="input-help">Input help&lt;/h2>
+&lt;p>Use an input helper to display additional information about a form element. The text label will appear once a user hovers over the helper.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;span class="form-help" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true" data-bs-content="&lt;p>ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&lt;/p>&lt;p class='mb-0'>&lt;a href=''>USP ZIP codes lookup tools&lt;/a>&lt;/p>" data-bs-original-title="" title="" aria-describedby="popover541127">?&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-help"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"popover"&lt;/span> &lt;span class="na">data-bs-placement=&lt;/span>&lt;span class="s">"top"&lt;/span> &lt;span class="na">data-bs-html=&lt;/span>&lt;span class="s">"true"&lt;/span> &lt;span class="na">data-bs-content=&lt;/span>&lt;span class="s">"&amp;lt;p&amp;gt;ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.&amp;lt;/p&amp;gt;
+&amp;lt;p class='mb-0'&amp;gt;&amp;lt;a href=''&amp;gt;USP ZIP codes lookup tools&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>?&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;/div></description></item><item><title>Docs: Icons</title><link>/RoverCoreDocs/docs/theme/content/icons/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/icons/</guid><description>
+&lt;div class="markdown">
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">Icons&lt;/h1>
+&lt;/div>
+&lt;/div>
+&lt;p>All icons come from the Tabler Icons set and are MIT-licensed. Visit &lt;a href="https://tabler-icons.io" target="_blank">tabler-icons.io&lt;/a>, download the icons you need in SVG, PNG or React and use them in your favourite design tools. You can show all icons and SVG codes &lt;a href="../icons.html">here&lt;/a>.&lt;/p>
+&lt;h2 id="base-icon">Base icon&lt;/h2>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7">&lt;/path>&lt;line x1="10" y1="10" x2="10.01" y2="10">&lt;/line>&lt;line x1="14" y1="10" x2="14.01" y2="10">&lt;/line>&lt;path d="M10 14a3.5 3.5 0 0 0 4 0">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/star -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/bike -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="5" cy="18" r="3">&lt;/circle>&lt;circle cx="19" cy="18" r="3">&lt;/circle>&lt;polyline points="12 19 12 15 9 12 14 8 16 11 19 11">&lt;/polyline>&lt;circle cx="17" cy="5" r="1">&lt;/circle>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/heart --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/ghost --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/star --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/bike --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="filled-icons">Filled icons&lt;/h2>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/circle -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="12" cy="12" r="9">&lt;/circle>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/star -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">&lt;/path>&lt;/svg>
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/square -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;rect x="4" y="4" width="16" height="16" rx="2">&lt;/rect>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/heart --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/circle --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/star --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/square --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="icon-colors">Icon colors&lt;/h2>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;span class="text-red">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">&lt;/path>&lt;/svg>
+&lt;/span>
+&lt;span class="text-yellow">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/star -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">&lt;/path>&lt;/svg>
+&lt;/span>
+&lt;span class="text-blue">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/circle -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="12" cy="12" r="9">&lt;/circle>&lt;/svg>
+&lt;/span>
+&lt;span class="text-green">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/square -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;rect x="4" y="4" width="16" height="16" rx="2">&lt;/rect>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-red"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/heart --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-yellow"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/star --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="icon-filled" --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-blue"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/circle --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-green"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/square --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;/div></description></item><item><title>Docs: Image Check</title><link>/RoverCoreDocs/docs/theme/formcomponents/imagecheck/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/imagecheck/</guid><description>
+&lt;div class="markdown">
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">Image check&lt;/h1>
+&lt;/div>
+&lt;/div>
+&lt;p>Add an image check to your form and give users visually attractive options to choose from.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div style="max-width: 25rem">
+&lt;div class="mb-3">
+&lt;label class="form-label">Image Check&lt;/label>
+&lt;div class="row g-2">
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/1b73704b282a8ec6.jpg" alt="Breakfast served with tea, bread and eggs" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" checked="">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/3d2998219313cd37.jpg" alt="Book, fairy lights" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/6ab3200b14549f8a.jpg" alt="Healthy Dinner" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="4" class="form-imagecheck-input" checked="">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/6d35d9a2bd6c63c2.jpg" alt="Aperol Spritz is a cocktail consisting of prosecco, aperitif and soda water" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="5" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/8a26974ee6444acd.jpg" alt="Beautiful blonde woman on a wooden pier by the lake" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="6" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/8c13ad59f739558c.jpg" alt="Still life of mandarin oranges with leaves" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="7" class="form-imagecheck-input" checked="">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/8fdeb4785d2b82ef.jpg" alt="Blonde woman having a healthy snack at the wooden pier" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="8" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/9f36332564ca271d.jpg" alt="Woman working on a laptop while enjoying a breakfast coffee and chocolate in bed" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-6 col-sm-4">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="9" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;img src="../photos/35b88fc04a518c1b.jpg" alt="Overhead view of macarons on a marble slab" class="form-imagecheck-image">
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Image Check&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row g-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"1"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Breakfast served with tea, bread and eggs"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"2"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Book, fairy lights"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"3"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Healthy Dinner"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"4"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Aperol Spritz is a cocktail consisting of prosecco, aperitif and soda water"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"5"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Beautiful blonde woman on a wooden pier by the lake"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"6"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Still life of mandarin oranges with leaves"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"7"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Blonde woman having a healthy snack at the wooden pier"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"8"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Woman working on a laptop while enjoying a breakfast coffee and chocolate in bed"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-6 col-sm-4"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"9"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;img&lt;/span> &lt;span class="na">src=&lt;/span>&lt;span class="s">"..."&lt;/span> &lt;span class="na">alt=&lt;/span>&lt;span class="s">"Overhead view of macarons on a marble slab"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Person Check&lt;/label>
+&lt;div class="row g-2">
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md" style="background-image: url(/avatars/003f.jpg)">&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="2" class="form-imagecheck-input" checked="">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md">HS&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md" style="background-image: url(/avatars/006m.jpg)">&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="4" class="form-imagecheck-input" checked="">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md" style="background-image: url(/avatars/004f.jpg)">&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="5" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md" style="background-image: url(/avatars/007m.jpg)">&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="6" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md">SA&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="7" class="form-imagecheck-input" checked="">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md" style="background-image: url(/avatars/009m.jpg)">&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="8" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md" style="background-image: url(/avatars/010m.jpg)">&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;label class="form-imagecheck mb-2">
+&lt;input name="form-imagecheck" type="checkbox" value="9" class="form-imagecheck-input">
+&lt;span class="form-imagecheck-figure">
+&lt;span class="form-imagecheck-image">
+&lt;span class="avatar avatar-md" style="background-image: url(/avatars/005f.jpg)">&lt;/span>
+&lt;/span>
+&lt;/span>
+&lt;/label>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Person Check&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row g-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"1"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"2"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>HS&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"3"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"4"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"5"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"6"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>SA&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"7"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="na">checked&lt;/span>&lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"8"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck mb-2"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">name=&lt;/span>&lt;span class="s">"form-imagecheck"&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"checkbox"&lt;/span> &lt;span class="na">value=&lt;/span>&lt;span class="s">"9"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-input"&lt;/span> &lt;span class="nt">/&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-figure"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-imagecheck-image"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;/div></description></item><item><title>Docs: Page headers</title><link>/RoverCoreDocs/docs/theme/layout/headers/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/layout/headers/</guid><description>
+&lt;div class="markdown">
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">Page headers&lt;/h1>
+&lt;/div>
+&lt;p>Page heading examples for Tabler&lt;/p>
+&lt;/div>
+&lt;h2 id="simple-header">Simple header&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header">
+&lt;div class="row align-items-center">
+&lt;div class="col">
+&lt;div class="page-pretitle">
+Overview
+&lt;/div>
+&lt;h2 class="page-title">
+Dashboard
+&lt;/h2>
+&lt;/div>
+&lt;div class="col-auto ms-auto">
+&lt;div class="btn-list">
+&lt;span class="d-none d-sm-inline">
+&lt;a href="javascript:void(0)" class="btn btn-white">
+New view
+&lt;/a>
+&lt;/span>
+&lt;a href="javascript:void(0)" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="12" y1="5" x2="12" y2="19">&lt;/line>&lt;line x1="5" y1="12" x2="19" y2="12">&lt;/line>&lt;/svg>
+Create new report
+&lt;/a>
+&lt;a href="javascript:void(0)" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="12" y1="5" x2="12" y2="19">&lt;/line>&lt;line x1="5" y1="12" x2="19" y2="12">&lt;/line>&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-pretitle"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+Overview
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+Dashboard
+&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto ms-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn-list"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"d-none d-sm-inline"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-white"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+New view
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary d-none d-sm-inline-block"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"modal"&lt;/span> &lt;span class="na">data-bs-target=&lt;/span>&lt;span class="s">"#modal-report"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/plus --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Create new report
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary d-sm-none btn-icon"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"modal"&lt;/span> &lt;span class="na">data-bs-target=&lt;/span>&lt;span class="s">"#modal-report"&lt;/span> &lt;span class="na">aria-label=&lt;/span>&lt;span class="s">"Create new report"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/plus --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="with-meta-avatar-and-actions">With meta, avatar and actions&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header">
+&lt;div class="row align-items-center">
+&lt;div class="col-auto">
+&lt;span class="avatar avatar-md" style="background-image: url(../static/avatars/000m.jpg)">&lt;/span>
+&lt;/div>
+&lt;div class="col">
+&lt;h2 class="page-title">Paweł Kuna&lt;/h2>
+&lt;div class="page-subtitle">
+&lt;div class="row">
+&lt;div class="col-auto">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/building-skyscraper -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="3" y1="21" x2="21" y2="21">&lt;/line>&lt;path d="M5 21v-14l8 -4v18">&lt;/path>&lt;path d="M19 21v-10l-6 -4">&lt;/path>&lt;line x1="9" y1="9" x2="9" y2="9.01">&lt;/line>&lt;line x1="9" y1="12" x2="9" y2="12.01">&lt;/line>&lt;line x1="9" y1="15" x2="9" y2="15.01">&lt;/line>&lt;line x1="9" y1="18" x2="9" y2="18.01">&lt;/line>&lt;/svg>
+&lt;a href="javascript:void(0)" class="text-reset">UI Designer at Tabler&lt;/a>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/users -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="9" cy="7" r="4">&lt;/circle>&lt;path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2">&lt;/path>&lt;path d="M16 3.13a4 4 0 0 1 0 7.75">&lt;/path>&lt;path d="M21 21v-2a4 4 0 0 0 -3 -3.85">&lt;/path>&lt;/svg>
+&lt;a href="javascript:void(0)" class="text-reset">194 friends&lt;/a>
+&lt;/div>
+&lt;div class="col-auto text-success">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/check -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M5 12l5 5l10 -10">&lt;/path>&lt;/svg>
+Verified
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-auto d-none d-md-flex">
+&lt;a href="javascript:void(0)" class="btn btn-primary">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/message -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4">&lt;/path>&lt;line x1="8" y1="9" x2="16" y2="9">&lt;/line>&lt;line x1="8" y1="13" x2="14" y2="13">&lt;/line>&lt;/svg>
+Send message
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Paweł Kuna&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-subtitle"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/building-skyscraper --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-reset"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>UI Designer at Tabler&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/users --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-reset"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>194 friends&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto text-success"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/check --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="text-green" --&amp;gt;&lt;/span>
+Verified
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto d-none d-md-flex"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/message --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Send message
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="with-meta-search-and-actions">With meta, search and actions&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header">
+&lt;div class="row align-items-center">
+&lt;div class="col">
+&lt;h2 class="page-title">Gallery&lt;/h2>
+&lt;div class="text-muted mt-1">1-12 of 241 photos&lt;/div>
+&lt;/div>
+&lt;div class="col-auto ms-auto d-print-none">
+&lt;div class="d-flex">
+&lt;div class="me-3 d-none d-md-block">
+&lt;div class="input-icon">
+&lt;input type="text" class="form-control" placeholder="Search…">
+&lt;span class="input-icon-addon">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="12" y1="5" x2="12" y2="19">&lt;/line>&lt;line x1="5" y1="12" x2="19" y2="12">&lt;/line>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;a href="javascript:void(0)" class="btn btn-primary">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="12" y1="5" x2="12" y2="19">&lt;/line>&lt;line x1="5" y1="12" x2="19" y2="12">&lt;/line>&lt;/svg>
+Add photo
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Gallery&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-muted mt-1"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>1-12 of 241 photos&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto ms-auto d-print-none"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"d-flex"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"me-3 d-none d-md-block"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Search…"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon-addon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/plus --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/plus --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Add photo
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="bordered-header">Bordered header&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header page-header-border">
+&lt;div class="row align-items-center">
+&lt;div class="col">
+&lt;h2 class="page-title">Improve cards with no border&lt;/h2>
+&lt;div class="text-muted mt-1">
+&lt;a href="javascript:void(0)" class="text-reset">#693&lt;/a>
+opened by &lt;a href="javascript:void(0)" class="text-body">Jeffie Lewzey&lt;/a>
+in &lt;a href="javascript:void(0)" class="text-body">Calendar Page&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;div class="btn-list">
+&lt;a href="javascript:void(0)" class="btn">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/edit -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3">&lt;/path>&lt;path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3">&lt;/path>&lt;line x1="16" y1="5" x2="19" y2="8">&lt;/line>&lt;/svg>
+Edit
+&lt;/a>
+&lt;a href="javascript:void(0)" class="btn d-none d-md-inline-flex">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6">&lt;/path>&lt;path d="M9 17v1a3 3 0 0 0 6 0v-1">&lt;/path>&lt;/svg>
+Subscribe
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header page-header-border"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Improve cards with no border&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-muted mt-1"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-reset"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>#693&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+opened by &lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-body"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Jeffie Lewzey&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+in &lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-body"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Calendar Page&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn-list"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/edit --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Edit
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn d-none d-md-inline-flex"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/bell --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Subscribe
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="header-with-breadcrumb-and-actions">Header with breadcrumb and actions&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header">
+&lt;div class="row align-items-center mw-100">
+&lt;div class="col">
+&lt;div class="mb-1">
+&lt;ol class="breadcrumb breadcrumb-alternate" aria-label="breadcrumbs">
+&lt;li class="breadcrumb-item">&lt;a href="javascript:void(0)">Home&lt;/a>&lt;/li>
+&lt;li class="breadcrumb-item">&lt;a href="javascript:void(0)">Library&lt;/a>&lt;/li>
+&lt;li class="breadcrumb-item active" aria-current="page">&lt;a href="javascript:void(0)">Articles&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;/div>
+&lt;h2 class="page-title">
+&lt;span class="text-truncate">Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.&lt;/span>
+&lt;/h2>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;div class="btn-list">
+&lt;a href="javascript:void(0)" class="btn d-none d-md-inline-flex">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/edit -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3">&lt;/path>&lt;path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3">&lt;/path>&lt;line x1="16" y1="5" x2="19" y2="8">&lt;/line>&lt;/svg>
+Edit
+&lt;/a>
+&lt;a href="javascript:void(0)" class="btn btn-primary">
+Publish
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center mw-100"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-1"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;ol&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"breadcrumb breadcrumb-alternate"&lt;/span> &lt;span class="na">aria-label=&lt;/span>&lt;span class="s">"breadcrumbs"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;li&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"breadcrumb-item"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Home&lt;span class="nt">&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;li&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"breadcrumb-item"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Library&lt;span class="nt">&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;li&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"breadcrumb-item active"&lt;/span> &lt;span class="na">aria-current=&lt;/span>&lt;span class="s">"page"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Articles&lt;span class="nt">&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/ol&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-truncate"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn-list"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn d-none d-md-inline-flex"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/edit --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Edit
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+Publish
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;/div></description></item><item><title>Docs: Typography</title><link>/RoverCoreDocs/docs/theme/content/typography/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/typography/</guid><description>
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
@@ -2152,6 +3834,54 @@ Dolor sit amet.&lt;span class="nt">&amp;lt;/p&amp;gt;&lt;/span>&lt;/code>&lt;/pr
 &lt;span class="nt">&amp;lt;li&amp;gt;&lt;/span>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.&lt;span class="nt">&amp;lt;/li&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;li&amp;gt;&lt;/span>Ut non enim metus.&lt;span class="nt">&amp;lt;/li&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/ul&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;/div></description></item><item><title>Docs: Validation States</title><link>/RoverCoreDocs/docs/theme/formcomponents/validationstates/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/formcomponents/validationstates/</guid><description>
+&lt;div class="markdown">
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">Validation states&lt;/h1>
+&lt;/div>
+&lt;p>To inform users whether the entered value is correct or not, use either of the validation states. Thanks to that, users will immediately know which form elements they need to correct and, if the state displays as invalid, why the value is incorrect.&lt;/p>
+&lt;/div>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Validation States&lt;/label>
+&lt;input type="text" class="form-control is-valid mb-2" placeholder="Valid State..">
+&lt;input type="text" class="form-control is-invalid" placeholder="Invalid State..">
+&lt;div class="invalid-feedback">Invalid feedback&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-valid mb-2"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Valid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-invalid"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Invalid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"invalid-feedback"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Invalid feedback&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="subtle-validation-states">Subtle validation states&lt;/h2>
+&lt;p>If you prefer a more subtle manner of informing users of the input control validation state, you can use tick and cross symbols and resign from colored control frames and the validation feedback.&lt;/p>
+&lt;div class="example no_toc_section">
+&lt;div class="example-content">
+&lt;div class="mb-3">
+&lt;label class="form-label">Validation States&lt;/label>
+&lt;input type="text" class="form-control is-valid is-valid-lite mb-2" placeholder="Valid State..">
+&lt;input type="text" class="form-control is-invalid is-invalid-lite" placeholder="Invalid State..">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-3"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;label&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-label"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Validation States&lt;span class="nt">&amp;lt;/label&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-valid is-valid-lite mb-2"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Valid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control is-invalid is-invalid-lite"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Invalid State.."&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
 &lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>

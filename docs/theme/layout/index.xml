@@ -1,0 +1,356 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – Layout</title><link>/RoverCoreDocs/docs/theme/layout/</link><description>Recent content in Layout on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/RoverCoreDocs/docs/theme/layout/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Page headers</title><link>/RoverCoreDocs/docs/theme/layout/headers/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/layout/headers/</guid><description>
+&lt;div class="markdown">
+&lt;div>
+&lt;div class="d-flex mb-3">
+&lt;h1 class="m-0">Page headers&lt;/h1>
+&lt;/div>
+&lt;p>Page heading examples for Tabler&lt;/p>
+&lt;/div>
+&lt;h2 id="simple-header">Simple header&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header">
+&lt;div class="row align-items-center">
+&lt;div class="col">
+&lt;div class="page-pretitle">
+Overview
+&lt;/div>
+&lt;h2 class="page-title">
+Dashboard
+&lt;/h2>
+&lt;/div>
+&lt;div class="col-auto ms-auto">
+&lt;div class="btn-list">
+&lt;span class="d-none d-sm-inline">
+&lt;a href="javascript:void(0)" class="btn btn-white">
+New view
+&lt;/a>
+&lt;/span>
+&lt;a href="javascript:void(0)" class="btn btn-primary d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="12" y1="5" x2="12" y2="19">&lt;/line>&lt;line x1="5" y1="12" x2="19" y2="12">&lt;/line>&lt;/svg>
+Create new report
+&lt;/a>
+&lt;a href="javascript:void(0)" class="btn btn-primary d-sm-none btn-icon" data-bs-toggle="modal" data-bs-target="#modal-report" aria-label="Create new report">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="12" y1="5" x2="12" y2="19">&lt;/line>&lt;line x1="5" y1="12" x2="19" y2="12">&lt;/line>&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-pretitle"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+Overview
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+Dashboard
+&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto ms-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn-list"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"d-none d-sm-inline"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-white"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+New view
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary d-none d-sm-inline-block"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"modal"&lt;/span> &lt;span class="na">data-bs-target=&lt;/span>&lt;span class="s">"#modal-report"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/plus --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Create new report
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary d-sm-none btn-icon"&lt;/span> &lt;span class="na">data-bs-toggle=&lt;/span>&lt;span class="s">"modal"&lt;/span> &lt;span class="na">data-bs-target=&lt;/span>&lt;span class="s">"#modal-report"&lt;/span> &lt;span class="na">aria-label=&lt;/span>&lt;span class="s">"Create new report"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/plus --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="with-meta-avatar-and-actions">With meta, avatar and actions&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header">
+&lt;div class="row align-items-center">
+&lt;div class="col-auto">
+&lt;span class="avatar avatar-md" style="background-image: url(../static/avatars/000m.jpg)">&lt;/span>
+&lt;/div>
+&lt;div class="col">
+&lt;h2 class="page-title">Paweł Kuna&lt;/h2>
+&lt;div class="page-subtitle">
+&lt;div class="row">
+&lt;div class="col-auto">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/building-skyscraper -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="3" y1="21" x2="21" y2="21">&lt;/line>&lt;path d="M5 21v-14l8 -4v18">&lt;/path>&lt;path d="M19 21v-10l-6 -4">&lt;/path>&lt;line x1="9" y1="9" x2="9" y2="9.01">&lt;/line>&lt;line x1="9" y1="12" x2="9" y2="12.01">&lt;/line>&lt;line x1="9" y1="15" x2="9" y2="15.01">&lt;/line>&lt;line x1="9" y1="18" x2="9" y2="18.01">&lt;/line>&lt;/svg>
+&lt;a href="javascript:void(0)" class="text-reset">UI Designer at Tabler&lt;/a>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/users -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;circle cx="9" cy="7" r="4">&lt;/circle>&lt;path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2">&lt;/path>&lt;path d="M16 3.13a4 4 0 0 1 0 7.75">&lt;/path>&lt;path d="M21 21v-2a4 4 0 0 0 -3 -3.85">&lt;/path>&lt;/svg>
+&lt;a href="javascript:void(0)" class="text-reset">194 friends&lt;/a>
+&lt;/div>
+&lt;div class="col-auto text-success">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/check -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M5 12l5 5l10 -10">&lt;/path>&lt;/svg>
+Verified
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-auto d-none d-md-flex">
+&lt;a href="javascript:void(0)" class="btn btn-primary">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/message -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4">&lt;/path>&lt;line x1="8" y1="9" x2="16" y2="9">&lt;/line>&lt;line x1="8" y1="13" x2="14" y2="13">&lt;/line>&lt;/svg>
+Send message
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"avatar avatar-md"&lt;/span> &lt;span class="na">style=&lt;/span>&lt;span class="s">"background-image: url(...)"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Paweł Kuna&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-subtitle"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/building-skyscraper --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-reset"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>UI Designer at Tabler&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/users --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-reset"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>194 friends&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto text-success"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/check --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code with class="text-green" --&amp;gt;&lt;/span>
+Verified
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto d-none d-md-flex"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/message --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Send message
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="with-meta-search-and-actions">With meta, search and actions&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header">
+&lt;div class="row align-items-center">
+&lt;div class="col">
+&lt;h2 class="page-title">Gallery&lt;/h2>
+&lt;div class="text-muted mt-1">1-12 of 241 photos&lt;/div>
+&lt;/div>
+&lt;div class="col-auto ms-auto d-print-none">
+&lt;div class="d-flex">
+&lt;div class="me-3 d-none d-md-block">
+&lt;div class="input-icon">
+&lt;input type="text" class="form-control" placeholder="Search…">
+&lt;span class="input-icon-addon">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="12" y1="5" x2="12" y2="19">&lt;/line>&lt;line x1="5" y1="12" x2="19" y2="12">&lt;/line>&lt;/svg>
+&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;a href="javascript:void(0)" class="btn btn-primary">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/plus -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;line x1="12" y1="5" x2="12" y2="19">&lt;/line>&lt;line x1="5" y1="12" x2="19" y2="12">&lt;/line>&lt;/svg>
+Add photo
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Gallery&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-muted mt-1"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>1-12 of 241 photos&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto ms-auto d-print-none"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"d-flex"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"me-3 d-none d-md-block"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;input&lt;/span> &lt;span class="na">type=&lt;/span>&lt;span class="s">"text"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"form-control"&lt;/span> &lt;span class="na">placeholder=&lt;/span>&lt;span class="s">"Search…"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"input-icon-addon"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/plus --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/plus --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Add photo
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="bordered-header">Bordered header&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header page-header-border">
+&lt;div class="row align-items-center">
+&lt;div class="col">
+&lt;h2 class="page-title">Improve cards with no border&lt;/h2>
+&lt;div class="text-muted mt-1">
+&lt;a href="javascript:void(0)" class="text-reset">#693&lt;/a>
+opened by &lt;a href="javascript:void(0)" class="text-body">Jeffie Lewzey&lt;/a>
+in &lt;a href="javascript:void(0)" class="text-body">Calendar Page&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;div class="btn-list">
+&lt;a href="javascript:void(0)" class="btn">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/edit -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3">&lt;/path>&lt;path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3">&lt;/path>&lt;line x1="16" y1="5" x2="19" y2="8">&lt;/line>&lt;/svg>
+Edit
+&lt;/a>
+&lt;a href="javascript:void(0)" class="btn d-none d-md-inline-flex">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6">&lt;/path>&lt;path d="M9 17v1a3 3 0 0 0 6 0v-1">&lt;/path>&lt;/svg>
+Subscribe
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header page-header-border"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Improve cards with no border&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-muted mt-1"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-reset"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>#693&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+opened by &lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-body"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Jeffie Lewzey&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+in &lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-body"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Calendar Page&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn-list"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/edit --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Edit
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn d-none d-md-inline-flex"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/bell --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Subscribe
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;h2 id="header-with-breadcrumb-and-actions">Header with breadcrumb and actions&lt;/h2>
+&lt;div class="example no_toc_section example-bg">
+&lt;div class="example-content">
+&lt;div class="example-column example-column-2">
+&lt;div class="page-header">
+&lt;div class="row align-items-center mw-100">
+&lt;div class="col">
+&lt;div class="mb-1">
+&lt;ol class="breadcrumb breadcrumb-alternate" aria-label="breadcrumbs">
+&lt;li class="breadcrumb-item">&lt;a href="javascript:void(0)">Home&lt;/a>&lt;/li>
+&lt;li class="breadcrumb-item">&lt;a href="javascript:void(0)">Library&lt;/a>&lt;/li>
+&lt;li class="breadcrumb-item active" aria-current="page">&lt;a href="javascript:void(0)">Articles&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;/div>
+&lt;h2 class="page-title">
+&lt;span class="text-truncate">Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.&lt;/span>
+&lt;/h2>
+&lt;/div>
+&lt;div class="col-auto">
+&lt;div class="btn-list">
+&lt;a href="javascript:void(0)" class="btn d-none d-md-inline-flex">
+&lt;!-- Download SVG icon from http://tabler-icons.io/i/edit -->
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">&lt;path stroke="none" d="M0 0h24v24H0z" fill="none">&lt;/path>&lt;path d="M9 7h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3">&lt;/path>&lt;path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3">&lt;/path>&lt;line x1="16" y1="5" x2="19" y2="8">&lt;/line>&lt;/svg>
+Edit
+&lt;/a>
+&lt;a href="javascript:void(0)" class="btn btn-primary">
+Publish
+&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="example-code">
+&lt;figure class="highlight">
+&lt;pre>&lt;code class="language-html" data-lang="html">&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-header"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"row align-items-center mw-100"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"mb-1"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;ol&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"breadcrumb breadcrumb-alternate"&lt;/span> &lt;span class="na">aria-label=&lt;/span>&lt;span class="s">"breadcrumbs"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;li&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"breadcrumb-item"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Home&lt;span class="nt">&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;li&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"breadcrumb-item"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Library&lt;span class="nt">&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;li&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"breadcrumb-item active"&lt;/span> &lt;span class="na">aria-current=&lt;/span>&lt;span class="s">"page"&lt;/span>&lt;span class="nt">&amp;gt;&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Articles&lt;span class="nt">&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/ol&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;h2&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"page-title"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;span&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"text-truncate"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.&lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/h2&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"col-auto"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;div&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn-list"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn d-none d-md-inline-flex"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- Download SVG icon from http://tabler-icons.io/i/edit --&amp;gt;&lt;/span>
+&lt;span class="c">&amp;lt;!-- SVG icon code --&amp;gt;&lt;/span>
+Edit
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;a&lt;/span> &lt;span class="na">href=&lt;/span>&lt;span class="s">"#"&lt;/span> &lt;span class="na">class=&lt;/span>&lt;span class="s">"btn btn-primary"&lt;/span>&lt;span class="nt">&amp;gt;&lt;/span>
+Publish
+&lt;span class="nt">&amp;lt;/a&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>
+&lt;span class="nt">&amp;lt;/div&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
+&lt;/figure>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
