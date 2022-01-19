@@ -7,12 +7,7 @@ description: >
 ---
 
 <div class="markdown">
-                      <div>
-                        <div class="d-flex mb-3">
-                          <h1 class="m-0">Image check</h1>
-                        </div>
-                      </div>
-                      <p>Add an image check to your form and give users visually attractive options to choose from.</p>
+
                       <div class="example no_toc_section">
                         <div class="example-content">
                           <div style="max-width: 25rem">
@@ -187,7 +182,7 @@ description: >
                                   <input name="form-imagecheck" type="checkbox" value="1" class="form-imagecheck-input">
                                   <span class="form-imagecheck-figure">
                                     <span class="form-imagecheck-image">
-                                      <span class="avatar avatar-md" style="background-image: url(/avatars/003f.jpg)"></span>
+                                      <span class="avatar avatar-md" style="background-image: url(/RoverCoreDocs/avatars/003f.jpg)"></span>
                                     </span>
                                   </span>
                                 </label>
@@ -207,7 +202,7 @@ description: >
                                   <input name="form-imagecheck" type="checkbox" value="3" class="form-imagecheck-input">
                                   <span class="form-imagecheck-figure">
                                     <span class="form-imagecheck-image">
-                                      <span class="avatar avatar-md" style="background-image: url(/avatars/006m.jpg)"></span>
+                                      <span class="avatar avatar-md" style="background-image: url(/RoverCoreDocs/avatars/006m.jpg)"></span>
                                     </span>
                                   </span>
                                 </label>
@@ -217,7 +212,7 @@ description: >
                                   <input name="form-imagecheck" type="checkbox" value="4" class="form-imagecheck-input" checked="">
                                   <span class="form-imagecheck-figure">
                                     <span class="form-imagecheck-image">
-                                      <span class="avatar avatar-md" style="background-image: url(/avatars/004f.jpg)"></span>
+                                      <span class="avatar avatar-md" style="background-image: url(/RoverCoreDocs/avatars/004f.jpg)"></span>
                                     </span>
                                   </span>
                                 </label>
@@ -227,7 +222,7 @@ description: >
                                   <input name="form-imagecheck" type="checkbox" value="5" class="form-imagecheck-input">
                                   <span class="form-imagecheck-figure">
                                     <span class="form-imagecheck-image">
-                                      <span class="avatar avatar-md" style="background-image: url(/avatars/007m.jpg)"></span>
+                                      <span class="avatar avatar-md" style="background-image: url(/RoverCoreDocs/avatars/007m.jpg)"></span>
                                     </span>
                                   </span>
                                 </label>
@@ -247,7 +242,7 @@ description: >
                                   <input name="form-imagecheck" type="checkbox" value="7" class="form-imagecheck-input" checked="">
                                   <span class="form-imagecheck-figure">
                                     <span class="form-imagecheck-image">
-                                      <span class="avatar avatar-md" style="background-image: url(/avatars/009m.jpg)"></span>
+                                      <span class="avatar avatar-md" style="background-image: url(/RoverCoreDocs/avatars/009m.jpg)"></span>
                                     </span>
                                   </span>
                                 </label>
@@ -257,7 +252,7 @@ description: >
                                   <input name="form-imagecheck" type="checkbox" value="8" class="form-imagecheck-input">
                                   <span class="form-imagecheck-figure">
                                     <span class="form-imagecheck-image">
-                                      <span class="avatar avatar-md" style="background-image: url(/avatars/010m.jpg)"></span>
+                                      <span class="avatar avatar-md" style="background-image: url(/RoverCoreDocs/avatars/010m.jpg)"></span>
                                     </span>
                                   </span>
                                 </label>
@@ -267,7 +262,7 @@ description: >
                                   <input name="form-imagecheck" type="checkbox" value="9" class="form-imagecheck-input">
                                   <span class="form-imagecheck-figure">
                                     <span class="form-imagecheck-image">
-                                      <span class="avatar avatar-md" style="background-image: url(/avatars/005f.jpg)"></span>
+                                      <span class="avatar avatar-md" style="background-image: url(/RoverCoreDocs/avatars/005f.jpg)"></span>
                                     </span>
                                   </span>
                                 </label>
