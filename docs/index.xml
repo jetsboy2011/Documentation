@@ -3741,7 +3741,7 @@ Publish
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
-&lt;h1 class="m-0">Typography&lt;/h1>
+&lt;h1 class="m-0">&lt;/h1>
 &lt;p class="ms-auto">
 &lt;a href="https://getbootstrap.com/docs/5.0/content/typography/" target="_blank" class="d-flex align-items-center">
 &lt;!-- Download SVG icon from http://tabler-icons.io/i/external-link -->
@@ -3750,7 +3750,7 @@ Bootstrap documentation
 &lt;/a>
 &lt;/p>
 &lt;/div>
-&lt;p>Typography plays an important role in creating an attractive and clear interface design. Good typography will make the content easy to follow and improve the usability of your website.&lt;/p>
+&lt;p>The Tabler theme is built on top of Bootstrap 5.0, so you can also utilize framework styles from the Bootstrap 5 documentation.&lt;/p>
 &lt;/div>
 &lt;h2 id="headings">Headings&lt;/h2>
 &lt;p>Use HTML headings to organize content on your website and make the structure clear and user-friendly.&lt;/p>
