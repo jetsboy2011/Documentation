@@ -7,12 +7,7 @@ description: >
 ---
 
 <div class="markdown">
-                      <div>
-                        <div class="d-flex mb-3">
-                          <h1 class="m-0">Validation states</h1>
-                        </div>
-                        <p>To inform users whether the entered value is correct or not, use either of the validation states. Thanks to that, users will immediately know which form elements they need to correct and, if the state displays as invalid, why the value is incorrect.</p>
-                      </div>
+
                       <div class="example no_toc_section">
                         <div class="example-content">
                           <div class="mb-3">

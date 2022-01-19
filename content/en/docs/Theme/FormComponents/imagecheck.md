@@ -7,12 +7,7 @@ description: >
 ---
 
 <div class="markdown">
-                      <div>
-                        <div class="d-flex mb-3">
-                          <h1 class="m-0">Image check</h1>
-                        </div>
-                      </div>
-                      <p>Add an image check to your form and give users visually attractive options to choose from.</p>
+
                       <div class="example no_toc_section">
                         <div class="example-content">
                           <div style="max-width: 25rem">

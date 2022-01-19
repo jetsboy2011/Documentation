@@ -9,7 +9,6 @@ description: >
 <div class="markdown">
                       <div>
                         <div class="d-flex mb-3">
-                          <h1 class="m-0">Form elements</h1>
                           <p class="ms-auto">
                             <a href="https://getbootstrap.com/docs/5.0/components/forms/" target="_blank" class="d-flex align-items-center">
                               <!-- Download SVG icon from http://tabler-icons.io/i/external-link -->
@@ -18,7 +17,6 @@ description: >
                             </a>
                           </p>
                         </div>
-                        <p>Forms are one of the most important types of interaction with a website or app. Since their aim is to enable users to make a purchase, subscribe to a service or sign up to create an account, it's important to make sure they are easy to complete and help increase conversion rates. Use the available elements to create forms which are well-structured and user-friendly.</p>
                       </div>
                       <h2 id="classic-inputs">Classic inputs</h2>
                       <p>Use classic, user-friendly inputs, label them appropriately and include input placeholders that will help users avoid confusion when completing a form.</p>
