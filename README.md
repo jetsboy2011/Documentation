@@ -1,10 +1,11 @@
 # RoverCore Documentation
 
-RoverCore documentation is built using Docsy.  [Docsy][] is a [Hugo theme][] for technical documentation sites, providing easy
-site navigation, structure, and more. This **Docsy Example Project** uses the
-Docsy theme and provides a skeleton documentation structure for you to use. You
-can clone/copy this project and edit it with your own content, or use it as an
-example.
+[Jump to Documentation](https://rovercore.github.io/rovercoredocs)
+
+## About this Documentation
+
+RoverCore documentation is built using Docsy.  Docsy is a Hugo theme for technical documentation sites, providing easy
+site navigation, structure, and more. 
 
 In this project, the Docsy theme is included as a Git submodule:
 
