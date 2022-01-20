@@ -1,6 +1,6 @@
 # RoverCore Documentation
 
-[Jump to Documentation](https://rovercore.github.io/rovercoredocs)
+[Jump to Documentation](https://rovercore.github.io/RoverCoreDocs)
 
 ## About this Documentation
 
