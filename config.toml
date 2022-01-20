@@ -121,12 +121,12 @@ version = "1.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://eahs.github.io/RoverCoreDocs/docs/"
+url_latest_version = "https://rovercore.github.io/RoverCoreDocs/docs/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/eahs/rovercoredocs"
+github_repo = "https://github.com/rovercore/rovercoredocs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/eahs/rovercore"
+github_project_repo = "https://github.com/rovercore/rovercore"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -169,8 +169,8 @@ sidebar_search_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/eahs/rovercoredocs/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/eahs/rovercoredocs/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/rovercore/rovercoredocs/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/rovercore/rovercoredocs/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
@@ -182,6 +182,6 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
   name = "GitHub"
-  url = "https://github.com/eahs/rovercore"
+  url = "https://github.com/rovercore/rovercore"
   icon = "fab fa-github"
   desc = "Development takes place here!"
