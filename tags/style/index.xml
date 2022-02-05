@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – style</title><link>/RoverCoreDocs/tags/style/</link><description>Recent content in style on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/RoverCoreDocs/tags/style/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Icons</title><link>/RoverCoreDocs/docs/theme/content/icons/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/icons/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – style</title><link>/Documentation/tags/style/</link><description>Recent content in style on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/Documentation/tags/style/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Icons</title><link>/Documentation/docs/theme/content/icons/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/Documentation/docs/theme/content/icons/</guid><description>
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
@@ -97,7 +97,7 @@
 &lt;span class="nt">&amp;lt;/span&amp;gt;&lt;/span>&lt;/code>&lt;/pre>
 &lt;/figure>
 &lt;/div>
-&lt;/div></description></item><item><title>Docs: Typography</title><link>/RoverCoreDocs/docs/theme/content/typography/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/RoverCoreDocs/docs/theme/content/typography/</guid><description>
+&lt;/div></description></item><item><title>Docs: Typography</title><link>/Documentation/docs/theme/content/typography/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/Documentation/docs/theme/content/typography/</guid><description>
 &lt;div class="markdown">
 &lt;div>
 &lt;div class="d-flex mb-3">
