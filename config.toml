@@ -1,4 +1,4 @@
-baseURL = "/RoverCoreDocs/"
+baseURL = "/"
 title = "RoverCore Documentation"
 
 enableRobotsTXT = true
