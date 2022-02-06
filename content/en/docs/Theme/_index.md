@@ -2,7 +2,7 @@
 ---
 title: "Theme"
 linkTitle: "Theme"
-weight: 3
+weight: 5
 date: 2017-01-05
 description: >
   Theming guidelines
