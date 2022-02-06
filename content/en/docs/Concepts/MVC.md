@@ -1,12 +1,12 @@
 ---
-title: "Onion Architecture"
-linkTitle: "Onion Architecture"
-weight: 2
+title: "MVC - Model View Controller"
+linkTitle: "Model View Controller"
+weight: 1
 description: >
-  The Onion Architecture is a simple way of keeping your project organized.
+  A MVC is a structure in web development that splits functions into three components.
 ---
 
-## What is the Onion Architecture?
+## What is a Model View Controller?
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra justo vitae risus suscipit, sed ornare purus faucibus. Sed aliquet orci in nulla varius, eu blandit orci euismod. Suspendisse sit amet mollis justo. Ut accumsan mi elit, quis commodo turpis fermentum nec. Fusce fermentum dictum mollis. Nam vel odio consequat, faucibus erat laoreet, pulvinar urna. Etiam mi eros, aliquam ac quam non, auctor feugiat sem. Vivamus vestibulum purus sed ligula dictum consequat.
