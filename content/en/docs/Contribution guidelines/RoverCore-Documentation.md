@@ -12,6 +12,9 @@ When writing and contributing to the RoverCoreDocs GitHub repository, there are 
 2. Writing should be free of major grammatical errors.
 3. All references should be linked properly.
 4. Try to refrain from lengthy sentences and using contractions.
+5. Titles and linkTitles for pages should be the same, with the exception of abbreviations or acronyms.
+   1. An example is [ModelViewController](/docs/concepts/mvc). The linkTitle is "Model View Controller", but the title is "MVC - Model View Controller".
+6. File names should be short and be able to distinguish one page from another.
 
 ## How do I link a reference to something?
 Good question! It is pretty easy. If for example you write the following:
