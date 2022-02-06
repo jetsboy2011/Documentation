@@ -3,7 +3,7 @@ title: "RoverCore"
 linkTitle: "RoverCore"
 weight: 10
 description: >
-  How to contribute to the docs
+  How to contribute to RoverCore
 ---
 
 ## General Guidelines

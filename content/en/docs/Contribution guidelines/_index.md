@@ -3,14 +3,14 @@ title: "Contribution Guidelines"
 linkTitle: "Contribution Guidelines"
 weight: 10
 description: >
-  How to contribute to RoverCore/Docs
+  How to contribute to RoverCore and Documentation
 ---
 
 ## What is allowed
-Anything on the RoverCore & RoverCoreDocs GitHub repository can be changed. We, the maintainers, are extremely happy to have community support and feedback.
+Anything on the RoverCore & Documentation GitHub repository can be changed. We, the maintainers, are extremely happy to have community support and feedback.
 
 ## Pull Requests
-You've made a change? Awesome! First let's get a pull request made. You can do this by going to your repository. After that, go to "Pull Requests" and select the main branch for the RoverCore/Docs repository.
+You've made a change? Awesome! First let's get a pull request made. You can do this by going to your repository. After that, go to "Pull Requests" and select the main branch for the appropriate repository.
 
 After you have done that, create a little description about what the change does, and submit it. Once the maintainers receive it, they will look at it and converse with you there.
 ## I want to change something, what should I do?
