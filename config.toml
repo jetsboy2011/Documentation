@@ -96,12 +96,8 @@ weight = 1
 section = ["HTML", "print", "RSS"]
 
 [params]
-RoverCore_GH_URL = "https://github.com/RoverCore/RoverCore"
-RoverCoreDocs_GH_URL= "https://github.com/RoverCore/Documentation"
-RoverCoreDocs_URL= "https://rovercore.github.io/Documentation/"
 copyright = "The RoverCore Authors"
 privacy_policy = "https://policies.google.com/privacy"
-
 
 
 custom_css = ["/css/tabler.min.css", "/css/tabler-flags.min.css", "/css/tabler-payments.min.css", "/css/tabler-vendors.min.css", "/css/demo.min.css" ]
