@@ -29,8 +29,8 @@ You will have to replace "Microsoft's documentation" with:
     \[Microsoft's documentation]\(https://asp.net)
 
 Then, it will look like this:
-> Sometimes, visiting [Microsoft's documentation](https://asp.net) for ASP.NET is a useful place to learn.
 
+> Sometimes, visiting [Microsoft's documentation](https://asp.net) for ASP.NET is a useful place to learn.
 
 ### How do I link to another part of the site?
 To link to another part of the site, do the same as before, but use

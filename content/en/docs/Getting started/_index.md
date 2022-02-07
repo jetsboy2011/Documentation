@@ -9,12 +9,12 @@ description: >
 ---
 
 ## Prerequisites
-- Visual Studio 2019/2022
+- Visual Studio 2022
 - ASP.NET Core
 - LocalDB
 - Git
 - GitHub
-- Git Client(optional, though highly recommended)
+- Git Client (optional, though highly recommended)
   - GitHub Desktop
   - Axosoft's GitKraken
   - BitBucket's SourceTree
