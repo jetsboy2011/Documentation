@@ -1,6 +1,6 @@
 ﻿<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Server" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="npm run run" />
+  <configuration default="false" name="Docs" type="ShConfigurationType">
+    <option name="SCRIPT_TEXT" value="npm run docs" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />
