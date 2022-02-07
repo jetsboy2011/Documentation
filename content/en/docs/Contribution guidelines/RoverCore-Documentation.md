@@ -1,7 +1,7 @@
 ---
 title: "RoverCore Documentation"
 linkTitle: "RoverCore Documentation"
-weight: 10
+weight: 2
 description: >
   How to contribute to the documentation
 ---
@@ -16,20 +16,27 @@ When writing and contributing to the RoverCoreDocs GitHub repository, there are 
    1. An example is [ModelViewController](/docs/concepts/mvc). The linkTitle is "Model View Controller", but the title is "MVC - Model View Controller".
 6. File names should be short and be able to distinguish one page from another.
 
-## How do I link a reference to something?
+## Frequently Asked Questions
+Here is where you can find more information on tips and tricks to write for the documentation.
+
+### How do I link a reference to something?
 Good question! It is pretty easy. If for example you write the following:
 
 > Sometimes, visiting Microsoft's documentation for ASP.NET is a useful place to learn.
 
-You will have to replace "Microsoft's documentation" with "\[Microsoft's documentation]\(https://asp.net)"
+You will have to replace "Microsoft's documentation" with: 
+
+    \[Microsoft's documentation]\(https://asp.net)
+
 Then, it will look like this:
 > Sometimes, visiting [Microsoft's documentation](https://asp.net) for ASP.NET is a useful place to learn.
 
 
-## Useful resources
+### How do I link to another part of the site?
+To link to another part of the site, do the same as before, but use
 
-* [Docsy user guide](https://www.docsy.dev/docs/): All about Docsy, including how it manages navigation, look and feel, and multi-language support.
-* [Hugo documentation](https://gohugo.io/documentation/): Comprehensive reference for Hugo.
-* [Github Hello World!](https://guides.github.com/activities/hello-world/): A basic introduction to GitHub concepts and workflow.
+    \[Contribution Guidelines]\(docs/contribution-guidelines)
+
+instead of hard-coding the URL. This allows the domain to change without all of the references within the site being changed.
 
 

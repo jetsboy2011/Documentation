@@ -1,9 +1,9 @@
 ---
 title: "RoverCore"
 linkTitle: "RoverCore"
-weight: 10
+weight: 1
 description: >
-  How to contribute to RoverCore
+  How to contribute to RoverCore.
 ---
 
 ## General Guidelines
