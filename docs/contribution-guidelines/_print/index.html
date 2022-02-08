@@ -17,18 +17,18 @@
 <link rel=icon type=image/png href=../../../favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=../../../favicons/android-192x192.png sizes=192x192>
 <title>Contribution Guidelines | RoverCore Docs</title>
-<meta name=description content="How to contribute to the docs
+<meta name=description content="How to contribute to RoverCore and Documentation
 ">
 <meta property="og:title" content="Contribution Guidelines">
-<meta property="og:description" content="How to contribute to the docs
+<meta property="og:description" content="How to contribute to RoverCore and Documentation
 ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="/Documentation/docs/contribution-guidelines/"><meta property="og:site_name" content="RoverCore Docs">
 <meta itemprop=name content="Contribution Guidelines">
-<meta itemprop=description content="How to contribute to the docs
+<meta itemprop=description content="How to contribute to RoverCore and Documentation
 "><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Contribution Guidelines">
-<meta name=twitter:description content="How to contribute to the docs
+<meta name=twitter:description content="How to contribute to RoverCore and Documentation
 ">
 <link rel=preload href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css as=style>
 <link href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css rel=stylesheet integrity>
@@ -78,78 +78,74 @@ This is the multi-page printable view of this section.
 </p>
 </div>
 <h1 class=title>Contribution Guidelines</h1>
-<div class=lead>How to contribute to the docs</div>
+<div class=lead>How to contribute to RoverCore and Documentation</div>
 <ul>
+<li>1: <a href=#pg-b985e53832bb2cf0a86d46cb2ea850e3>RoverCore</a></li>
+<li>2: <a href=#pg-73a2877ce800cd68b9133f57bb607005>RoverCore Documentation</a></li>
 </ul>
 <div class=content>
-<div class="pageinfo pageinfo-primary">
-<p>These basic sample guidelines assume that your Docsy site is deployed using Netlify and your files are stored in GitHub. You can use the guidelines &ldquo;as is&rdquo; or adapt them with your own instructions: for example, other deployment options, information about your doc project&rsquo;s file structure, project-specific review guidelines, versioning guidelines, or any other information your users might find useful when updating your site. <a href=https://github.com/kubeflow/website/blob/master/README.md>Kubeflow</a> has a great example.</p>
-<p>Don&rsquo;t forget to link to your own doc repo rather than our example site! Also make sure users can find these guidelines from your doc repo README: either add them there and link to them from this page, add them here and link to them from the README, or include them in both locations.</p>
+<h2 id=what-is-allowed>What is allowed</h2>
+<p>Anything on the RoverCore & Documentation GitHub repository can be changed. We, the maintainers, are extremely happy to have community support and feedback.</p>
+<h2 id=pull-requests>Pull Requests</h2>
+<p>You&rsquo;ve made a change? Awesome! First let&rsquo;s get a pull request made. You can do this by going to your repository. After that, go to &ldquo;Pull Requests&rdquo; and select the main branch for the appropriate repository.</p>
+<p>After you have done that, create a little description about what the change does, and submit it. Once the maintainers receive it, they will look at it and converse with you there.</p>
+<h2 id=i-want-to-change-something-what-should-i-do>I want to change something, what should I do?</h2>
+<p>Good question! We recommend you fork the appropriate repository first. This allows you to have full access to it, as if it were your own, whilst not interfering with the official repository.</p>
+<p>After you fork the repository, create a branch preferably with your initials, then a dash separating your initials and the branch name. Below is an example.</p>
+<blockquote>
+<p>vl-example-refactor</p>
+</blockquote>
+<p>Here the user has the initials &ldquo;VL&rdquo; and they are refactoring something called example.</p>
+<p>After you commit and push your changes normally, submit a pull request on the appropriate GitHub Repository.</p>
 </div>
-<p>We use <a href=https://gohugo.io/>Hugo</a> to format and generate our website, the
-<a href=https://github.com/google/docsy>Docsy</a> theme for styling and site structure,
-and <a href=https://www.netlify.com/>Netlify</a> to manage the deployment of the site.
-Hugo is an open-source static site generator that provides us with templates,
-content organisation in a standard directory structure, and a website generation
-engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps them up into a website.</p>
-<p>All submissions, including submissions by project members, require review. We
-use GitHub pull requests for this purpose. Consult
-<a href=https://help.github.com/articles/about-pull-requests/>GitHub Help</a> for more
-information on using pull requests.</p>
-<h2 id=quick-start-with-netlify>Quick start with Netlify</h2>
-<p>Here&rsquo;s a quick guide to updating the docs. It assumes you&rsquo;re familiar with the
-GitHub workflow and you&rsquo;re happy to use the automated preview of your doc
-updates:</p>
-<ol>
-<li>Fork the <a href=https://github.com/google/docsy-example>Goldydocs repo</a> on GitHub.</li>
-<li>Make your changes and send a pull request (PR).</li>
-<li>If you&rsquo;re not yet ready for a review, add &ldquo;WIP&rdquo; to the PR name to indicate
-it&rsquo;s a work in progress. (<strong>Don&rsquo;t</strong> add the Hugo property
-&ldquo;draft = true&rdquo; to the page front matter, because that prevents the
-auto-deployment of the content preview described in the next point.)</li>
-<li>Wait for the automated PR workflow to do some checks. When it&rsquo;s ready,
-you should see a comment like this: <strong>deploy/netlify — Deploy preview ready!</strong></li>
-<li>Click <strong>Details</strong> to the right of &ldquo;Deploy preview ready&rdquo; to see a preview
-of your updates.</li>
-<li>Continue updating your doc and pushing your changes until you&rsquo;re happy with
-the content.</li>
-<li>When you&rsquo;re ready for a review, add a comment to the PR, and remove any
-&ldquo;WIP&rdquo; markers.</li>
-</ol>
-<h2 id=updating-a-single-page>Updating a single page</h2>
-<p>If you&rsquo;ve just spotted something you&rsquo;d like to change while using the docs, Docsy has a shortcut for you:</p>
-<ol>
-<li>Click <strong>Edit this page</strong> in the top right hand corner of the page.</li>
-<li>If you don&rsquo;t already have an up to date fork of the project repo, you are prompted to get one - click <strong>Fork this repository and propose changes</strong> or <strong>Update your Fork</strong> to get an up to date version of the project to edit. The appropriate page in your fork is displayed in edit mode.</li>
-<li>Follow the rest of the <a href=#quick-start-with-netlify>Quick start with Netlify</a> process above to make, preview, and propose your changes.</li>
-</ol>
-<h2 id=previewing-your-changes-locally>Previewing your changes locally</h2>
-<p>If you want to run your own local Hugo server to preview your changes as you work:</p>
-<ol>
-<li>
-<p>Follow the instructions in <a href=../../../docs/getting-started>Getting started</a> to install Hugo and any other tools you need. You&rsquo;ll need at least <strong>Hugo version 0.45</strong> (we recommend using the most recent available version), and it must be the <strong>extended</strong> version, which supports SCSS.</p>
-</li>
-<li>
-<p>Fork the <a href=https://github.com/google/docsy-example>Goldydocs repo</a> repo into your own project, then create a local copy using <code>git clone</code>. Don’t forget to use <code>--recurse-submodules</code> or you won’t pull down some of the code you need to generate a working site.</p>
-<pre tabindex=0><code>git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
-</code></pre></li>
-<li>
-<p>Run <code>hugo server</code> in the site root directory. By default your site will be available at http://localhost:1313/. Now that you&rsquo;re serving your site locally, Hugo will watch for changes to the content and automatically refresh your site.</p>
-</li>
-<li>
-<p>Continue with the usual GitHub workflow to edit files, commit them, push the
-changes up to your fork, and create a pull request.</p>
-</li>
-</ol>
-<h2 id=creating-an-issue>Creating an issue</h2>
-<p>If you&rsquo;ve found a problem in the docs, but you&rsquo;re not sure how to fix it yourself, please create an issue in the <a href=https://github.com/google/docsy-example/issues>Goldydocs repo</a>. You can also create an issue about a specific page by clicking the <strong>Create Issue</strong> button in the top right hand corner of the page.</p>
-<h2 id=useful-resources>Useful resources</h2>
-<ul>
-<li><a href=https://www.docsy.dev/docs/>Docsy user guide</a>: All about Docsy, including how it manages navigation, look and feel, and multi-language support.</li>
-<li><a href=https://gohugo.io/documentation/>Hugo documentation</a>: Comprehensive reference for Hugo.</li>
-<li><a href=https://guides.github.com/activities/hello-world/>Github Hello World!</a>: A basic introduction to GitHub concepts and workflow.</li>
-</ul>
 </div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-b985e53832bb2cf0a86d46cb2ea850e3>1 - RoverCore</h1>
+<div class=lead>How to contribute to RoverCore.</div>
+<h2 id=general-guidelines>General Guidelines</h2>
+<p>For submitting code to the RoverCore GitHub Repository please ensure the following:</p>
+<ol>
+<li>Code is written to the best of your ability, and with no malicious intention.</li>
+<li>Code written will improve the quality of RoverCore in a manner for all to use.</li>
+<li>Comments are placed throughout your code to explain everything.</li>
+</ol>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-73a2877ce800cd68b9133f57bb607005>2 - RoverCore Documentation</h1>
+<div class=lead>How to contribute to the documentation.</div>
+<h2 id=writing-etiquette>Writing Etiquette</h2>
+<p>When writing and contributing to the RoverCoreDocs GitHub repository, there are a few rules you should follow.</p>
+<ol>
+<li>Writing should be in English.</li>
+<li>Writing should be free of major grammatical errors.</li>
+<li>All references should be linked properly.</li>
+<li>Try to refrain from lengthy sentences and using contractions.</li>
+<li>Titles and linkTitles for pages should be the same, with the exception of abbreviations or acronyms.
+<ol>
+<li>An example is <a href=../../../docs/concepts/mvc>ModelViewController</a>. The linkTitle is &ldquo;Model View Controller&rdquo;, but the title is &ldquo;MVC - Model View Controller&rdquo;.</li>
+</ol>
+</li>
+<li>File names should be short and be able to distinguish one page from another.</li>
+</ol>
+<h2 id=frequently-asked-questions>Frequently Asked Questions</h2>
+<p>Here is where you can find more information on tips and tricks to write for the documentation.</p>
+<h3 id=how-do-i-link-a-reference-to-something>How do I link a reference to something?</h3>
+<p>Good question! It is pretty easy. If for example you write the following:</p>
+<blockquote>
+<p>Sometimes, visiting Microsoft&rsquo;s documentation for ASP.NET is a useful place to learn.</p>
+</blockquote>
+<p>You will have to replace &ldquo;Microsoft&rsquo;s documentation&rdquo; with:</p>
+<pre><code>[Microsoft's documentation](https://asp.net)
+</code></pre>
+<p>Then, it will look like this:</p>
+<blockquote>
+<p>Sometimes, visiting <a href=https://asp.net>Microsoft&rsquo;s documentation</a> for ASP.NET is a useful place to learn.</p>
+</blockquote>
+<h3 id=how-do-i-link-to-another-part-of-the-site>How do I link to another part of the site?</h3>
+<p>To link to another part of the site, do the same as before, but use</p>
+<pre><code>[Contribution Guidelines](docs/contribution-guidelines)
+</code></pre>
+<p>instead of hard-coding the URL. This allows the domain to change without all of the references within the site being changed.</p>
 </div>
 </main>
 </div>

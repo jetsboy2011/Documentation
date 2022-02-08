@@ -1,0 +1,10 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – Fundamentals</title><link>/Documentation/docs/fundamentals/</link><description>Recent content in Fundamentals on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="/Documentation/docs/fundamentals/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Entity Framework</title><link>/Documentation/docs/fundamentals/entity-framework/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/entity-framework/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Entity Framework is a very large topic. In this section, we will be going over the basics of EF Core. For more information, please visit &lt;a href="https://docs.microsoft.com/en-us/ef/">Entity Framework Documentation&lt;/a>.&lt;/p>
+&lt;/div>
+&lt;h2 id="what-is-entity-framework-ef-core">What is Entity Framework (EF Core)?&lt;/h2>
+&lt;h2 id="why-use-it">Why use it?&lt;/h2>
+&lt;h2 id="how-do-i-use-it">How do I use it?&lt;/h2></description></item><item><title>Docs: Services</title><link>/Documentation/docs/fundamentals/services/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/services/</guid><description>
+&lt;h2 id="what-is-a-service">What is a service?&lt;/h2>
+&lt;h2 id="why-use-it">Why use it?&lt;/h2>
+&lt;h2 id="how-do-i-use-it">How do I use it?&lt;/h2></description></item><item><title>Docs: Settings</title><link>/Documentation/docs/fundamentals/settings/</link><pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/settings/</guid><description/></item><item><title>Docs: Options</title><link>/Documentation/docs/fundamentals/options/</link><pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/options/</guid><description/></item></channel></rss>

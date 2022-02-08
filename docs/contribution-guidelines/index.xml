@@ -1,1 +1,41 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – Contribution Guidelines</title><link>/Documentation/docs/contribution-guidelines/</link><description>Recent content in Contribution Guidelines on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><atom:link href="/Documentation/docs/contribution-guidelines/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – Contribution Guidelines</title><link>/Documentation/docs/contribution-guidelines/</link><description>Recent content in Contribution Guidelines on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><atom:link href="/Documentation/docs/contribution-guidelines/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: RoverCore</title><link>/Documentation/docs/contribution-guidelines/rovercore/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/contribution-guidelines/rovercore/</guid><description>
+&lt;h2 id="general-guidelines">General Guidelines&lt;/h2>
+&lt;p>For submitting code to the RoverCore GitHub Repository please ensure the following:&lt;/p>
+&lt;ol>
+&lt;li>Code is written to the best of your ability, and with no malicious intention.&lt;/li>
+&lt;li>Code written will improve the quality of RoverCore in a manner for all to use.&lt;/li>
+&lt;li>Comments are placed throughout your code to explain everything.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: RoverCore Documentation</title><link>/Documentation/docs/contribution-guidelines/rovercore-documentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/contribution-guidelines/rovercore-documentation/</guid><description>
+&lt;h2 id="writing-etiquette">Writing Etiquette&lt;/h2>
+&lt;p>When writing and contributing to the RoverCoreDocs GitHub repository, there are a few rules you should follow.&lt;/p>
+&lt;ol>
+&lt;li>Writing should be in English.&lt;/li>
+&lt;li>Writing should be free of major grammatical errors.&lt;/li>
+&lt;li>All references should be linked properly.&lt;/li>
+&lt;li>Try to refrain from lengthy sentences and using contractions.&lt;/li>
+&lt;li>Titles and linkTitles for pages should be the same, with the exception of abbreviations or acronyms.
+&lt;ol>
+&lt;li>An example is &lt;a href="../../docs/concepts/mvc">ModelViewController&lt;/a>. The linkTitle is &amp;ldquo;Model View Controller&amp;rdquo;, but the title is &amp;ldquo;MVC - Model View Controller&amp;rdquo;.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>File names should be short and be able to distinguish one page from another.&lt;/li>
+&lt;/ol>
+&lt;h2 id="frequently-asked-questions">Frequently Asked Questions&lt;/h2>
+&lt;p>Here is where you can find more information on tips and tricks to write for the documentation.&lt;/p>
+&lt;h3 id="how-do-i-link-a-reference-to-something">How do I link a reference to something?&lt;/h3>
+&lt;p>Good question! It is pretty easy. If for example you write the following:&lt;/p>
+&lt;blockquote>
+&lt;p>Sometimes, visiting Microsoft&amp;rsquo;s documentation for ASP.NET is a useful place to learn.&lt;/p>
+&lt;/blockquote>
+&lt;p>You will have to replace &amp;ldquo;Microsoft&amp;rsquo;s documentation&amp;rdquo; with:&lt;/p>
+&lt;pre>&lt;code>[Microsoft's documentation](https://asp.net)
+&lt;/code>&lt;/pre>
+&lt;p>Then, it will look like this:&lt;/p>
+&lt;blockquote>
+&lt;p>Sometimes, visiting &lt;a href="https://asp.net">Microsoft&amp;rsquo;s documentation&lt;/a> for ASP.NET is a useful place to learn.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="how-do-i-link-to-another-part-of-the-site">How do I link to another part of the site?&lt;/h3>
+&lt;p>To link to another part of the site, do the same as before, but use&lt;/p>
+&lt;pre>&lt;code>[Contribution Guidelines](docs/contribution-guidelines)
+&lt;/code>&lt;/pre>
+&lt;p>instead of hard-coding the URL. This allows the domain to change without all of the references within the site being changed.&lt;/p></description></item></channel></rss>

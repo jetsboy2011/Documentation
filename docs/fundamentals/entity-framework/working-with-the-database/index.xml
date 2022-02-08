@@ -1,0 +1,11 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – Working with the Database</title><link>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/</link><description>Recent content in Working with the Database on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="/Documentation/docs/fundamentals/entity-framework/working-with-the-database/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: AppSettings</title><link>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/appsettings/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/appsettings/</guid><description>
+&lt;h2 id="what-is-appsettings">What is AppSettings?&lt;/h2>
+&lt;h2 id="why-use-it">Why use it?&lt;/h2>
+&lt;h2 id="how-do-i-use-it">How do I use it?&lt;/h2></description></item><item><title>Docs: CLI - Command Line</title><link>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/command-line/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/command-line/</guid><description>
+&lt;h2 id="what-is-the-command-line">What is the command line?&lt;/h2>
+&lt;h2 id="why-use-it">Why use it?&lt;/h2>
+&lt;h2 id="how-do-i-use-it">How do I use it?&lt;/h2></description></item><item><title>Docs: PMC - Package Manager Console</title><link>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/pmc/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/pmc/</guid><description>
+&lt;h2 id="what-is-a-nuget-package">What is a Nuget Package?&lt;/h2>
+&lt;h2 id="what-is-the-package-manager-console">What is the Package Manager Console?&lt;/h2>
+&lt;h2 id="why-use-it">Why use it?&lt;/h2>
+&lt;h2 id="how-do-i-use-it">How do I use it?&lt;/h2></description></item></channel></rss>
