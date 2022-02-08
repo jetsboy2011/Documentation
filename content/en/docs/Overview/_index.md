@@ -7,22 +7,27 @@ description: >
 ---
 
 
-
-The Overview is where your users find out about your project. Depending on the size of your docset, you can have a separate overview page (like this one) or put your overview contents in the Documentation landing page (like in the Docsy User Guide). 
-
-Try answering these questions for your user in this page:
-
 ## What is RoverCore?
 
-RoverCore is an easy-to-use, efficient, and simple ASP.NET Core boilerplate. A boilerplate is essentially a template, with lots of tools and key parts that a developer may need for their project.
+RoverCore is an easy-to-use, efficient, and simple ASP.NET 6 boilerplate. A boilerplate is essentially a template, with lots of tools and key parts that a developer may need for their project.  RoverCore is organized as an n-Tiered Architecture and borrows ideas from Clean Architecture. Most boilerplate frameworks you come across are highly opinionated on how to organize your project.  This can sometimes put you in a situation where you may have to write far more code for simple tasks and cause you to get lost in the magic of how the framework functions. RoverCore provides a solid boilerplate that provides you with a lot of the functionality you will need for smaller projects.  
+
+This is a big step up from the default ASP.NET MVC template, and provides a starting point where you can implement the functionality you want within the system. As you learn how to use the framework you will become well-versed in how to develop ASP.NET applications and can begin the process of developing your own architecture ideas.
 
 ## Why RoverCore?
 
-RoverCore is a unique and well-documented boilerplate, unlike many others. It is designed for students by students, which is a core concept.
+RoverCore was designed to be a starting project that can be used both by professionals and individuals learning how to develop ASP.NET 6 applications. The project contains work by students and was designed originally for educational purposes.  Don't let that scare you off, as the intention for this project is to be production-ready.
 
-* **What is it good for?**: Any non multi-tenant ASP.NET Core Identity project.
-
-* **What is it not good for?**: Very advanced projects involving multiple tenants.
+**Project Features**: 
+- 100% open-sourced (almost exclusively MIT-compatible)
+- Beautiful UI based off the Tabler Theme (includes dark mode!)
+- Front and backend design ready to go out of the box
+- Serilog error logging
+- Simple Navigation Navbar management using roles
+- Automatic Seeder discovery for default users, roles, and other data
+- Visual studio template scaffolds to match the built-in theme
+- ASP.NET 6 Identity
+- User and Role Management
+- JWT authorization for API endpoints
 
 ## What now?
 
