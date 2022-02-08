@@ -1,13 +1,14 @@
 ---
-title: "Onion Architecture"
-linkTitle: "Onion Architecture"
+title: "Layered Architecture"
+linkTitle: "Layered Architecture"
 weight: 2
 description: >
-  The Onion Architecture is a simple way of keeping your project organized.
+  Layered Architectures break a codebase up into areas according to responsibilities or concerns.
 ---
 
-## What is the Onion Architecture?
+## What is a layered Architecture?
 
+https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra justo vitae risus suscipit, sed ornare purus faucibus. Sed aliquet orci in nulla varius, eu blandit orci euismod. Suspendisse sit amet mollis justo. Ut accumsan mi elit, quis commodo turpis fermentum nec. Fusce fermentum dictum mollis. Nam vel odio consequat, faucibus erat laoreet, pulvinar urna. Etiam mi eros, aliquam ac quam non, auctor feugiat sem. Vivamus vestibulum purus sed ligula dictum consequat.
 
