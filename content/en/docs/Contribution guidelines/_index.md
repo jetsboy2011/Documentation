@@ -22,12 +22,3 @@ After you fork the repository, create a branch preferably with your initials, th
 Here the user has the initials "VL" and they are refactoring something called example.
 
 After you commit and push your changes normally, submit a pull request on the appropriate GitHub Repository.
-
-
-## Useful resources
-
-* [Docsy user guide](https://www.docsy.dev/docs/): All about Docsy, including how it manages navigation, look and feel, and multi-language support.
-* [Hugo documentation](https://gohugo.io/documentation/): Comprehensive reference for Hugo.
-* [Github Hello World!](https://guides.github.com/activities/hello-world/): A basic introduction to GitHub concepts and workflow.
-
-

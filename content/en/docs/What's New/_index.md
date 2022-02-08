@@ -8,7 +8,7 @@ weight: 2
 ## What's New
 
 ### Version 1.0.0
-IT'S OUT! RoverCore is finally released. You can check it out at  https://github.com/RoverCore/RoverCore.
+IT'S OUT! RoverCore is finally released. You can check it out at {{% params/url_latest_version %}}
 
 In this version the creators of RoverCore have made an amazing and easy-to-use ASP.NET Core Boilerplate complete with everything you may need to get started developing.
 

@@ -3,7 +3,7 @@ title: "RoverCore Documentation"
 linkTitle: "RoverCore Documentation"
 weight: 2
 description: >
-  How to contribute to the documentation
+  How to contribute to the documentation.
 ---
 
 ## Writing Etiquette

@@ -20,7 +20,7 @@ RoverCore is an easy-to-use, efficient, and simple ASP.NET Core boilerplate. A b
 
 RoverCore is a unique and well-documented boilerplate, unlike many others. It is designed for students by students, which is a core concept.
 
-* **What is it good for?**: Any non mutli-tenant ASP.NET Core Identity project.
+* **What is it good for?**: Any non multi-tenant ASP.NET Core Identity project.
 
 * **What is it not good for?**: Very advanced projects involving multiple tenants.
 
