@@ -4,6 +4,7 @@
   "description": "Hugo theme for technical documentation.",
   "main": "none.js",
   "scripts": {
+    "docs" : "hugo server -D -b=/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/google/docsy-example#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "hugo-extended": "^0.92.1",
     "postcss": "^8.3.7",
     "postcss-cli": "^9.0.2"
   }

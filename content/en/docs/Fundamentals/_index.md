@@ -1,7 +1,7 @@
 
 ---
-title: "Core Tasks"
-linkTitle: "Core Tasks"
+title: "Fundamentals"
+linkTitle: "Fundamentals"
 weight: 6
 date: 2017-01-05
 description: >
