@@ -14,23 +14,23 @@
 <link rel=icon type=image/png href=../../../favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=../../../favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=../../../favicons/android-192x192.png sizes=192x192>
-<title>Onion Architecture | RoverCore Docs</title>
-<meta name=description content="The Onion Architecture is a simple way of keeping your project organized.
+<title>Layered Architecture | RoverCore Docs</title>
+<meta name=description content="Layered Architectures break a codebase up into areas according to responsibilities or concerns.
 ">
-<meta property="og:title" content="Onion Architecture">
-<meta property="og:description" content="The Onion Architecture is a simple way of keeping your project organized.
+<meta property="og:title" content="Layered Architecture">
+<meta property="og:description" content="Layered Architectures break a codebase up into areas according to responsibilities or concerns.
 ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/Documentation/docs/concepts/onion/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-07T21:00:17-05:00"><meta property="og:site_name" content="RoverCore Docs">
-<meta itemprop=name content="Onion Architecture">
-<meta itemprop=description content="The Onion Architecture is a simple way of keeping your project organized.
+<meta property="og:url" content="/Documentation/docs/concepts/layeredarchitecture/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2022-02-08T17:35:43-05:00"><meta property="og:site_name" content="RoverCore Docs">
+<meta itemprop=name content="Layered Architecture">
+<meta itemprop=description content="Layered Architectures break a codebase up into areas according to responsibilities or concerns.
 ">
-<meta itemprop=dateModified content="2022-02-07T21:00:17-05:00">
-<meta itemprop=wordCount content="433">
+<meta itemprop=dateModified content="2022-02-08T17:35:43-05:00">
+<meta itemprop=wordCount content="434">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
-<meta name=twitter:title content="Onion Architecture">
-<meta name=twitter:description content="The Onion Architecture is a simple way of keeping your project organized.
+<meta name=twitter:title content="Layered Architecture">
+<meta name=twitter:description content="Layered Architectures break a codebase up into areas according to responsibilities or concerns.
 ">
 <link rel=preload href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css as=style>
 <link href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css rel=stylesheet integrity>
@@ -97,8 +97,8 @@
 <ul class="ul-2 foldable">
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsconceptsmvc-li>
 <a href=../../../docs/concepts/mvc/ title="MVC - Model View Controller" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsconceptsmvc><span>Model View Controller</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docsconceptsonion-li>
-<a href=../../../docs/concepts/onion/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docsconceptsonion><span class=td-sidebar-nav-active-item>Onion Architecture</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docsconceptslayeredarchitecture-li>
+<a href=../../../docs/concepts/layeredarchitecture/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docsconceptslayeredarchitecture><span class=td-sidebar-nav-active-item>Layered Architecture</span></a>
 </li>
 </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docstheme-li>
@@ -217,10 +217,10 @@
 </aside>
 <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-<a href=https://github.com/rovercore/rovercoredocs/tree/main/content/en/docs/Concepts/onion.md class=td-page-meta--view target=_blank rel=noopener><i class="fa fa-file-alt fa-fw"></i> View page source</a>
-<a href=https://github.com/rovercore/rovercoredocs/edit/main/content/en/docs/Concepts/onion.md class=td-page-meta--edit target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/rovercore/rovercoredocs/new/main/content/en/docs/Concepts/onion.md?filename=change-me.md&value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60getting-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A" class=td-page-meta--child target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Create child page</a>
-<a href="https://github.com/rovercore/rovercoredocs/issues/new?title=Onion%20Architecture" class=td-page-meta--issue target=_blank rel=noopener><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href=https://github.com/rovercore/rovercoredocs/tree/main/content/en/docs/Concepts/LayeredArchitecture.md class=td-page-meta--view target=_blank rel=noopener><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+<a href=https://github.com/rovercore/rovercoredocs/edit/main/content/en/docs/Concepts/LayeredArchitecture.md class=td-page-meta--edit target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/rovercore/rovercoredocs/new/main/content/en/docs/Concepts/LayeredArchitecture.md?filename=change-me.md&value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60getting-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A" class=td-page-meta--child target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Create child page</a>
+<a href="https://github.com/rovercore/rovercoredocs/issues/new?title=Layered%20Architecture" class=td-page-meta--issue target=_blank rel=noopener><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 <a href=https://github.com/rovercore/rovercore/issues/new class=td-page-meta--project-issue target=_blank rel=noopener><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
 <a id=print href=../../../Documentation/docs/concepts/_print/><i class="fa fa-print fa-fw"></i> Print entire section</a>
 </div>
@@ -254,23 +254,24 @@
 <a href=../../../Documentation/docs/concepts/>Concepts</a>
 </li>
 <li class="breadcrumb-item active" aria-current=page>
-<a href=../../../Documentation/docs/concepts/onion/>Onion Architecture</a>
+<a href=../../../Documentation/docs/concepts/layeredarchitecture/>Layered Architecture</a>
 </li>
 </ol>
 </nav>
 <div class=td-content>
-<h1>Onion Architecture</h1>
-<div class=lead>The Onion Architecture is a simple way of keeping your project organized.</div>
+<h1>Layered Architecture</h1>
+<div class=lead>Layered Architectures break a codebase up into areas according to responsibilities or concerns.</div>
 <header class=article-meta>
 </header>
-<h2 id=what-is-the-onion-architecture>What is the Onion Architecture?</h2>
+<h2 id=what-is-a-layered-architecture>What is a layered Architecture?</h2>
+<p><a href=https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures>https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures</a></p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra justo vitae risus suscipit, sed ornare purus faucibus. Sed aliquet orci in nulla varius, eu blandit orci euismod. Suspendisse sit amet mollis justo. Ut accumsan mi elit, quis commodo turpis fermentum nec. Fusce fermentum dictum mollis. Nam vel odio consequat, faucibus erat laoreet, pulvinar urna. Etiam mi eros, aliquam ac quam non, auctor feugiat sem. Vivamus vestibulum purus sed ligula dictum consequat.</p>
 <p>Ut non turpis nisl. Vestibulum aliquet vel velit et ultricies. Integer sem elit, convallis in commodo eu, efficitur sit amet risus. In bibendum lorem non felis lacinia efficitur. Quisque imperdiet fringilla pretium. Pellentesque sodales quam mi, eu finibus ex pulvinar quis. Sed a finibus diam. Pellentesque ultrices non purus vel vehicula. Cras eget massa ut lectus molestie laoreet. Suspendisse rutrum nisi at laoreet vulputate.</p>
 <p>Aenean dui lectus, tincidunt eget mi ut, eleifend semper nunc. Suspendisse in sodales ligula, vitae auctor augue. Phasellus pellentesque eleifend auctor. Ut at eros odio. Aenean facilisis pretium sem, nec porttitor eros maximus dapibus. Aliquam erat volutpat. Ut a nisl tortor. Phasellus vehicula ac lacus in elementum. Nam nibh purus, hendrerit id vulputate sit amet, blandit id quam. Aenean cursus erat nisl, id maximus mauris ornare sed. Sed finibus aliquet imperdiet. Praesent lobortis sapien eget metus feugiat, ac pellentesque est porttitor. Donec congue sit amet lacus eu tempor.</p>
 <p>Aenean mattis mi ut libero tempor, at ultricies sapien sagittis. Nulla elementum, orci ut feugiat ornare, ante neque elementum nulla, quis ultricies metus lacus non elit. Mauris ante dolor, pulvinar in lacus quis, gravida bibendum mauris. Donec non dolor erat. Phasellus nec aliquet turpis, et condimentum nisi. Quisque a euismod arcu. Fusce erat tortor, ultrices imperdiet posuere non, posuere non ligula. Fusce rhoncus faucibus est eget consequat. Cras ut erat lorem. Donec vel vehicula risus. Praesent ut leo mauris.</p>
 <p>Aliquam erat volutpat. Duis molestie est molestie erat dictum, id aliquam est vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sit amet suscipit augue. Cras mattis quam in nisl porttitor, a scelerisque dolor luctus. Cras non nisi ac dui scelerisque tempus in in erat. Quisque sit amet mi tincidunt, faucibus nisl luctus, sodales nunc. Ut quis ligula congue, faucibus nibh nec, sollicitudin enim. Suspendisse at nulla in justo molestie convallis vel vel sapien. Donec pharetra pellentesque massa, ut auctor est. Donec lacinia dictum facilisis. Aenean iaculis efficitur leo vel dictum. Proin malesuada nisi dictum luctus eleifend. In rhoncus dolor metus, at pretium velit faucibus fermentum. Donec venenatis congue ligula, sit amet elementum mi porttitor a. Morbi non rutrum lorem.</p>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified February 7, 2022: <a href=https://github.com/rovercore/rovercoredocs/commit/1c31727bbb6bd21d4becabcab36d807b0dc3da99>Merge pull request #1 from RoverCore/vl-basic-information (1c31727)</a>
+Last modified February 8, 2022: <a href=https://github.com/rovercore/rovercoredocs/commit/c5bb49f57eee049fc7ff4e98c3ebb04a54aeb552>Removed hugo as package dependency (c5bb49f)</a>
 </div>
 </div>
 </main>
