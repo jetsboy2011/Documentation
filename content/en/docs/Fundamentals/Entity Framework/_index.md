@@ -2,7 +2,7 @@
 ---
 title: "Entity Framework"
 linkTitle: "Entity Framework"
-weight: 6
+weight: 1
 date: 2017-01-05
 description: >
   Experience the greatness of Entity Framework and learn about what it can do.
