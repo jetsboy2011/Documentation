@@ -1,6 +1,6 @@
 
 ---
-title: "Documentation"
+title: "RoverCore Boilerplate Documentation"
 linkTitle: "Documentation"
 weight: 20
 menu:
@@ -8,17 +8,12 @@ menu:
     weight: 20
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+Welcome to the RoverCore Boilerplate Documentation project.  Our goal is to provide you with all the information you need to get started with developing using this framework.
 
+![](/rovercore-front-preview.png)
 
-This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project. 
+Please note that this documentation is written in a tutorial style with a focus on teaching developers unfamiliar with ASP.NET concepts some of the core fundamentals of the framework along with guides that explain what went into the development of RoverCore.
 
-For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which lives in the [Docsy theme repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to copy its docs section. 
+We strongly recommend using this site in tandom with the official [ASP.NET documentation](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0).  Microsoft has done an excellent job developing a myriad of tutorials that provide insight into some of the concepts we will be covering in this documentation.  For your benefit, we will often link to supporting articles to help you learn more about the concepts we are discussing.
 
-Other content such as marketing material, case studies, and community updates should live in the [About](/about/) and [Community](/community/) pages.
-
-Find out how to use the Docsy theme in the [Docsy User Guide](https://docsy.dev/docs/). You can learn more about how to organize your documentation (and how we organized this site) in [Organizing Your Content](https://docsy.dev/docs/best-practices/organizing-content/).
-
-
+## Documentation Contents

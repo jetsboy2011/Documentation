@@ -6,16 +6,47 @@ description: >
   Layered Architectures break a codebase up into areas according to responsibilities or concerns.
 ---
 
-## What is a layered Architecture?
+## What is a layered architecture?
 
-https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures
+As your projects become larger it becomes helpful to break the project into parts based on responsibilities or concerns.  This idea of separating pieces of your project from one another makes it ultimately easier to test your software and ensure that it is working as you would expect.  Just like you wouldn’t want to write overly lengthy methods for that very same reason, we want to avoid single projects that take on too much responsibility for the workload of the application. This separation involves splitting the codebase into multiple projects which we will refer to as *layers*.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra justo vitae risus suscipit, sed ornare purus faucibus. Sed aliquet orci in nulla varius, eu blandit orci euismod. Suspendisse sit amet mollis justo. Ut accumsan mi elit, quis commodo turpis fermentum nec. Fusce fermentum dictum mollis. Nam vel odio consequat, faucibus erat laoreet, pulvinar urna. Etiam mi eros, aliquam ac quam non, auctor feugiat sem. Vivamus vestibulum purus sed ligula dictum consequat.
+There are a number of advantages to using layers:
+- Easier to work with in teams as individuals can focus on distinct layers
+- Simplifies the process of understanding a codebase as each layer is isolated from each other and classes are typically grouped together by responsibility
+- Testing is easier
 
-Ut non turpis nisl. Vestibulum aliquet vel velit et ultricies. Integer sem elit, convallis in commodo eu, efficitur sit amet risus. In bibendum lorem non felis lacinia efficitur. Quisque imperdiet fringilla pretium. Pellentesque sodales quam mi, eu finibus ex pulvinar quis. Sed a finibus diam. Pellentesque ultrices non purus vel vehicula. Cras eget massa ut lectus molestie laoreet. Suspendisse rutrum nisi at laoreet vulputate.
+There are also disadvantages, but for now we will focus on the rationale behind this framework.
 
-Aenean dui lectus, tincidunt eget mi ut, eleifend semper nunc. Suspendisse in sodales ligula, vitae auctor augue. Phasellus pellentesque eleifend auctor. Ut at eros odio. Aenean facilisis pretium sem, nec porttitor eros maximus dapibus. Aliquam erat volutpat. Ut a nisl tortor. Phasellus vehicula ac lacus in elementum. Nam nibh purus, hendrerit id vulputate sit amet, blandit id quam. Aenean cursus erat nisl, id maximus mauris ornare sed. Sed finibus aliquet imperdiet. Praesent lobortis sapien eget metus feugiat, ac pellentesque est porttitor. Donec congue sit amet lacus eu tempor.
+## Tiered Architecture
 
-Aenean mattis mi ut libero tempor, at ultricies sapien sagittis. Nulla elementum, orci ut feugiat ornare, ante neque elementum nulla, quis ultricies metus lacus non elit. Mauris ante dolor, pulvinar in lacus quis, gravida bibendum mauris. Donec non dolor erat. Phasellus nec aliquet turpis, et condimentum nisi. Quisque a euismod arcu. Fusce erat tortor, ultrices imperdiet posuere non, posuere non ligula. Fusce rhoncus faucibus est eget consequat. Cras ut erat lorem. Donec vel vehicula risus. Praesent ut leo mauris.
+If you do enough searching you’ll quickly come across a number of ideas on how large software projects should be organized.  Some of the most common approaches to software architecture for ASP.NET projects include:
 
-Aliquam erat volutpat. Duis molestie est molestie erat dictum, id aliquam est vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sit amet suscipit augue. Cras mattis quam in nisl porttitor, a scelerisque dolor luctus. Cras non nisi ac dui scelerisque tempus in in erat. Quisque sit amet mi tincidunt, faucibus nisl luctus, sodales nunc. Ut quis ligula congue, faucibus nibh nec, sollicitudin enim. Suspendisse at nulla in justo molestie convallis vel vel sapien. Donec pharetra pellentesque massa, ut auctor est. Donec lacinia dictum facilisis. Aenean iaculis efficitur leo vel dictum. Proin malesuada nisi dictum luctus eleifend. In rhoncus dolor metus, at pretium velit faucibus fermentum. Donec venenatis congue ligula, sit amet elementum mi porttitor a. Morbi non rutrum lorem.
+- Tiered Architecture
+- Onion Architecture
+- Hexagonal Architecture
+- Clean Architecture
+- Vertical Slice Architecture
+
+RoverCore is organized as an Tiered Architecture and borrows ideas from Clean Architecture. The project itself is organized into three layers with distinct responsibilities. However, as you grow in your understanding of ASP.NET you may decide to add additional layers as your project grows in scope.  These layers can also at times make it easier to reuse your code, as one layer may share much of the code you might reuse in an entirely different project.
+
+<img src="/docs/concepts/layeredarchitecture.svg" width="600"/>
+
+The organization for RoverCore consists of three tiers (or layers):
+- Presentation
+- Infrastructure
+- Core
+
+As you see with the above diagram, the arrows always point inward towards the core. This is because each layer depends on an inner layer to function. The Core layer is intended to be as free of dependencies as possible as it is typical that all projects will depend on the Core layer.
+
+
+### Presentation Layer
+
+### Infrastructure Layer
+
+### Core Layer
+
+
+
+## More Reading
+
+[Common Web Application Architectures](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures)
