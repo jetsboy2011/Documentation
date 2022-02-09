@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – Documentation</title><link>/Documentation/docs/</link><description>Recent content in Documentation on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><atom:link href="/Documentation/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: AppSettings</title><link>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/appsettings/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/appsettings/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – RoverCore Boilerplate Documentation</title><link>/Documentation/docs/</link><description>Recent content in RoverCore Boilerplate Documentation on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><atom:link href="/Documentation/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: AppSettings</title><link>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/appsettings/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/entity-framework/working-with-the-database/appsettings/</guid><description>
 &lt;h2 id="what-is-appsettings">What is AppSettings?&lt;/h2>
 &lt;h2 id="why-use-it">Why use it?&lt;/h2>
 &lt;h2 id="how-do-i-use-it">How do I use it?&lt;/h2></description></item><item><title>Docs: Creating Models</title><link>/Documentation/docs/fundamentals/entity-framework/creating-models/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/entity-framework/creating-models/</guid><description>
@@ -29,13 +29,38 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>This is a placeholder page that shows you how to use this template site.&lt;/p>
 &lt;/div></description></item><item><title>Docs: Service Registration</title><link>/Documentation/docs/fundamentals/services/service-registration/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/services/service-registration/</guid><description/></item><item><title>Docs: Scaffolding a Controller</title><link>/Documentation/docs/tutorials/scaffolding/</link><pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/tutorials/scaffolding/</guid><description/></item><item><title>Docs: Layered Architecture</title><link>/Documentation/docs/concepts/layeredarchitecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/concepts/layeredarchitecture/</guid><description>
-&lt;h2 id="what-is-a-layered-architecture">What is a layered Architecture?&lt;/h2>
-&lt;p>&lt;a href="https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures">https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures&lt;/a>&lt;/p>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra justo vitae risus suscipit, sed ornare purus faucibus. Sed aliquet orci in nulla varius, eu blandit orci euismod. Suspendisse sit amet mollis justo. Ut accumsan mi elit, quis commodo turpis fermentum nec. Fusce fermentum dictum mollis. Nam vel odio consequat, faucibus erat laoreet, pulvinar urna. Etiam mi eros, aliquam ac quam non, auctor feugiat sem. Vivamus vestibulum purus sed ligula dictum consequat.&lt;/p>
-&lt;p>Ut non turpis nisl. Vestibulum aliquet vel velit et ultricies. Integer sem elit, convallis in commodo eu, efficitur sit amet risus. In bibendum lorem non felis lacinia efficitur. Quisque imperdiet fringilla pretium. Pellentesque sodales quam mi, eu finibus ex pulvinar quis. Sed a finibus diam. Pellentesque ultrices non purus vel vehicula. Cras eget massa ut lectus molestie laoreet. Suspendisse rutrum nisi at laoreet vulputate.&lt;/p>
-&lt;p>Aenean dui lectus, tincidunt eget mi ut, eleifend semper nunc. Suspendisse in sodales ligula, vitae auctor augue. Phasellus pellentesque eleifend auctor. Ut at eros odio. Aenean facilisis pretium sem, nec porttitor eros maximus dapibus. Aliquam erat volutpat. Ut a nisl tortor. Phasellus vehicula ac lacus in elementum. Nam nibh purus, hendrerit id vulputate sit amet, blandit id quam. Aenean cursus erat nisl, id maximus mauris ornare sed. Sed finibus aliquet imperdiet. Praesent lobortis sapien eget metus feugiat, ac pellentesque est porttitor. Donec congue sit amet lacus eu tempor.&lt;/p>
-&lt;p>Aenean mattis mi ut libero tempor, at ultricies sapien sagittis. Nulla elementum, orci ut feugiat ornare, ante neque elementum nulla, quis ultricies metus lacus non elit. Mauris ante dolor, pulvinar in lacus quis, gravida bibendum mauris. Donec non dolor erat. Phasellus nec aliquet turpis, et condimentum nisi. Quisque a euismod arcu. Fusce erat tortor, ultrices imperdiet posuere non, posuere non ligula. Fusce rhoncus faucibus est eget consequat. Cras ut erat lorem. Donec vel vehicula risus. Praesent ut leo mauris.&lt;/p>
-&lt;p>Aliquam erat volutpat. Duis molestie est molestie erat dictum, id aliquam est vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sit amet suscipit augue. Cras mattis quam in nisl porttitor, a scelerisque dolor luctus. Cras non nisi ac dui scelerisque tempus in in erat. Quisque sit amet mi tincidunt, faucibus nisl luctus, sodales nunc. Ut quis ligula congue, faucibus nibh nec, sollicitudin enim. Suspendisse at nulla in justo molestie convallis vel vel sapien. Donec pharetra pellentesque massa, ut auctor est. Donec lacinia dictum facilisis. Aenean iaculis efficitur leo vel dictum. Proin malesuada nisi dictum luctus eleifend. In rhoncus dolor metus, at pretium velit faucibus fermentum. Donec venenatis congue ligula, sit amet elementum mi porttitor a. Morbi non rutrum lorem.&lt;/p></description></item><item><title>Docs: RoverCore Documentation</title><link>/Documentation/docs/contribution-guidelines/rovercore-documentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/contribution-guidelines/rovercore-documentation/</guid><description>
+&lt;h2 id="what-is-a-layered-architecture">What is a layered architecture?&lt;/h2>
+&lt;p>As your projects become larger it becomes helpful to break the project into parts based on responsibilities or concerns. This idea of separating pieces of your project from one another makes it ultimately easier to test your software and ensure that it is working as you would expect. Just like you wouldn’t want to write overly lengthy methods for that very same reason, we want to avoid single projects that take on too much responsibility for the workload of the application. This separation involves splitting the codebase into multiple projects which we will refer to as &lt;em>layers&lt;/em>.&lt;/p>
+&lt;p>There are a number of advantages to using layers:&lt;/p>
+&lt;ul>
+&lt;li>Easier to work with in teams as individuals can focus on distinct layers&lt;/li>
+&lt;li>Simplifies the process of understanding a codebase as each layer is isolated from each other and classes are typically grouped together by responsibility&lt;/li>
+&lt;li>Testing is easier&lt;/li>
+&lt;/ul>
+&lt;p>There are also disadvantages, but for now we will focus on the rationale behind this framework.&lt;/p>
+&lt;h2 id="tiered-architecture">Tiered Architecture&lt;/h2>
+&lt;p>If you do enough searching you’ll quickly come across a number of ideas on how large software projects should be organized. Some of the most common approaches to software architecture for ASP.NET projects include:&lt;/p>
+&lt;ul>
+&lt;li>Tiered Architecture&lt;/li>
+&lt;li>Onion Architecture&lt;/li>
+&lt;li>Hexagonal Architecture&lt;/li>
+&lt;li>Clean Architecture&lt;/li>
+&lt;li>Vertical Slice Architecture&lt;/li>
+&lt;/ul>
+&lt;p>RoverCore is organized as an Tiered Architecture and borrows ideas from Clean Architecture. The project itself is organized into three layers with distinct responsibilities. However, as you grow in your understanding of ASP.NET you may decide to add additional layers as your project grows in scope. These layers can also at times make it easier to reuse your code, as one layer may share much of the code you might reuse in an entirely different project.&lt;/p>
+&lt;img src="../docs/concepts/layeredarchitecture.svg" width="600"/>
+&lt;p>The organization for RoverCore consists of three tiers (or layers):&lt;/p>
+&lt;ul>
+&lt;li>Presentation&lt;/li>
+&lt;li>Infrastructure&lt;/li>
+&lt;li>Core&lt;/li>
+&lt;/ul>
+&lt;p>As you see with the above diagram, the arrows always point inward towards the core. This is because each layer depends on an inner layer to function. The Core layer is intended to be as free of dependencies as possible as it is typical that all projects will depend on the Core layer.&lt;/p>
+&lt;h3 id="presentation-layer">Presentation Layer&lt;/h3>
+&lt;h3 id="infrastructure-layer">Infrastructure Layer&lt;/h3>
+&lt;h3 id="core-layer">Core Layer&lt;/h3>
+&lt;h2 id="more-reading">More Reading&lt;/h2>
+&lt;p>&lt;a href="https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures">Common Web Application Architectures&lt;/a>&lt;/p></description></item><item><title>Docs: RoverCore Documentation</title><link>/Documentation/docs/contribution-guidelines/rovercore-documentation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/contribution-guidelines/rovercore-documentation/</guid><description>
 &lt;h2 id="writing-etiquette">Writing Etiquette&lt;/h2>
 &lt;p>When writing and contributing to the RoverCoreDocs GitHub repository, there are a few rules you should follow.&lt;/p>
 &lt;ol>
