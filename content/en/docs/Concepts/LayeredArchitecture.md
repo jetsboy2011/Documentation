@@ -27,7 +27,7 @@ If you do enough searching you’ll quickly come across a number of ideas on how
 - Clean Architecture
 - Vertical Slice Architecture
 
-RoverCore is organized as an Tiered Architecture and borrows ideas from Clean Architecture. The project itself is organized into three layers with distinct responsibilities. However, as you grow in your understanding of ASP.NET you may decide to add additional layers as your project grows in scope.  These layers can also at times make it easier to reuse your code, as one layer may share much of the code you might reuse in an entirely different project.
+RoverCore is organized as an Tiered Architecture but in many of the above architectures there is a clear separation of what each layer is responsible for. The project itself is organized into three layers with distinct responsibilities and is intended to help you begin the process of understanding how to work with multi-project web applications. As you grow in your understanding of ASP.NET you may decide to add additional layers as your project grows in scope.  You may also make stricter decisions on how to isolate the responsibilities of each layer.  For example, you may decide to avoid making any direct calls to Entity Framework code in the Infrastructure layer from the Web layer in the chance that you want to swap out EF for something else.  For now, these layers can make it easier to reuse your code, as one layer may share much of the code you might reuse in an entirely different project.
 
 <img src="/docs/concepts/layeredarchitecture.svg" width="600"/>
 
@@ -40,6 +40,8 @@ As you see with the above diagram, the arrows always point inward towards the co
 
 
 ### Presentation Layer
+
+The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application.  Whether the interface is html-based or an API, the ideal way to think of this layer is think about any of the other myriad of ways that your data can be presented to the user.  Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers.  As you progress you may decide to push business logic to another layer entirely (such as the Infrastructure layer).  
 
 ### Infrastructure Layer
 
