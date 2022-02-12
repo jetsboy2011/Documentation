@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=generator content="Hugo 0.92.1">
+<meta name=generator content="Hugo 0.92.2">
 <link rel=canonical type=text/html href=../../Documentation/docs/>
 <link rel=alternate type=application/rss+xml href=../../Documentation/docs/index.xml>
 <meta name=robots content="noindex, nofollow">
@@ -541,7 +541,7 @@ This is a warning with a title.
 <li>Clean Architecture</li>
 <li>Vertical Slice Architecture</li>
 </ul>
-<p>RoverCore is organized as an Tiered Architecture and borrows ideas from Clean Architecture. The project itself is organized into three layers with distinct responsibilities. However, as you grow in your understanding of ASP.NET you may decide to add additional layers as your project grows in scope. These layers can also at times make it easier to reuse your code, as one layer may share much of the code you might reuse in an entirely different project.</p>
+<p>RoverCore is organized as an Tiered Architecture but in many of the above architectures there is a clear separation of what each layer is responsible for. The project itself is organized into three layers with distinct responsibilities and is intended to help you begin the process of understanding how to work with multi-project web applications. As you grow in your understanding of ASP.NET you may decide to add additional layers as your project grows in scope. You may also make stricter decisions on how to isolate the responsibilities of each layer. For example, you may decide to avoid making any direct calls to Entity Framework code in the Infrastructure layer from the Web layer in the chance that you want to swap out EF for something else. For now, these layers can make it easier to reuse your code, as one layer may share much of the code you might reuse in an entirely different project.</p>
 <img src=../../docs/concepts/layeredarchitecture.svg width=600>
 <p>The organization for RoverCore consists of three tiers (or layers):</p>
 <ul>
@@ -551,6 +551,7 @@ This is a warning with a title.
 </ul>
 <p>As you see with the above diagram, the arrows always point inward towards the core. This is because each layer depends on an inner layer to function. The Core layer is intended to be as free of dependencies as possible as it is typical that all projects will depend on the Core layer.</p>
 <h3 id=presentation-layer>Presentation Layer</h3>
+<p>The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application. Whether the interface is html-based or an API, the ideal way to think of this layer is think about any of the other myriad of ways that your data can be presented to the user. Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers. As you progress you may decide to push business logic to another layer entirely (such as the Infrastructure layer).</p>
 <h3 id=infrastructure-layer>Infrastructure Layer</h3>
 <h3 id=core-layer>Core Layer</h3>
 <h2 id=more-reading>More Reading</h2>
