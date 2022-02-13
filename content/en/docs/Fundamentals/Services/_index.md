@@ -2,7 +2,7 @@
 ---
 title: "Services"
 linkTitle: "Services"
-weight: 2
+weight: 20
 date: 2017-01-05
 description: >
   Learn about services and why they can be useful.

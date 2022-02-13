@@ -1,11 +1,11 @@
 
 ---
-title: "Entity Framework"
-linkTitle: "Entity Framework"
-weight: 1
+title: "Data Persistence"
+linkTitle: "Data Persistence"
+weight: 15
 date: 2017-01-05
 description: >
-  Experience the greatness of Entity Framework and learn about what it can do.
+  RoverCore utilizes Entity Framework for data persistence.  Entity Framework Core is a modern object-database mapper for .NET.
 ---
 
 {{% pageinfo %}}

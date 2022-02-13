@@ -1,11 +1,11 @@
 
 ---
-title: "Creating Models"
-linkTitle: "Creating Models"
+title: "Creating Entities"
+linkTitle: "Creating Entities"
 weight: 1
 date: 2017-01-05
 description: >
-  Learn more about models in the MVC pattern here.
+  Learn more about how to create your own data models in RoverCore.
 ---
 
 {{% pageinfo %}}

@@ -1,9 +1,9 @@
 ---
 title: "MVC - Model View Controller"
 linkTitle: "Model View Controller"
-weight: 1
+weight: 10
 description: >
-  A MVC is a structure in web development that splits functions into three components.
+  The model-view-controller (MVC) pattern divides an application into three components: A model, a view, and a controller.
 ---
 
 ## What is a Model View Controller?

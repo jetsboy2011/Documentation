@@ -1,7 +1,7 @@
 ---
 title: "Layered Architecture"
 linkTitle: "Layered Architecture"
-weight: 2
+weight: 20
 description: >
   Layered Architectures break a codebase up into areas according to responsibilities or concerns.
 ---
@@ -41,7 +41,7 @@ As you see with the above diagram, the arrows always point inward towards the co
 
 ### Presentation Layer
 
-The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application.  Whether the interface is html-based or an API, the ideal way to think of this layer is think about any of the other myriad of ways that your data can be presented to the user.  Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers.  As you progress you may decide to push business logic to another layer entirely (such as the Infrastructure layer).  
+The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application.  Whether the interface is html-based, an API, or even a mobile app, there are a myriad of ways that your data can be presented to the user.  Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers.  As you progress you may decide to push business logic to another layer entirely. 
 
 ### Infrastructure Layer
 

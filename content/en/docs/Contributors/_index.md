@@ -1,7 +1,7 @@
 ﻿---
 title: "Contributors"
 linkTitle: "Contributors"
-weight: 13
+weight: 90
 date: 2017-01-04
 description: >
     Learn about the contributors here!

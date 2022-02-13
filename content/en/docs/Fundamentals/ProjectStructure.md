@@ -1,8 +1,8 @@
 
 ---
-title: "RoverCore Fundamentals"
-linkTitle: "RoverCore Fundamentals"
-weight: 5
+title: "Project Structure"
+linkTitle: "Project Structure"
+weight: 10
 date: 2017-01-05
 description: >
   What can your user do with your project?

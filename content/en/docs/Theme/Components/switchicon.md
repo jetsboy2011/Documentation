@@ -1,0 +1,11 @@
+---
+title: "Switch Icon"
+linkTitle: "Switch Icon"
+date: 2022-01-18
+description: >
+  Lorem ipsum...
+---
+
+{{% pageinfo %}}
+This is a placeholder page. Replace it with your own content.
+{{% /pageinfo %}}
