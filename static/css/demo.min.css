@@ -22,3 +22,12 @@ blockquote p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+@media (min-width: 768px) {
+    .td-sidebar {
+        padding-top: 1.5rem;
+    }
+    .td-main main {
+        padding-top: 2.5rem;
+    }
+}
