@@ -1,0 +1,54 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – setup</title><link>/Documentation/tags/setup/</link><description>Recent content in setup on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><atom:link href="/Documentation/tags/setup/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Getting Started</title><link>/Documentation/docs/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/getting-started/</guid><description>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2022&lt;/a> with ASP.NET and web development workload&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0">Latest .NET 6 SDK&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Install the latest &lt;a href="https://docs.microsoft.com/en-us/ef/core/cli/dotnet">.NET &amp;amp; EF CLI Tools&lt;/a> by using this command :&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-.NET" data-lang=".NET">dotnet tool install --global dotnet-ef
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Git Client&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://desktop.github.com/">GitHub Desktop&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.gitkraken.com/">Axosoft&amp;rsquo;s GitKraken&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.git-tower.com/">Tower&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>Get the newest RoverCore template on &lt;a href="https://www.nuget.org/packages/RoverCore.Template/">nuget.org&lt;/a>.&lt;/p>
+&lt;pre tabindex="0">&lt;code>dotnet new --install RoverCore.Template
+&lt;/code>&lt;/pre>&lt;h2 id="setup">Setup&lt;/h2>
+&lt;p>To create a new project create a directory and open a command line console (cmd). Change the directory to your working folder with the following command (assuming your working folder is c:\users\&lt;strong>&lt;em>username&lt;/em>&lt;/strong>\documents\)&lt;/p>
+&lt;pre tabindex="0">&lt;code>cd c:\users\username\documents\
+&lt;/code>&lt;/pre>&lt;p>Then to create your project, type in the following command to generate a brand new solution with a name of your choosing. For this example I am using the name &lt;strong>RoverDemo&lt;/strong>.&lt;/p>
+&lt;pre tabindex="0">&lt;code>dotnet new rovercore -o RoverDemo
+&lt;/code>&lt;/pre>&lt;p>Give it a few moments. A new folder called RoverDemo will be created for you at &lt;code>c:\users\username\documents\roverdemo\&lt;/code>&lt;/p>
+&lt;h2 id="try-it-out">Try it out!&lt;/h2>
+&lt;p>The RoverDemo folder that was created will have all of the files and folders you will need to run your own starter project.&lt;/p>
+&lt;p>Here&amp;rsquo;s what you need to get your project running:&lt;/p>
+&lt;ul>
+&lt;li>Open the Solution in Visual Studio 2022&lt;/li>
+&lt;li>Initialize the SQL Server Express LocalDB
+&lt;ul>
+&lt;li>In Visual Studio, go to &lt;code>View &amp;gt; Other Windows &amp;gt; Package Manager Console&lt;/code>&lt;/li>
+&lt;li>In the console that appears at the bottom, type the command &lt;code>Update-Database&lt;/code> and wait for the migration to finish.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Run the project
+&lt;ul>
+&lt;li>Press &lt;code>Control + F5&lt;/code> to run the project without the debugger, or &lt;code>F5&lt;/code> to run the project with the debugger attached.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Seed Data
+&lt;ul>
+&lt;li>When running the project for the first time, the database will be seeded with an admin user.&lt;/li>
+&lt;li>You can log in to this account with the username &lt;code>admin&lt;/code> and the password &lt;code>Password123!&lt;/code>. It is &lt;em>highly&lt;/em> recommended that you change this password after logging in for the first time.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

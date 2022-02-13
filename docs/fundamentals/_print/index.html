@@ -16,18 +16,18 @@
 <link rel=icon type=image/png href=../../../favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=../../../favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=../../../favicons/android-192x192.png sizes=192x192>
-<title>Fundamentals | RoverCore Docs</title>
+<title>RoverCore Fundamentals | RoverCore Docs</title>
 <meta name=description content="What can your user do with your project?
 ">
-<meta property="og:title" content="Fundamentals">
+<meta property="og:title" content="RoverCore Fundamentals">
 <meta property="og:description" content="What can your user do with your project?
 ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="/Documentation/docs/fundamentals/"><meta property="og:site_name" content="RoverCore Docs">
-<meta itemprop=name content="Fundamentals">
+<meta itemprop=name content="RoverCore Fundamentals">
 <meta itemprop=description content="What can your user do with your project?
 "><meta name=twitter:card content="summary">
-<meta name=twitter:title content="Fundamentals">
+<meta name=twitter:title content="RoverCore Fundamentals">
 <meta name=twitter:description content="What can your user do with your project?
 ">
 <link rel=preload href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css as=style>
@@ -77,30 +77,31 @@ This is the multi-page printable view of this section.
 <a href=../../../docs/fundamentals/>Return to the regular view of this page</a>.
 </p>
 </div>
-<h1 class=title>Fundamentals</h1>
+<h1 class=title>RoverCore Fundamentals</h1>
 <div class=lead>What can your user do with your project?</div>
 <ul>
-<li>1: <a href=#pg-690c5644211fe01aee909e0d631e3115>Entity Framework</a></li>
+<li>1: <a href=#pg-b15f28e25efde59f9d8362c2e6248f09>Project Structure</a></li>
+<li>2: <a href=#pg-63df3512151e5e5363841215e592bb87>Data Persistence</a></li>
 <ul>
-<li>1.1: <a href=#pg-45db5876df2da9088d5a9dcddc200e4b>Creating Models</a></li>
-<li>1.2: <a href=#pg-0ccb88693d5081162b863b15533837fc>Model Attributes</a></li>
-<li>1.3: <a href=#pg-24d278c6fc908bc96acbaf63b08e5dad>Seeding Data</a></li>
-<li>1.4: <a href=#pg-615b000bd3f287d7e0e1b6848167510d>Working with the Database</a></li>
+<li>2.1: <a href=#pg-36caf8df76984c5c9a2c0499566cb8c7>Creating Entities</a></li>
+<li>2.2: <a href=#pg-294994bcab3163346d8a6e803c8a9963>Model Attributes</a></li>
+<li>2.3: <a href=#pg-c7df133a2c5b1b08fd0b9ed13aa1407f>Seeding Data</a></li>
+<li>2.4: <a href=#pg-69d585aa57968a751ef60482306cf91f>Working with the Database</a></li>
 <ul>
-<li>1.4.1: <a href=#pg-4db6e072a1be8a8dc573a73ef09fb3ce>AppSettings</a></li>
-<li>1.4.2: <a href=#pg-6fe321cbfc83cd71f11c62b064bb79bb>CLI - Command Line</a></li>
-<li>1.4.3: <a href=#pg-5f963d5655f035fa64d3aff605844302>PMC - Package Manager Console</a></li>
+<li>2.4.1: <a href=#pg-e6dde345a9431324cbfe8ce8e84e92f3>AppSettings</a></li>
+<li>2.4.2: <a href=#pg-865d994b4131a525a67ced068c79e765>CLI - Command Line</a></li>
+<li>2.4.3: <a href=#pg-153afac9afac4a2d9797e60615ab3e84>PMC - Package Manager Console</a></li>
 </ul>
 </ul>
-<li>2: <a href=#pg-96ff06caf02d1d685dacd87b9bc485eb>Services</a></li>
+<li>3: <a href=#pg-96ff06caf02d1d685dacd87b9bc485eb>Services</a></li>
 <ul>
-<li>2.1: <a href=#pg-92b68fb4cc0c460b6e3884950fa63093>DI - Dependency Injection</a></li>
-<li>2.2: <a href=#pg-32f19f497bdb8d852dcd59bfb9b61de4>Service Registration</a></li>
+<li>3.1: <a href=#pg-92b68fb4cc0c460b6e3884950fa63093>DI - Dependency Injection</a></li>
+<li>3.2: <a href=#pg-32f19f497bdb8d852dcd59bfb9b61de4>Service Registration</a></li>
 </ul>
-<li>3: <a href=#pg-b8db03d5bc2f52c75967fe6744f2dc22>Settings</a></li>
+<li>4: <a href=#pg-b8db03d5bc2f52c75967fe6744f2dc22>Settings</a></li>
 <ul>
 </ul>
-<li>4: <a href=#pg-81095302aed10421a868b92939b3381b>Options</a></li>
+<li>5: <a href=#pg-81095302aed10421a868b92939b3381b>Options</a></li>
 <ul>
 </ul>
 </ul>
@@ -120,8 +121,24 @@ This is the multi-page printable view of this section.
 </div>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-690c5644211fe01aee909e0d631e3115>1 - Entity Framework</h1>
-<div class=lead>Experience the greatness of Entity Framework and learn about what it can do.</div>
+<h1 id=pg-b15f28e25efde59f9d8362c2e6248f09>1 - Project Structure</h1>
+<div class=lead>What can your user do with your project?</div>
+<div class="pageinfo pageinfo-primary">
+<p>This is a placeholder page that shows you how to use this template site.</p>
+</div>
+<p>Think about your project’s features and use cases. Use these to choose your core tasks. Each granular use case (enable x, configure y) should have a corresponding tasks page or tasks page section. Users should be able to quickly refer to your core tasks when they need to find out how to do one specific thing, rather than having to look for the instructions in a bigger tutorial or example. Think of your tasks pages as a cookbook with different procedures your users can combine to create something more substantial.</p>
+<p>You can give each task a page, or you can group related tasks together in a page, such as tasks related to a particular feature. As well as grouping related tasks in single pages, you can also group task pages in nested folders with an index page as an overview, as seen in this example site. Or if you have a small docset like the <a href=https://docsy.dev/docs/>Docsy User Guide</a> with no Tutorials or Concepts pages, consider adding your feature-specific pages at the top level of your docs rather than in a Tasks section.</p>
+<p>Each task should give the user</p>
+<ul>
+<li>The prerequisites for this task, if any (this can be specified at the top of a multi-task page if they&rsquo;re the same for all the page&rsquo;s tasks. &ldquo;All these tasks assume that you understand&mldr;.and that you have already&mldr;.").</li>
+<li>What this task accomplishes.</li>
+<li>Instructions for the task. If it involves editing a file, running a command, or writing code, provide code-formatted example snippets to show the user what to do! If there are multiple steps, provide them as a numbered list.</li>
+<li>If appropriate, links to related concept, tutorial, or example pages.</li>
+</ul>
+</div>
+<div class=td-content style=page-break-before:always>
+<h1 id=pg-63df3512151e5e5363841215e592bb87>2 - Data Persistence</h1>
+<div class=lead>RoverCore utilizes Entity Framework for data persistence. Entity Framework Core is a modern object-database mapper for .NET.</div>
 <div class="pageinfo pageinfo-primary">
 <p>Entity Framework is a very large topic. In this section, we will be going over the basics of EF Core. For more information, please visit <a href=https://docs.microsoft.com/en-us/ef/>Entity Framework Documentation</a>.</p>
 </div>
@@ -130,8 +147,8 @@ This is the multi-page printable view of this section.
 <h2 id=how-do-i-use-it>How do I use it?</h2>
 </div>
 <div class=td-content>
-<h1 id=pg-45db5876df2da9088d5a9dcddc200e4b>1.1 - Creating Models</h1>
-<div class=lead>Learn more about models in the MVC pattern here.</div>
+<h1 id=pg-36caf8df76984c5c9a2c0499566cb8c7>2.1 - Creating Entities</h1>
+<div class=lead>Learn more about how to create your own data models in RoverCore.</div>
 <div class="pageinfo pageinfo-primary">
 <p>Models are a core part of ASP.NET. It is part of the structure, MVC, meaning Model View Controller.</p>
 </div>
@@ -141,42 +158,42 @@ This is the multi-page printable view of this section.
 <p>Now that you have successfully created a model, you can head on to the next section, <a href=../../../docs/fundamentals/entity-framework/model-attributes>Model Attributes</a>.</p>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-0ccb88693d5081162b863b15533837fc>1.2 - Model Attributes</h1>
+<h1 id=pg-294994bcab3163346d8a6e803c8a9963>2.2 - Model Attributes</h1>
 <div class=lead>Learn more about decorating models with attributes to secure your data.</div>
 <div class="pageinfo pageinfo-primary">
 <p>This is a placeholder page that shows you how to use this template site.</p>
 </div>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-24d278c6fc908bc96acbaf63b08e5dad>1.3 - Seeding Data</h1>
+<h1 id=pg-c7df133a2c5b1b08fd0b9ed13aa1407f>2.3 - Seeding Data</h1>
 <div class=lead>Learn how to setup your database with preset data for you to use.</div>
 <h2 id=what-is-seeding-data>What is seeding data?</h2>
 <h2 id=why-would-i-seed-data>Why would I seed data?</h2>
 <h2 id=how-do-i-seed-data>How do I seed data?</h2>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-615b000bd3f287d7e0e1b6848167510d>1.4 - Working with the Database</h1>
+<h1 id=pg-69d585aa57968a751ef60482306cf91f>2.4 - Working with the Database</h1>
 <div class=lead>Learn about migrations and why they are important.</div>
 <h2 id=what-is-a-migration>What is a migration?</h2>
 <h2 id=why-use-it>Why use it?</h2>
 <h2 id=how-do-i-use-it>How do I use it?</h2>
 </div>
 <div class=td-content>
-<h1 id=pg-4db6e072a1be8a8dc573a73ef09fb3ce>1.4.1 - AppSettings</h1>
+<h1 id=pg-e6dde345a9431324cbfe8ce8e84e92f3>2.4.1 - AppSettings</h1>
 <div class=lead>Learn about AppSettings.json and how to configure the database.</div>
 <h2 id=what-is-appsettings>What is AppSettings?</h2>
 <h2 id=why-use-it>Why use it?</h2>
 <h2 id=how-do-i-use-it>How do I use it?</h2>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-6fe321cbfc83cd71f11c62b064bb79bb>1.4.2 - CLI - Command Line</h1>
+<h1 id=pg-865d994b4131a525a67ced068c79e765>2.4.2 - CLI - Command Line</h1>
 <div class=lead>Learn how to run your application using the command line.</div>
 <h2 id=what-is-the-command-line>What is the command line?</h2>
 <h2 id=why-use-it>Why use it?</h2>
 <h2 id=how-do-i-use-it>How do I use it?</h2>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-5f963d5655f035fa64d3aff605844302>1.4.3 - PMC - Package Manager Console</h1>
+<h1 id=pg-153afac9afac4a2d9797e60615ab3e84>2.4.3 - PMC - Package Manager Console</h1>
 <div class=lead>Learn about Nuget Packages and how to use the PMC.</div>
 <h2 id=what-is-a-nuget-package>What is a Nuget Package?</h2>
 <h2 id=what-is-the-package-manager-console>What is the Package Manager Console?</h2>
@@ -184,27 +201,27 @@ This is the multi-page printable view of this section.
 <h2 id=how-do-i-use-it>How do I use it?</h2>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-96ff06caf02d1d685dacd87b9bc485eb>2 - Services</h1>
+<h1 id=pg-96ff06caf02d1d685dacd87b9bc485eb>3 - Services</h1>
 <div class=lead>Learn about services and why they can be useful.</div>
 <h2 id=what-is-a-service>What is a service?</h2>
 <h2 id=why-use-it>Why use it?</h2>
 <h2 id=how-do-i-use-it>How do I use it?</h2>
 </div>
 <div class=td-content>
-<h1 id=pg-92b68fb4cc0c460b6e3884950fa63093>2.1 - DI - Dependency Injection</h1>
+<h1 id=pg-92b68fb4cc0c460b6e3884950fa63093>3.1 - DI - Dependency Injection</h1>
 <div class=lead>Learn about DI and why this simple concept is useful.</div>
 <h2 id=what-is-dependency-injection>What is Dependency Injection?</h2>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-32f19f497bdb8d852dcd59bfb9b61de4>2.2 - Service Registration</h1>
+<h1 id=pg-32f19f497bdb8d852dcd59bfb9b61de4>3.2 - Service Registration</h1>
 <div class=lead>Learn about how to register a custom service for you to use.</div>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-b8db03d5bc2f52c75967fe6744f2dc22>3 - Settings</h1>
+<h1 id=pg-b8db03d5bc2f52c75967fe6744f2dc22>4 - Settings</h1>
 <div class=lead>Learn about the settings here.</div>
 </div>
 <div class=td-content style=page-break-before:always>
-<h1 id=pg-81095302aed10421a868b92939b3381b>4 - Options</h1>
+<h1 id=pg-81095302aed10421a868b92939b3381b>5 - Options</h1>
 <div class=lead>Learn about options here.</div>
 </div>
 </main>

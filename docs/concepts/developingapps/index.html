@@ -1,0 +1,463 @@
+<!doctype html><html lang=en class=no-js>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=generator content="Hugo 0.92.2">
+<meta name=robots content="index, follow">
+<link rel="shortcut icon" href=../../../favicons/favicon.ico>
+<link rel=apple-touch-icon href=../../../favicons/apple-touch-icon-180x180.png sizes=180x180>
+<link rel=icon type=image/png href=../../../favicons/favicon-16x16.png sizes=16x16>
+<link rel=icon type=image/png href=../../../favicons/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=../../../favicons/android-36x36.png sizes=36x36>
+<link rel=icon type=image/png href=../../../favicons/android-48x48.png sizes=48x48>
+<link rel=icon type=image/png href=../../../favicons/android-72x72.png sizes=72x72>
+<link rel=icon type=image/png href=../../../favicons/android-96x96.png sizes=96x96>
+<link rel=icon type=image/png href=../../../favicons/android-144x144.png sizes=144x144>
+<link rel=icon type=image/png href=../../../favicons/android-192x192.png sizes=192x192>
+<title>Develop ASP.NET Core MVC apps | RoverCore Docs</title>
+<meta name=description content="ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications. 
+">
+<meta property="og:title" content="Develop ASP.NET Core MVC apps">
+<meta property="og:description" content="ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications. 
+">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/Documentation/docs/concepts/developingapps/"><meta property="article:section" content="docs">
+<meta property="article:modified_time" content="2022-02-13T18:21:58-05:00"><meta property="og:site_name" content="RoverCore Docs">
+<meta itemprop=name content="Develop ASP.NET Core MVC apps">
+<meta itemprop=description content="ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications. 
+">
+<meta itemprop=dateModified content="2022-02-13T18:21:58-05:00">
+<meta itemprop=wordCount content="2281">
+<meta itemprop=keywords content><meta name=twitter:card content="summary">
+<meta name=twitter:title content="Develop ASP.NET Core MVC apps">
+<meta name=twitter:description content="ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications. 
+">
+<link rel=preload href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css as=style>
+<link href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css rel=stylesheet integrity>
+<script src=https://code.jquery.com/jquery-3.5.1.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+<link rel=stylesheet href=../../../css/prism.css>
+<link rel=stylesheet href=../../../css/tabler.min.css><link rel=stylesheet href=../../../css/tabler-flags.min.css><link rel=stylesheet href=../../../css/tabler-payments.min.css><link rel=stylesheet href=../../../css/tabler-vendors.min.css><link rel=stylesheet href=../../../css/demo.min.css>
+<script type=text/javascript src=../../../js/tabler.js></script>
+<style type=text/css>@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';.breadcrumb{margin-bottom:1rem!important}.feedback--title{margin-top:4rem}:root{--tblr-font-sans-serif:"Poppins",-apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif}.lead{font-size:1.1rem}</style>
+</head>
+<body class=td-page>
+<header>
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+<a class=navbar-brand href=../../../>
+<span class=navbar-logo><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zm7.993 21.8577c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="text-uppercase font-weight-bold">RoverCore Docs</span>
+</a>
+<div class="td-navbar-nav-scroll ml-md-auto" id=main_navbar>
+<ul class="navbar-nav mt-2 mt-lg-0">
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href=../../../about/><span>About</span></a>
+</li>
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class="nav-link active" href=../../../docs/><span class=active>Documentation</span></a>
+</li>
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href=../../../blog/><span>Blog</span></a>
+</li>
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href=../../../community/><span>Community</span></a>
+</li>
+</ul>
+</div>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off>
+</div>
+</nav>
+</header>
+<div class="container-fluid td-outer">
+<div class=td-main>
+<div class="row flex-xl-nowrap">
+<aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+<div id=td-sidebar-menu class=td-sidebar__inner>
+<form class="td-sidebar__search d-flex align-items-center">
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off>
+<button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
+</button>
+</form>
+<nav class="collapse td-sidebar-nav" id=td-section-nav>
+<ul class="td-sidebar-nav__section pr-md-3 ul-0">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docs-li>
+<a href=../../../docs/ title="RoverCore Boilerplate Documentation" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id=m-docs><span>Documentation</span></a>
+<ul class=ul-1>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsoverview-li>
+<a href=../../../docs/overview/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsoverview><span>Overview</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docswhats-new-li>
+<a href=../../../docs/whats-new/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docswhats-new><span>What's New</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsgetting-started-li>
+<a href=../../../docs/getting-started/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsgetting-started><span>Getting Started</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsgetting-startedexample-page-li>
+<a href=../../../docs/getting-started/example-page/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsgetting-startedexample-page><span>Example Page</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docsconcepts-li>
+<a href=../../../docs/concepts/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsconcepts><span>Concepts</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docsconceptsdevelopingapps-li>
+<a href=../../../docs/concepts/developingapps/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docsconceptsdevelopingapps><span class=td-sidebar-nav-active-item>Develop ASP.NET Core MVC apps</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsconceptsmvc-li>
+<a href=../../../docs/concepts/mvc/ title="MVC - Model View Controller" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsconceptsmvc><span>Model View Controller</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsconceptslayeredarchitecture-li>
+<a href=../../../docs/concepts/layeredarchitecture/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsconceptslayeredarchitecture><span>Layered Architecture</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsconceptsauthentication-li>
+<a href=../../../docs/concepts/authentication/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsconceptsauthentication><span>Authentication</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentals-li>
+<a href=../../../docs/fundamentals/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentals><span>RoverCore Fundamentals</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsprojectstructure-li>
+<a href=../../../docs/fundamentals/projectstructure/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsprojectstructure><span>Project Structure</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsdata-persistence-li>
+<a href=../../../docs/fundamentals/data-persistence/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsdata-persistence><span>Data Persistence</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistencecreating-entities-li>
+<a href=../../../docs/fundamentals/data-persistence/creating-entities/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistencecreating-entities><span>Creating Entities</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistencemodel-attributes-li>
+<a href=../../../docs/fundamentals/data-persistence/model-attributes/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistencemodel-attributes><span>Model Attributes</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistenceseeding-data-li>
+<a href=../../../docs/fundamentals/data-persistence/seeding-data/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistenceseeding-data><span>Seeding Data</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsdata-persistenceworking-with-the-database-li>
+<a href=../../../docs/fundamentals/data-persistence/working-with-the-database/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsdata-persistenceworking-with-the-database><span>Working with the Database</span></a>
+<ul class="ul-4 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistenceworking-with-the-databaseappsettings-li>
+<a href=../../../docs/fundamentals/data-persistence/working-with-the-database/appsettings/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistenceworking-with-the-databaseappsettings><span>AppSettings</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistenceworking-with-the-databasecommand-line-li>
+<a href=../../../docs/fundamentals/data-persistence/working-with-the-database/command-line/ title="CLI - Command Line" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistenceworking-with-the-databasecommand-line><span>Command Line</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistenceworking-with-the-databasepmc-li>
+<a href=../../../docs/fundamentals/data-persistence/working-with-the-database/pmc/ title="PMC - Package Manager Console" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistenceworking-with-the-databasepmc><span>Package Manager Console</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsservices-li>
+<a href=../../../docs/fundamentals/services/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsservices><span>Services</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsservicesdependency-injection-li>
+<a href=../../../docs/fundamentals/services/dependency-injection/ title="DI - Dependency Injection" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsservicesdependency-injection><span>Dependency Injection</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsservicesservice-registration-li>
+<a href=../../../docs/fundamentals/services/service-registration/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsservicesservice-registration><span>Service Registration</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalssettings-li>
+<a href=../../../docs/fundamentals/settings/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalssettings><span>Settings</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsoptions-li>
+<a href=../../../docs/fundamentals/options/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsoptions><span>Options</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsinfrastructure-li>
+<a href=../../../docs/infrastructure/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsinfrastructure><span>Infrastructure</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsinfrastructurebg-tasks-li>
+<a href=../../../docs/infrastructure/bg-tasks/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsinfrastructurebg-tasks><span>Background Tasks</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docscontribution-guidelines-li>
+<a href=../../../docs/contribution-guidelines/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docscontribution-guidelines><span>Contribution Guidelines</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docscontribution-guidelinesrovercore-li>
+<a href=../../../docs/contribution-guidelines/rovercore/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docscontribution-guidelinesrovercore><span>RoverCore</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docscontribution-guidelinesrovercore-documentation-li>
+<a href=../../../docs/contribution-guidelines/rovercore-documentation/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docscontribution-guidelinesrovercore-documentation><span>RoverCore Documentation</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docstutorials-li>
+<a href=../../../docs/tutorials/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docstutorials><span>Tutorials</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialslibman-li>
+<a href=../../../docs/tutorials/libman/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialslibman><span>Adding Clientside Javascript Packages</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialsscaffolding-li>
+<a href=../../../docs/tutorials/scaffolding/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialsscaffolding><span>Scaffolding a Controller</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialsjwt-li>
+<a href=../../../docs/tutorials/jwt/ title="Using JWT - JSON Web Tokens" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialsjwt><span>Using JSON Web Tokens</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docstheme-li>
+<a href=../../../docs/theme/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docstheme><span>Theme</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsthemecomponents-li>
+<a href=../../../docs/theme/components/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsthemecomponents><span>Components</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsalerts-li>
+<a href=../../../docs/theme/components/alerts/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsalerts><span>Alerts</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsavatars-li>
+<a href=../../../docs/theme/components/avatars/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsavatars><span>Avatars</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsbadges-li>
+<a href=../../../docs/theme/components/badges/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsbadges><span>Badges</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsbreadcrumb-li>
+<a href=../../../docs/theme/components/breadcrumb/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsbreadcrumb><span>Breadcrumb</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsbuttons-li>
+<a href=../../../docs/theme/components/buttons/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsbuttons><span>Buttons</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentscards-li>
+<a href=../../../docs/theme/components/cards/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentscards><span>Cards</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentscarousel-li>
+<a href=../../../docs/theme/components/carousel/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentscarousel><span>Carousel</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsdivider-li>
+<a href=../../../docs/theme/components/divider/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsdivider><span>Divider</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsdropdowns-li>
+<a href=../../../docs/theme/components/dropdowns/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsdropdowns><span>Dropdowns</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsemptystates-li>
+<a href=../../../docs/theme/components/emptystates/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsemptystates><span>Empty States</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsmodals-li>
+<a href=../../../docs/theme/components/modals/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsmodals><span>Modals</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentspageheaders-li>
+<a href=../../../docs/theme/components/pageheaders/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentspageheaders><span>Page Headers</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsplaceholder-li>
+<a href=../../../docs/theme/components/placeholder/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsplaceholder><span>Placeholder</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsprogress-li>
+<a href=../../../docs/theme/components/progress/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsprogress><span>Progress</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsrangeslider-li>
+<a href=../../../docs/theme/components/rangeslider/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsrangeslider><span>Range Slider</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsribbons-li>
+<a href=../../../docs/theme/components/ribbons/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsribbons><span>Ribbons</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsspinners-li>
+<a href=../../../docs/theme/components/spinners/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsspinners><span>Spinners</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsstatuses-li>
+<a href=../../../docs/theme/components/statuses/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsstatuses><span>Statuses</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentssteps-li>
+<a href=../../../docs/theme/components/steps/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentssteps><span>Steps</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsswitchicon-li>
+<a href=../../../docs/theme/components/switchicon/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsswitchicon><span>Switch Icon</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstables-li>
+<a href=../../../docs/theme/components/tables/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstables><span>Tables</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstabs-li>
+<a href=../../../docs/theme/components/tabs/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstabs><span>Tabs</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstimelines-li>
+<a href=../../../docs/theme/components/timelines/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstimelines><span>Timelines</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstoasts-li>
+<a href=../../../docs/theme/components/toasts/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstoasts><span>Toasts</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstooltips-li>
+<a href=../../../docs/theme/components/tooltips/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstooltips><span>Tooltips</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsthemecontent-li>
+<a href=../../../docs/theme/content/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsthemecontent><span>Content</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecontentcolors-li>
+<a href=../../../docs/theme/content/colors/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecontentcolors><span>Colors</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecontenticons-li>
+<a href=../../../docs/theme/content/icons/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecontenticons><span>Icons</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecontenttypography-li>
+<a href=../../../docs/theme/content/typography/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecontenttypography><span>Typography</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsthemeformcomponents-li>
+<a href=../../../docs/theme/formcomponents/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsthemeformcomponents><span>Form Components</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemeformcomponentselements-li>
+<a href=../../../docs/theme/formcomponents/elements/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemeformcomponentselements><span>Form Elements</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemeformcomponentshelpers-li>
+<a href=../../../docs/theme/formcomponents/helpers/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemeformcomponentshelpers><span>Form Helpers</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemeformcomponentsimagecheck-li>
+<a href=../../../docs/theme/formcomponents/imagecheck/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemeformcomponentsimagecheck><span>Image Check</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemeformcomponentsvalidationstates-li>
+<a href=../../../docs/theme/formcomponents/validationstates/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemeformcomponentsvalidationstates><span>Validation States</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsthemelayout-li>
+<a href=../../../docs/theme/layout/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsthemelayout><span>Layout</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemelayoutheaders-li>
+<a href=../../../docs/theme/layout/headers/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemelayoutheaders><span>Page headers</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docslicense-li>
+<a href=../../../docs/license/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docslicense><span>License</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docscontributors-li>
+<a href=../../../docs/contributors/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docscontributors><span>Contributors</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+<aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a href=https://github.com/rovercore/documentation/tree/main/content/en/docs/Concepts/DevelopingApps.md class=td-page-meta--view target=_blank rel=noopener><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+<a href=https://github.com/rovercore/documentation/edit/main/content/en/docs/Concepts/DevelopingApps.md class=td-page-meta--edit target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/rovercore/documentation/new/main/content/en/docs/Concepts/DevelopingApps.md?filename=change-me.md&value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60getting-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A" class=td-page-meta--child target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Create child page</a>
+<a href="https://github.com/rovercore/documentation/issues/new?title=Develop%20ASP.NET%20Core%20MVC%20apps" class=td-page-meta--issue target=_blank rel=noopener><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href=https://github.com/rovercore/rovercore/issues/new class=td-page-meta--project-issue target=_blank rel=noopener><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+<a id=print href=../../../Documentation/docs/concepts/_print/><i class="fa fa-print fa-fw"></i> Print entire section</a>
+</div>
+<div class=td-toc><nav id=TableOfContents>
+<ul>
+<li><a href=#mvc-and-razor-pages>MVC and Razor Pages</a>
+<ul>
+<li><a href=#why-razor-pages>Why Razor Pages?</a></li>
+<li><a href=#when-to-use-mvc>When to use MVC</a></li>
+</ul>
+</li>
+<li><a href=#working-with-dependencies>Working with dependencies</a>
+<ul>
+<li><a href=#declare-your-dependencies>Declare your dependencies</a></li>
+</ul>
+</li>
+<li><a href=#structuring-the-application>Structuring the application</a>
+<ul>
+<li><a href=#feature-organization>Feature organization</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+<div class="taxonomy taxonomy-terms-cloud taxo-tags">
+<h5 class=taxonomy-title>Tag Cloud</h5>
+<ul class=taxonomy-terms>
+<li><a class=taxonomy-term href=../../../Documentation/tags/docs/ data-taxonomy-term=docs><span class=taxonomy-label>docs</span><span class=taxonomy-count>2</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/icons/ data-taxonomy-term=icons><span class=taxonomy-label>icons</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/installation/ data-taxonomy-term=installation><span class=taxonomy-label>installation</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/sample/ data-taxonomy-term=sample><span class=taxonomy-label>sample</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/setup/ data-taxonomy-term=setup><span class=taxonomy-label>setup</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/style/ data-taxonomy-term=style><span class=taxonomy-label>style</span><span class=taxonomy-count>2</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/test/ data-taxonomy-term=test><span class=taxonomy-label>test</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/typography/ data-taxonomy-term=typography><span class=taxonomy-label>typography</span><span class=taxonomy-count>1</span></a></li>
+</ul>
+</div>
+<div class="taxonomy taxonomy-terms-cloud taxo-categories">
+<h5 class=taxonomy-title>Categories</h5>
+<ul class=taxonomy-terms>
+<li><a class=taxonomy-term href=../../../Documentation/categories/content/ data-taxonomy-term=content><span class=taxonomy-label>Content</span><span class=taxonomy-count>2</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/categories/examples/ data-taxonomy-term=examples><span class=taxonomy-label>Examples</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/categories/getting-started/ data-taxonomy-term=getting-started><span class=taxonomy-label>Getting Started</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/categories/setup/ data-taxonomy-term=setup><span class=taxonomy-label>Setup</span><span class=taxonomy-count>1</span></a></li>
+</ul>
+</div>
+</aside>
+<main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
+<nav aria-label=breadcrumb class=td-breadcrumbs>
+<ol class=breadcrumb>
+<li class=breadcrumb-item>
+<a href=../../../Documentation/docs/>Documentation</a>
+</li>
+<li class=breadcrumb-item>
+<a href=../../../Documentation/docs/concepts/>Concepts</a>
+</li>
+<li class="breadcrumb-item active" aria-current=page>
+<a href=../../../Documentation/docs/concepts/developingapps/>Develop ASP.NET Core MVC apps</a>
+</li>
+</ol>
+</nav>
+<div class=td-content>
+<h1>Develop ASP.NET Core MVC apps</h1>
+<div class=lead>ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications.</div>
+<header class=article-meta>
+</header>
+<blockquote>
+<p>The following text contains excerpts that are creative-commons licensed from Microsoft. The full article can be found <a href=https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/develop-asp-net-core-mvc-apps>here</a>.</p>
+</blockquote>
+<p>ASP.NET Core is a cross-platform, open-source framework for building modern cloud-optimized web applications. ASP.NET Core apps are lightweight and modular, with built-in support for dependency injection, enabling greater testability and maintainability. Combined with MVC, which supports building modern web APIs in addition to view-based apps, ASP.NET Core is a powerful framework with which to build enterprise web applications.</p>
+<h2 id=mvc-and-razor-pages>MVC and Razor Pages</h2>
+<p>ASP.NET Core MVC offers many features that are useful for building web-based APIs and apps. The term MVC stands for &ldquo;Model-View-Controller&rdquo;, a UI pattern that breaks up the responsibilities of responding to user requests into several parts. In addition to following this pattern, you can also implement features in your ASP.NET Core apps as Razor Pages.</p>
+<p>Razor Pages are built into ASP.NET Core MVC, and use the same features for routing, model binding, filters, authorization, etc. However, instead of having separate folders and files for Controllers, Models, Views, etc. and using attribute-based routing, Razor Pages are placed in a single folder ("/Pages"), route based on their relative location in this folder, and handle requests with handlers instead of controller actions. As a result, when working with Razor Pages, all of the files and classes you need are typically colocated, not spread throughout the web project.</p>
+<p>When you create a new ASP.NET Core App, you should have a plan in mind for the kind of app you want to build. When creating a new project, in your IDE or using the <code>dotnet new</code> CLI command, you will choose from several templates. The most common project templates are Empty, Web API, Web App, and Web App (Model-View-Controller). Although you can only make this decision when you first create a project, it&rsquo;s not an irrevocable decision. The Web API project uses standard Model-View-Controller controllers – it just lacks Views by default. Likewise, the default Web App template uses Razor Pages, and so also lacks a Views folder. You can add a Views folder to these projects later to support view-based behavior. Web API and Model-View-Controller projects don&rsquo;t include a Pages folder by default, but you can add one later to support Razor Pages-based behavior. You can think of these three templates as supporting three different kinds of default user interaction: data (web API), page-based, and view-based. However, you can mix and match any or all of these templates within a single project if you wish.</p>
+<h3 id=why-razor-pages>Why Razor Pages?</h3>
+<p>Razor Pages is the default approach for new web applications in Visual Studio. Razor Pages offers a simpler way of building page-based application features, such as non-SPA forms. Using controllers and views, it was common for applications to have very large controllers that worked with many different dependencies and view models and returned many different views. This resulted in more complexity and often resulted in controllers that didn&rsquo;t follow the Single Responsibility Principle or Open/Closed Principles effectively. Razor Pages addresses this issue by encapsulating the server-side logic for a given logical &ldquo;page&rdquo; in a web application with its Razor markup. A Razor Page that has no server-side logic can only consist of a Razor file (for instance, &ldquo;Index.cshtml&rdquo;). However, most non-trivial Razor Pages will have an associated page model class, which by convention is named the same as the Razor file with a &ldquo;.cs&rdquo; extension (for example, &ldquo;Index.cshtml.cs&rdquo;).</p>
+<p>A Razor Page&rsquo;s page model combines the responsibilities of an MVC controller and a viewmodel. Instead of handling requests with controller action methods, page model handlers like &ldquo;OnGet()&rdquo; are executed, rendering their associated page by default. Razor Pages simplifies the process of building individual pages in an ASP.NET Core app, while still providing all the architectural features of ASP.NET Core MVC. They&rsquo;re a good default choice for new page-based functionality.</p>
+<h3 id=when-to-use-mvc>When to use MVC</h3>
+<p>If you&rsquo;re building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template. Otherwise, it&rsquo;s easy to add controllers and associated API endpoints to any ASP.NET Core app. Use the view-based MVC approach if you&rsquo;re migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you&rsquo;ve made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration.</p>
+<p>Whether you choose to build your web app using Razor Pages or MVC views, your app will have similar performance and will include support for dependency injection, filters, model binding, validation, and so on.</p>
+<h2 id=working-with-dependencies>Working with dependencies</h2>
+<p>ASP.NET Core has built-in support for and internally makes use of a technique known as <a href=../../../aspnet/core/fundamentals/dependency-injection>dependency injection</a>. Dependency injection is a technique that enables loose coupling between different parts of an application. Looser coupling is desirable because it makes it easier to isolate parts of the application, allowing for testing or replacement. It also makes it less likely that a change in one part of the application will have an unexpected impact somewhere else in the application. Dependency injection is based on the dependency inversion principle, and is often key to achieving the open/closed principle. When evaluating how your application works with its dependencies, beware of the <a href=https://deviq.com/static-cling/>static cling</a> code smell, and remember the aphorism &ldquo;<a href=https://ardalis.com/new-is-glue>new is glue</a>.&rdquo;</p>
+<p>Static cling occurs when your classes make calls to static methods, or access static properties, which have side effects or dependencies on infrastructure. For example, if you have a method that calls a static method, which in turn writes to a database, your method is tightly coupled to the database. Anything that breaks that database call will break your method. Testing such methods is notoriously difficult, since such tests either require commercial mocking libraries to mock the static calls, or can only be tested with a test database in place. Static calls that don&rsquo;t have any dependence on infrastructure, especially those calls that are completely stateless, are fine to call and have no impact on coupling or testability (beyond coupling code to the static call itself).</p>
+<p>Many developers understand the risks of static cling and global state, but will still tightly couple their code to specific implementations through direct instantiation. &ldquo;New is glue&rdquo; is meant to be a reminder of this coupling, and not a general condemnation of the use of the <code>new</code> keyword. Just as with static method calls, new instances of types that have no external dependencies typically do not tightly couple code to implementation details or make testing more difficult. But each time a class is instantiated, take just a brief moment to consider whether it makes sense to hard-code that specific instance in that particular location, or if it would be a better design to request that instance as a dependency.</p>
+<h3 id=declare-your-dependencies>Declare your dependencies</h3>
+<p>ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in <em>Program.cs</em> or in a <code>Startup</code> class.</p>
+<blockquote>
+<p><div class="mb-2 align-middle"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox me-1" style="color:#805d93;margin-bottom:.08rem;stroke-width:2" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="9 11 12 14 20 6"/><path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg>
+<div class=d-inline-block style=font-weight:900;font-size:1rem;color:#805d93>Note</div>
+</div>
+Configuring apps completely in <em>Program.cs</em> is the default approach for .NET 6 and Visual Studio 2022 apps. Project templates have been updated to help you get started with this new approach. ASP.NET Core projects can still use a <code>Startup</code> class, if desired.</p>
+</blockquote>
+<h4 id=configure-services-in-_programcs_>Configure services in <em>Program.cs</em></h4>
+<p>For very simple apps, you can wire up dependencies directly in <em>Program.cs</em> file using a <code>WebApplicationBuilder</code>. Once all needed services have been added, the builder is used to create the app.</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#204a87;font-weight:700>var</span> <span style=color:#000>builder</span> <span style=color:#000;font-weight:700>=</span> <span style=color:#000>WebApplication</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>CreateBuilder</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>args</span><span style=color:#000;font-weight:700>);</span>
+
+<span style=color:#8f5902;font-style:italic>// Add services to the container.
+</span><span style=color:#8f5902;font-style:italic></span><span style=color:#000>builder</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>Services</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>AddRazorPages</span><span style=color:#000;font-weight:700>();</span>
+
+<span style=color:#204a87;font-weight:700>var</span> <span style=color:#000>app</span> <span style=color:#000;font-weight:700>=</span> <span style=color:#000>builder</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>Build</span><span style=color:#000;font-weight:700>();</span>
+</code></pre></div><h4 id=configure-services-in-_startupcs_>Configure services in <em>Startup.cs</em></h4>
+<p>The <em>Startup.cs</em> is itself configured to support dependency injection at several points. If you&rsquo;re using a <code>Startup</code> class, you can give it a constructor and it can request dependencies through it, like so:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Startup</span>
+<span style=color:#000;font-weight:700>{</span>
+    <span style=color:#204a87;font-weight:700>public</span> <span style=color:#000>Startup</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>IHostingEnvironment</span> <span style=color:#000>env</span><span style=color:#000;font-weight:700>)</span>
+    <span style=color:#000;font-weight:700>{</span>
+        <span style=color:#204a87;font-weight:700>var</span> <span style=color:#000>builder</span> <span style=color:#000;font-weight:700>=</span> <span style=color:#204a87;font-weight:700>new</span> <span style=color:#000>ConfigurationBuilder</span><span style=color:#000;font-weight:700>()</span>
+            <span style=color:#000;font-weight:700>.</span><span style=color:#000>SetBasePath</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>env</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>ContentRootPath</span><span style=color:#000;font-weight:700>)</span>
+            <span style=color:#000;font-weight:700>.</span><span style=color:#000>AddJsonFile</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>&#34;appsettings.json&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>optional</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>false</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>reloadOnChange</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>)</span>
+            <span style=color:#000;font-weight:700>.</span><span style=color:#000>AddJsonFile</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>$&#34;appsettings.{env.EnvironmentName}.json&#34;</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>optional</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>);</span>
+    <span style=color:#000;font-weight:700>}</span>
+<span style=color:#000;font-weight:700>}</span>
+</code></pre></div><p>The <code>Startup</code> class is interesting in that there are no explicit type requirements for it. It doesn&rsquo;t inherit from a special <code>Startup</code> base class, nor does it implement any particular interface. You can give it a constructor, or not, and you can specify as many parameters on the constructor as you want. When the web host you&rsquo;ve configured for your application starts, it will call the <code>Startup</code> class (if you&rsquo;ve told it to use one), and will use dependency injection to populate any dependencies the <code>Startup</code> class requires. Of course, if you request parameters that aren&rsquo;t configured in the services container used by ASP.NET Core, you&rsquo;ll get an exception, but as long as you stick to dependencies the container knows about, you can request anything you want.</p>
+<p>Dependency injection is built into your ASP.NET Core apps right from the start, when you create the Startup instance. It doesn&rsquo;t stop there for the Startup class. You can also request dependencies in the <code>Configure</code> method:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>Configure</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>IApplicationBuilder</span> <span style=color:#000>app</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#000>IHostingEnvironment</span> <span style=color:#000>env</span><span style=color:#000;font-weight:700>,</span>
+    <span style=color:#000>ILoggerFactory</span> <span style=color:#000>loggerFactory</span><span style=color:#000;font-weight:700>)</span>
+<span style=color:#000;font-weight:700>{</span>
+
+<span style=color:#000;font-weight:700>}</span>
+</code></pre></div><p>The ConfigureServices method is the exception to this behavior; it must take just one parameter of type <code>IServiceCollection</code>. It doesn&rsquo;t really need to support dependency injection, since on the one hand it is responsible for adding objects to the services container, and on the other it has access to all currently configured services via the IServiceCollection parameter. Thus, you can work with dependencies defined in the ASP.NET Core services collection in every part of the <code>Startup</code> class, either by requesting the needed service as a parameter or by working with the <code>IServiceCollection</code> in <code>ConfigureServices</code>.</p>
+<blockquote>
+<p><div class="mb-2 align-middle"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checkbox me-1" style="color:#805d93;margin-bottom:.08rem;stroke-width:2" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="9 11 12 14 20 6"/><path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg>
+<div class=d-inline-block style=font-weight:900;font-size:1rem;color:#805d93>Note</div>
+</div>
+If you need to ensure certain services are available to your <code>Startup</code> class, you can configure them using an <code>IWebHostBuilder</code> and its <code>ConfigureServices</code> method inside the <code>CreateDefaultBuilder</code> call.</p>
+</blockquote>
+<p>The Startup class is a model for how you should structure other parts of your ASP.NET Core application, from Controllers to Middleware to Filters to your own Services. In each case, you should follow the <a href=https://deviq.com/explicit-dependencies-principle/>Explicit Dependencies Principle</a>, requesting your dependencies rather than directly creating them, and leveraging dependency injection throughout your application. Be careful of where and how you directly instantiate implementations, especially services and objects that work with infrastructure or have side effects. Prefer working with abstractions defined in your application core and passed in as arguments to hardcoding references to specific implementation types.</p>
+<h2 id=structuring-the-application>Structuring the application</h2>
+<p>Monolithic applications typically have a single entry point. In the case of an ASP.NET Core web application, the entry point will be the ASP.NET Core web project. However, that doesn&rsquo;t mean the solution should consist of just a single project. It&rsquo;s useful to break up the application into different layers in order to follow separation of concerns. Once broken up into layers, it&rsquo;s helpful to go beyond folders to separate projects, which can help achieve better encapsulation. The best approach to achieve these goals with an ASP.NET Core application is a variation of the Clean Architecture discussed in chapter 5. Following this approach, the application&rsquo;s solution will comprise separate libraries for the UI, Infrastructure, and ApplicationCore.</p>
+<p>In addition to these projects, separate test projects are included as well (Testing is discussed in Chapter 9).</p>
+<p>The application&rsquo;s object model and interfaces should be placed in the ApplicationCore project. This project will have as few dependencies as possible (and none on specific infrastructure concerns), and the other projects in the solution will reference it. Business entities that need to be persisted are defined in the ApplicationCore project, as are services that do not directly depend on infrastructure.</p>
+<p>Implementation details, such as how persistence is performed or how notifications might be sent to a user, are kept in the Infrastructure project. This project will reference implementation-specific packages such as Entity Framework Core, but should not expose details about these implementations outside of the project. Infrastructure services and repositories should implement interfaces that are defined in the ApplicationCore project, and its persistence implementations are responsible for retrieving and storing entities defined in ApplicationCore.</p>
+<p>The ASP.NET Core UI project is responsible for any UI level concerns, but should not include business logic or infrastructure details. In fact, ideally it shouldn&rsquo;t even have a dependency on the Infrastructure project, which will help ensure no dependency between the two projects is introduced accidentally. This can be achieved using a third-party DI container like Autofac, which allows you to define DI rules in Module classes in each project.</p>
+<p>Another approach to decoupling the application from implementation details is to have the application call microservices, perhaps deployed in individual Docker containers. This provides even greater separation of concerns and decoupling than leveraging DI between two projects, but has additional complexity.</p>
+<h3 id=feature-organization>Feature organization</h3>
+<p>By default, ASP.NET Core applications organize their folder structure to include Controllers and Views, and frequently ViewModels. Client-side code to support these server-side structures is typically stored separately in the wwwroot folder. However, large applications may encounter problems with this organization, since working on any given feature often requires jumping between these folders. This gets more and more difficult as the number of files and subfolders in each folder grows, resulting in a great deal of scrolling through Solution Explorer. One solution to this problem is to organize application code by <em>feature</em> instead of by file type. This organizational style is typically referred to as feature folders or <a href=../../../archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc>feature slices</a> (see also: <a href=https://deviq.com/vertical-slices/>Vertical Slices</a>).</p>
+<p>ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder.</p>
+<p>When using Areas, you must use attributes to decorate your controllers with the name of the area to which they belong:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#c4a000>[Area(&#34;Catalog&#34;)]</span>
+<span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>HomeController</span>
+<span style=color:#000;font-weight:700>{}</span>
+</code></pre></div>
+<div class="text-muted mt-5 pt-3 border-top">
+Last modified February 13, 2022: <a href=https://github.com/rovercore/documentation/commit/da8e621cbe77cdb3a365a124fd498ef9c5bb548a>Theme fixes (da8e621)</a>
+</div>
+</div>
+</main>
+</div>
+</div>
+<footer class="bg-dark py-5 row d-print-none">
+<div class="container-fluid mx-sm-5">
+<div class=row>
+<div class="col-6 col-sm-4 text-xs-center order-sm-2">
+</div>
+<div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+<ul class="list-inline mb-0">
+<li class="list-inline-item mx-2 h3" data-toggle=tooltip data-placement=top title=GitHub aria-label=GitHub>
+<a class=text-white target=_blank rel=noopener href=https://github.com/rovercore/rovercore aria-label=GitHub>
+<i class="fab fa-github"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+<small class=text-white>&copy; 2022 The RoverCore Authors All Rights Reserved</small>
+<small class=ml-1><a href=https://policies.google.com/privacy target=_blank rel=noopener>Privacy Policy</a></small>
+<p class=mt-2><a href=../../../about/>About RoverCore</a></p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js integrity=sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin=anonymous></script>
+<script src=../../../js/tabpane-persist.js></script>
+<script src=../../../js/main.min.ad61136f51b666ce839fd4156e5725ded757ac991931c59853b0be91c18511b4.js integrity="sha256-rWETb1G2Zs6Dn9QVblcl3tdXrJkZMcWYU7C+kcGFEbQ=" crossorigin=anonymous></script>
+<script src=../../../js/prism.js></script>
+</body>
+</html>

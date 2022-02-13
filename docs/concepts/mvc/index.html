@@ -15,22 +15,22 @@
 <link rel=icon type=image/png href=../../../favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=../../../favicons/android-192x192.png sizes=192x192>
 <title>MVC - Model View Controller | RoverCore Docs</title>
-<meta name=description content="A MVC is a structure in web development that splits functions into three components.
+<meta name=description content="The model-view-controller (MVC) pattern divides an application into three components: A model, a view, and a controller.
 ">
 <meta property="og:title" content="MVC - Model View Controller">
-<meta property="og:description" content="A MVC is a structure in web development that splits functions into three components.
+<meta property="og:description" content="The model-view-controller (MVC) pattern divides an application into three components: A model, a view, and a controller.
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="/Documentation/docs/concepts/mvc/"><meta property="article:section" content="docs">
-<meta property="article:modified_time" content="2022-02-12T15:39:13-05:00"><meta property="og:site_name" content="RoverCore Docs">
+<meta property="article:modified_time" content="2022-02-13T18:21:58-05:00"><meta property="og:site_name" content="RoverCore Docs">
 <meta itemprop=name content="MVC - Model View Controller">
-<meta itemprop=description content="A MVC is a structure in web development that splits functions into three components.
+<meta itemprop=description content="The model-view-controller (MVC) pattern divides an application into three components: A model, a view, and a controller.
 ">
-<meta itemprop=dateModified content="2022-02-12T15:39:13-05:00">
+<meta itemprop=dateModified content="2022-02-13T18:21:58-05:00">
 <meta itemprop=wordCount content="434">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="MVC - Model View Controller">
-<meta name=twitter:description content="A MVC is a structure in web development that splits functions into three components.
+<meta name=twitter:description content="The model-view-controller (MVC) pattern divides an application into three components: A model, a view, and a controller.
 ">
 <link rel=preload href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css as=style>
 <link href=../../../scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css rel=stylesheet integrity>
@@ -95,16 +95,144 @@
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docsconcepts-li>
 <a href=../../../docs/concepts/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsconcepts><span>Concepts</span></a>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docsconceptsmvc-li>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsconceptsdevelopingapps-li>
+<a href=../../../docs/concepts/developingapps/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsconceptsdevelopingapps><span>Develop ASP.NET Core MVC apps</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docsconceptsmvc-li>
 <a href=../../../docs/concepts/mvc/ title="MVC - Model View Controller" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docsconceptsmvc><span class=td-sidebar-nav-active-item>Model View Controller</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsconceptslayeredarchitecture-li>
 <a href=../../../docs/concepts/layeredarchitecture/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsconceptslayeredarchitecture><span>Layered Architecture</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsconceptsauthentication-li>
+<a href=../../../docs/concepts/authentication/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsconceptsauthentication><span>Authentication</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentals-li>
+<a href=../../../docs/fundamentals/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentals><span>RoverCore Fundamentals</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsprojectstructure-li>
+<a href=../../../docs/fundamentals/projectstructure/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsprojectstructure><span>Project Structure</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsdata-persistence-li>
+<a href=../../../docs/fundamentals/data-persistence/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsdata-persistence><span>Data Persistence</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistencecreating-entities-li>
+<a href=../../../docs/fundamentals/data-persistence/creating-entities/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistencecreating-entities><span>Creating Entities</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistencemodel-attributes-li>
+<a href=../../../docs/fundamentals/data-persistence/model-attributes/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistencemodel-attributes><span>Model Attributes</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistenceseeding-data-li>
+<a href=../../../docs/fundamentals/data-persistence/seeding-data/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistenceseeding-data><span>Seeding Data</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsdata-persistenceworking-with-the-database-li>
+<a href=../../../docs/fundamentals/data-persistence/working-with-the-database/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsdata-persistenceworking-with-the-database><span>Working with the Database</span></a>
+<ul class="ul-4 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistenceworking-with-the-databaseappsettings-li>
+<a href=../../../docs/fundamentals/data-persistence/working-with-the-database/appsettings/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistenceworking-with-the-databaseappsettings><span>AppSettings</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistenceworking-with-the-databasecommand-line-li>
+<a href=../../../docs/fundamentals/data-persistence/working-with-the-database/command-line/ title="CLI - Command Line" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistenceworking-with-the-databasecommand-line><span>Command Line</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsdata-persistenceworking-with-the-databasepmc-li>
+<a href=../../../docs/fundamentals/data-persistence/working-with-the-database/pmc/ title="PMC - Package Manager Console" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsdata-persistenceworking-with-the-databasepmc><span>Package Manager Console</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsservices-li>
+<a href=../../../docs/fundamentals/services/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsservices><span>Services</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsservicesdependency-injection-li>
+<a href=../../../docs/fundamentals/services/dependency-injection/ title="DI - Dependency Injection" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsservicesdependency-injection><span>Dependency Injection</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsservicesservice-registration-li>
+<a href=../../../docs/fundamentals/services/service-registration/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsservicesservice-registration><span>Service Registration</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalssettings-li>
+<a href=../../../docs/fundamentals/settings/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalssettings><span>Settings</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsoptions-li>
+<a href=../../../docs/fundamentals/options/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsoptions><span>Options</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsinfrastructure-li>
+<a href=../../../docs/infrastructure/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsinfrastructure><span>Infrastructure</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsinfrastructurebg-tasks-li>
+<a href=../../../docs/infrastructure/bg-tasks/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsinfrastructurebg-tasks><span>Background Tasks</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docscontribution-guidelines-li>
+<a href=../../../docs/contribution-guidelines/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docscontribution-guidelines><span>Contribution Guidelines</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docscontribution-guidelinesrovercore-li>
+<a href=../../../docs/contribution-guidelines/rovercore/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docscontribution-guidelinesrovercore><span>RoverCore</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docscontribution-guidelinesrovercore-documentation-li>
+<a href=../../../docs/contribution-guidelines/rovercore-documentation/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docscontribution-guidelinesrovercore-documentation><span>RoverCore Documentation</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docstutorials-li>
+<a href=../../../docs/tutorials/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docstutorials><span>Tutorials</span></a>
+<ul class="ul-2 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialslibman-li>
+<a href=../../../docs/tutorials/libman/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialslibman><span>Adding Clientside Javascript Packages</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialsscaffolding-li>
+<a href=../../../docs/tutorials/scaffolding/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialsscaffolding><span>Scaffolding a Controller</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialsjwt-li>
+<a href=../../../docs/tutorials/jwt/ title="Using JWT - JSON Web Tokens" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialsjwt><span>Using JSON Web Tokens</span></a>
 </li>
 </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docstheme-li>
 <a href=../../../docs/theme/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docstheme><span>Theme</span></a>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsthemecontent-li>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsthemecomponents-li>
+<a href=../../../docs/theme/components/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsthemecomponents><span>Components</span></a>
+<ul class="ul-3 foldable">
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsalerts-li>
+<a href=../../../docs/theme/components/alerts/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsalerts><span>Alerts</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsavatars-li>
+<a href=../../../docs/theme/components/avatars/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsavatars><span>Avatars</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsbadges-li>
+<a href=../../../docs/theme/components/badges/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsbadges><span>Badges</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsbreadcrumb-li>
+<a href=../../../docs/theme/components/breadcrumb/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsbreadcrumb><span>Breadcrumb</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsbuttons-li>
+<a href=../../../docs/theme/components/buttons/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsbuttons><span>Buttons</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentscards-li>
+<a href=../../../docs/theme/components/cards/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentscards><span>Cards</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentscarousel-li>
+<a href=../../../docs/theme/components/carousel/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentscarousel><span>Carousel</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsdivider-li>
+<a href=../../../docs/theme/components/divider/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsdivider><span>Divider</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsdropdowns-li>
+<a href=../../../docs/theme/components/dropdowns/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsdropdowns><span>Dropdowns</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsemptystates-li>
+<a href=../../../docs/theme/components/emptystates/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsemptystates><span>Empty States</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsmodals-li>
+<a href=../../../docs/theme/components/modals/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsmodals><span>Modals</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentspageheaders-li>
+<a href=../../../docs/theme/components/pageheaders/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentspageheaders><span>Page Headers</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsplaceholder-li>
+<a href=../../../docs/theme/components/placeholder/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsplaceholder><span>Placeholder</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsprogress-li>
+<a href=../../../docs/theme/components/progress/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsprogress><span>Progress</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsrangeslider-li>
+<a href=../../../docs/theme/components/rangeslider/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsrangeslider><span>Range Slider</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsribbons-li>
+<a href=../../../docs/theme/components/ribbons/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsribbons><span>Ribbons</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsspinners-li>
+<a href=../../../docs/theme/components/spinners/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsspinners><span>Spinners</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsstatuses-li>
+<a href=../../../docs/theme/components/statuses/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsstatuses><span>Statuses</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentssteps-li>
+<a href=../../../docs/theme/components/steps/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentssteps><span>Steps</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentsswitchicon-li>
+<a href=../../../docs/theme/components/switchicon/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentsswitchicon><span>Switch Icon</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstables-li>
+<a href=../../../docs/theme/components/tables/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstables><span>Tables</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstabs-li>
+<a href=../../../docs/theme/components/tabs/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstabs><span>Tabs</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstimelines-li>
+<a href=../../../docs/theme/components/timelines/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstimelines><span>Timelines</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstoasts-li>
+<a href=../../../docs/theme/components/toasts/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstoasts><span>Toasts</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecomponentstooltips-li>
+<a href=../../../docs/theme/components/tooltips/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsthemecomponentstooltips><span>Tooltips</span></a>
+</li>
+</ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsthemecontent-li>
 <a href=../../../docs/theme/content/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsthemecontent><span>Content</span></a>
 <ul class="ul-3 foldable">
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsthemecontentcolors-li>
@@ -137,73 +265,6 @@
 </ul>
 </li>
 </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentals-li>
-<a href=../../../docs/fundamentals/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentals><span>Fundamentals</span></a>
-<ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsentity-framework-li>
-<a href=../../../docs/fundamentals/entity-framework/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsentity-framework><span>Entity Framework</span></a>
-<ul class="ul-3 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsentity-frameworkcreating-models-li>
-<a href=../../../docs/fundamentals/entity-framework/creating-models/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsentity-frameworkcreating-models><span>Creating Models</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsentity-frameworkmodel-attributes-li>
-<a href=../../../docs/fundamentals/entity-framework/model-attributes/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsentity-frameworkmodel-attributes><span>Model Attributes</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsentity-frameworkseeding-data-li>
-<a href=../../../docs/fundamentals/entity-framework/seeding-data/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsentity-frameworkseeding-data><span>Seeding Data</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsentity-frameworkworking-with-the-database-li>
-<a href=../../../docs/fundamentals/entity-framework/working-with-the-database/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsentity-frameworkworking-with-the-database><span>Working with the Database</span></a>
-<ul class="ul-4 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsentity-frameworkworking-with-the-databaseappsettings-li>
-<a href=../../../docs/fundamentals/entity-framework/working-with-the-database/appsettings/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsentity-frameworkworking-with-the-databaseappsettings><span>AppSettings</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsentity-frameworkworking-with-the-databasecommand-line-li>
-<a href=../../../docs/fundamentals/entity-framework/working-with-the-database/command-line/ title="CLI - Command Line" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsentity-frameworkworking-with-the-databasecommand-line><span>Command Line</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsentity-frameworkworking-with-the-databasepmc-li>
-<a href=../../../docs/fundamentals/entity-framework/working-with-the-database/pmc/ title="PMC - Package Manager Console" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsentity-frameworkworking-with-the-databasepmc><span>Package Manager Console</span></a>
-</li>
-</ul>
-</li>
-</ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsfundamentalsservices-li>
-<a href=../../../docs/fundamentals/services/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsservices><span>Services</span></a>
-<ul class="ul-3 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsservicesdependency-injection-li>
-<a href=../../../docs/fundamentals/services/dependency-injection/ title="DI - Dependency Injection" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsservicesdependency-injection><span>Dependency Injection</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsservicesservice-registration-li>
-<a href=../../../docs/fundamentals/services/service-registration/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsfundamentalsservicesservice-registration><span>Service Registration</span></a>
-</li>
-</ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalssettings-li>
-<a href=../../../docs/fundamentals/settings/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalssettings><span>Settings</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsfundamentalsoptions-li>
-<a href=../../../docs/fundamentals/options/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsfundamentalsoptions><span>Options</span></a>
-</li>
-</ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsinfrastructure-li>
-<a href=../../../docs/infrastructure/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsinfrastructure><span>Infrastructure</span></a>
-<ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docsinfrastructurebg-tasks-li>
-<a href=../../../docs/infrastructure/bg-tasks/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docsinfrastructurebg-tasks><span>Background Tasks</span></a>
-</li>
-</ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docstutorials-li>
-<a href=../../../docs/tutorials/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docstutorials><span>Tutorials</span></a>
-<ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialslibman-li>
-<a href=../../../docs/tutorials/libman/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialslibman><span>Adding Clientside Javascript Packages</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialsscaffolding-li>
-<a href=../../../docs/tutorials/scaffolding/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialsscaffolding><span>Scaffolding a Controller</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docstutorialsjwt-li>
-<a href=../../../docs/tutorials/jwt/ title="Using JWT - JSON Web Tokens" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docstutorialsjwt><span>Using JSON Web Tokens</span></a>
-</li>
-</ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docscontribution-guidelines-li>
-<a href=../../../docs/contribution-guidelines/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docscontribution-guidelines><span>Contribution Guidelines</span></a>
-<ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docscontribution-guidelinesrovercore-li>
-<a href=../../../docs/contribution-guidelines/rovercore/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docscontribution-guidelinesrovercore><span>RoverCore</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docscontribution-guidelinesrovercore-documentation-li>
-<a href=../../../docs/contribution-guidelines/rovercore-documentation/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docscontribution-guidelinesrovercore-documentation><span>RoverCore Documentation</span></a>
-</li>
-</ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docslicense-li>
 <a href=../../../docs/license/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docslicense><span>License</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docscontributors-li>
@@ -229,9 +290,11 @@
 <ul class=taxonomy-terms>
 <li><a class=taxonomy-term href=../../../Documentation/tags/docs/ data-taxonomy-term=docs><span class=taxonomy-label>docs</span><span class=taxonomy-count>2</span></a></li>
 <li><a class=taxonomy-term href=../../../Documentation/tags/icons/ data-taxonomy-term=icons><span class=taxonomy-label>icons</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/installation/ data-taxonomy-term=installation><span class=taxonomy-label>installation</span><span class=taxonomy-count>1</span></a></li>
 <li><a class=taxonomy-term href=../../../Documentation/tags/sample/ data-taxonomy-term=sample><span class=taxonomy-label>sample</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/setup/ data-taxonomy-term=setup><span class=taxonomy-label>setup</span><span class=taxonomy-count>1</span></a></li>
 <li><a class=taxonomy-term href=../../../Documentation/tags/style/ data-taxonomy-term=style><span class=taxonomy-label>style</span><span class=taxonomy-count>2</span></a></li>
-<li><a class=taxonomy-term href=../../../Documentation/tags/test/ data-taxonomy-term=test><span class=taxonomy-label>test</span><span class=taxonomy-count>2</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/tags/test/ data-taxonomy-term=test><span class=taxonomy-label>test</span><span class=taxonomy-count>1</span></a></li>
 <li><a class=taxonomy-term href=../../../Documentation/tags/typography/ data-taxonomy-term=typography><span class=taxonomy-label>typography</span><span class=taxonomy-count>1</span></a></li>
 </ul>
 </div>
@@ -239,8 +302,9 @@
 <h5 class=taxonomy-title>Categories</h5>
 <ul class=taxonomy-terms>
 <li><a class=taxonomy-term href=../../../Documentation/categories/content/ data-taxonomy-term=content><span class=taxonomy-label>Content</span><span class=taxonomy-count>2</span></a></li>
-<li><a class=taxonomy-term href=../../../Documentation/categories/examples/ data-taxonomy-term=examples><span class=taxonomy-label>Examples</span><span class=taxonomy-count>2</span></a></li>
-<li><a class=taxonomy-term href=../../../Documentation/categories/placeholders/ data-taxonomy-term=placeholders><span class=taxonomy-label>Placeholders</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/categories/examples/ data-taxonomy-term=examples><span class=taxonomy-label>Examples</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/categories/getting-started/ data-taxonomy-term=getting-started><span class=taxonomy-label>Getting Started</span><span class=taxonomy-count>1</span></a></li>
+<li><a class=taxonomy-term href=../../../Documentation/categories/setup/ data-taxonomy-term=setup><span class=taxonomy-label>Setup</span><span class=taxonomy-count>1</span></a></li>
 </ul>
 </div>
 </aside>
@@ -260,7 +324,7 @@
 </nav>
 <div class=td-content>
 <h1>MVC - Model View Controller</h1>
-<div class=lead>A MVC is a structure in web development that splits functions into three components.</div>
+<div class=lead>The model-view-controller (MVC) pattern divides an application into three components: A model, a view, and a controller.</div>
 <header class=article-meta>
 </header>
 <h2 id=what-is-a-model-view-controller>What is a Model View Controller?</h2>
@@ -270,7 +334,7 @@
 <p>Aenean mattis mi ut libero tempor, at ultricies sapien sagittis. Nulla elementum, orci ut feugiat ornare, ante neque elementum nulla, quis ultricies metus lacus non elit. Mauris ante dolor, pulvinar in lacus quis, gravida bibendum mauris. Donec non dolor erat. Phasellus nec aliquet turpis, et condimentum nisi. Quisque a euismod arcu. Fusce erat tortor, ultrices imperdiet posuere non, posuere non ligula. Fusce rhoncus faucibus est eget consequat. Cras ut erat lorem. Donec vel vehicula risus. Praesent ut leo mauris.</p>
 <p>Aliquam erat volutpat. Duis molestie est molestie erat dictum, id aliquam est vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sit amet suscipit augue. Cras mattis quam in nisl porttitor, a scelerisque dolor luctus. Cras non nisi ac dui scelerisque tempus in in erat. Quisque sit amet mi tincidunt, faucibus nisl luctus, sodales nunc. Ut quis ligula congue, faucibus nibh nec, sollicitudin enim. Suspendisse at nulla in justo molestie convallis vel vel sapien. Donec pharetra pellentesque massa, ut auctor est. Donec lacinia dictum facilisis. Aenean iaculis efficitur leo vel dictum. Proin malesuada nisi dictum luctus eleifend. In rhoncus dolor metus, at pretium velit faucibus fermentum. Donec venenatis congue ligula, sit amet elementum mi porttitor a. Morbi non rutrum lorem.</p>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified February 12, 2022: <a href=https://github.com/rovercore/documentation/commit/e0d76051115d7dc7038a8b41585a54e3c4b3f26a>Updated Layered Architecture description (e0d7605)</a>
+Last modified February 13, 2022: <a href=https://github.com/rovercore/documentation/commit/da8e621cbe77cdb3a365a124fd498ef9c5bb548a>Theme fixes (da8e621)</a>
 </div>
 </div>
 </main>
