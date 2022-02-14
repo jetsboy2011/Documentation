@@ -37,6 +37,7 @@
 &lt;li>Initialize the SQL Server Express LocalDB
 &lt;ul>
 &lt;li>In Visual Studio, go to &lt;code>View &amp;gt; Other Windows &amp;gt; Package Manager Console&lt;/code>&lt;/li>
+&lt;li>Set the default project in the Package Manager Console to the Infrastructure project&lt;/li>
 &lt;li>In the console that appears at the bottom, type the command &lt;code>Update-Database&lt;/code> and wait for the migration to finish.&lt;/li>
 &lt;/ul>
 &lt;/li>
