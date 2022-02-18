@@ -1,16 +1,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RoverCore Docs – RoverCore Fundamentals</title><link>/Documentation/docs/fundamentals/</link><description>Recent content in RoverCore Fundamentals on RoverCore Docs</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="/Documentation/docs/fundamentals/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Project Structure</title><link>/Documentation/docs/fundamentals/projectstructure/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/projectstructure/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>This is a placeholder page that shows you how to use this template site.&lt;/p>
+&lt;div class="row">
+&lt;div class="col">
+&lt;img src="../../docs/fundamentals/structure.png">
 &lt;/div>
-&lt;p>Think about your project’s features and use cases. Use these to choose your core tasks. Each granular use case (enable x, configure y) should have a corresponding tasks page or tasks page section. Users should be able to quickly refer to your core tasks when they need to find out how to do one specific thing, rather than having to look for the instructions in a bigger tutorial or example. Think of your tasks pages as a cookbook with different procedures your users can combine to create something more substantial.&lt;/p>
-&lt;p>You can give each task a page, or you can group related tasks together in a page, such as tasks related to a particular feature. As well as grouping related tasks in single pages, you can also group task pages in nested folders with an index page as an overview, as seen in this example site. Or if you have a small docset like the &lt;a href="https://docsy.dev/docs/">Docsy User Guide&lt;/a> with no Tutorials or Concepts pages, consider adding your feature-specific pages at the top level of your docs rather than in a Tasks section.&lt;/p>
-&lt;p>Each task should give the user&lt;/p>
-&lt;ul>
-&lt;li>The prerequisites for this task, if any (this can be specified at the top of a multi-task page if they&amp;rsquo;re the same for all the page&amp;rsquo;s tasks. &amp;ldquo;All these tasks assume that you understand&amp;hellip;.and that you have already&amp;hellip;.&amp;quot;).&lt;/li>
-&lt;li>What this task accomplishes.&lt;/li>
-&lt;li>Instructions for the task. If it involves editing a file, running a command, or writing code, provide code-formatted example snippets to show the user what to do! If there are multiple steps, provide them as a numbered list.&lt;/li>
-&lt;li>If appropriate, links to related concept, tutorial, or example pages.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Data Persistence</title><link>/Documentation/docs/fundamentals/data-persistence/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/data-persistence/</guid><description>
+&lt;/div>
+&lt;h2 id="domain">Domain&lt;/h2>
+&lt;p>The domain project is a core dependency that all of your other projects will likely depend on. For the time being, you will use this project to store any Entity Framework entities you intend on using. You can also store Data Transfer Objects (DTOs) and any other abstractions (typically interfaces) that might be useful across your solution.&lt;/p>
+&lt;h2 id="infrastructure">Infrastructure&lt;/h2>
+&lt;p>Each folder has roughly the following structure:&lt;/p>
+&lt;pre tabindex="0">&lt;code>+- Feature Name
++- Extensions
++- Models (any data models needed by the feature)
++- Seeding (holds any ISeeder classes in case this feature needs data to be seeded)
++- Services
+Startup.cs (holds all the startup services and application configuration logic just for this feature)
+&lt;/code>&lt;/pre>&lt;p>The most common services you will need (email, Hangfire, seeder, templates, etc) are in the Common folder. The remaining folders (Authentication, Identity, Persistence, etc) are all largely organized exactly the same as any folder in Common.&lt;/p>
+&lt;p>The end goal is to try to keep as much of the code and supporting code that makes up one of these feature services in a single location.&lt;/p>
+&lt;h3 id="startup">Startup&lt;/h3>
+&lt;p>The Startup.cs should look familiar. Here is an example for Identity:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">static&lt;/span> &lt;span style="color:#204a87;font-weight:bold">class&lt;/span> &lt;span style="color:#000">Startup&lt;/span>
+&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">/// &amp;lt;summary&amp;gt;
+&lt;/span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#8f5902;font-style:italic">/// Add custom identity user, roles, etc.
+&lt;/span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#8f5902;font-style:italic">/// &amp;lt;/summary&amp;gt;
+&lt;/span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">static&lt;/span> &lt;span style="color:#204a87;font-weight:bold">void&lt;/span> &lt;span style="color:#000">ConfigureServices&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">IServiceCollection&lt;/span> &lt;span style="color:#000">services&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">IConfiguration&lt;/span> &lt;span style="color:#000">configuration&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;span style="color:#000">services&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddIdentity&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">ApplicationUser&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">ApplicationRole&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;()&lt;/span>
+&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddEntityFrameworkStores&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">ApplicationDbContext&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;()&lt;/span>
+&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddClaimsPrincipalFactory&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">ApplicationClaimsPrincipalFactory&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;()&lt;/span>
+&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddDefaultTokenProviders&lt;/span>&lt;span style="color:#000;font-weight:bold">();&lt;/span>
+&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">static&lt;/span> &lt;span style="color:#204a87;font-weight:bold">void&lt;/span> &lt;span style="color:#000">Configure&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">IApplicationBuilder&lt;/span> &lt;span style="color:#000">app&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">IConfiguration&lt;/span> &lt;span style="color:#000">configuration&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="presentation">Presentation&lt;/h2></description></item><item><title>Docs: Data Persistence</title><link>/Documentation/docs/fundamentals/data-persistence/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/data-persistence/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Entity Framework is a very large topic. In this section, we will be going over the basics of EF Core. For more information, please visit &lt;a href="https://docs.microsoft.com/en-us/ef/">Entity Framework Documentation&lt;/a>.&lt;/p>
 &lt;/div>

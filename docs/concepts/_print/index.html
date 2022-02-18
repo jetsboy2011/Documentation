@@ -210,9 +210,46 @@ If you need to ensure certain services are available to your <code>Startup</code
 </ul>
 <p>As you see with the above diagram, the arrows always point inward towards the core. This is because each layer depends on an inner layer to function. The Core layer is intended to be as free of dependencies as possible as it is typical that all projects will depend on the Core layer.</p>
 <h3 id=presentation-layer>Presentation Layer</h3>
-<p>The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application. Whether the interface is html-based, an API, or even a mobile app, there are a myriad of ways that your data can be presented to the user. Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers. As you progress you may decide to push business logic to another layer entirely.</p>
+<p>The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application. Whether the interface is html-based, an API, or even a mobile app, there are a myriad of ways that your data can be presented to the user.</p>
+<p>Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers. As you progress you may decide to push business logic to another layer entirely.</p>
+<p>Presentation Layer types</p>
+<ul>
+<li>Controllers</li>
+<li>Custom Filters</li>
+<li>Custom Middleware</li>
+<li>Views</li>
+<li>ViewModels</li>
+<li>Startup</li>
+</ul>
 <h3 id=infrastructure-layer>Infrastructure Layer</h3>
+<p>The Infrastructure project typically includes data access implementations. In a typical ASP.NET Core web application, these implementations include the Entity Framework (EF) DbContext, any EF Core Migration objects that have been defined, and data access implementation classes. The most common way to abstract data access implementation code is through the use of the <a href=https://deviq.com/design-patterns/repository-pattern>Repository design pattern</a>.</p>
+<p>The Infrastructure layer contains supporting services for the Presentation layer. This includes services such as:</p>
+<ul>
+<li>Database</li>
+<li>Cache</li>
+<li>Logging</li>
+<li>Email</li>
+<li>Templates</li>
+<li>Configuration</li>
+</ul>
+<p>In many of the above architectures you would typically create services that provide a way to manipulate the data entities stored in the database in the Infrastructure layer. The business logic itself would typically be put into a fourth project (typically named Application) and these data manipulation services would be injected into any Application layer service that might need it through dependency injection.</p>
+<p>For this project, you can decide what you want to do. The beginning approach would be to simply add any supporting services your application needs inside the Infrastructure project. The services you create in Infrastructure can then be used in any controller in the web project that you want.</p>
 <h3 id=core-layer>Core Layer</h3>
+<p>The core layer includes projects (like Domain) that have no dependencies on the other application layers. The core holds entities, services, and interfaces. These interfaces include abstractions for operations that will be performed using Infrastructure, such as data access, file system access, network calls, etc. Sometimes services or interfaces defined at this layer will need to work with non-entity types that have no dependencies on UI or Infrastructure. These can be defined as simple Data Transfer Objects (DTOs).</p>
+<p>Application Core types</p>
+<ul>
+<li>Entities (business model classes that are persisted)</li>
+<li>Aggregates (groups of entities)</li>
+<li>Interfaces</li>
+<li>Domain Services</li>
+<li>Specifications</li>
+<li>Custom Exceptions and Guard Clauses</li>
+<li>Domain Events and Handlers</li>
+</ul>
+<h2 id=references>References</h2>
+<blockquote>
+<p>The preceding text contains excerpts that are creative-commons licensed from Microsoft. The full article can be found <a href=https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures>here</a>.</p>
+</blockquote>
 <h2 id=more-reading>More Reading</h2>
 <p><a href=https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures>Common Web Application Architectures</a></p>
 </div>

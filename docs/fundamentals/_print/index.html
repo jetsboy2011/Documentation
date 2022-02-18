@@ -122,19 +122,44 @@ This is the multi-page printable view of this section.
 </div>
 <div class=td-content style=page-break-before:always>
 <h1 id=pg-b15f28e25efde59f9d8362c2e6248f09>1 - Project Structure</h1>
-<div class=lead>What can your user do with your project?</div>
-<div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
+<div class=lead>The default boilerplate structure is organized into several projects.</div>
+<div class=row>
+<div class=col>
+<img src=../../../docs/fundamentals/structure.png>
 </div>
-<p>Think about your project’s features and use cases. Use these to choose your core tasks. Each granular use case (enable x, configure y) should have a corresponding tasks page or tasks page section. Users should be able to quickly refer to your core tasks when they need to find out how to do one specific thing, rather than having to look for the instructions in a bigger tutorial or example. Think of your tasks pages as a cookbook with different procedures your users can combine to create something more substantial.</p>
-<p>You can give each task a page, or you can group related tasks together in a page, such as tasks related to a particular feature. As well as grouping related tasks in single pages, you can also group task pages in nested folders with an index page as an overview, as seen in this example site. Or if you have a small docset like the <a href=https://docsy.dev/docs/>Docsy User Guide</a> with no Tutorials or Concepts pages, consider adding your feature-specific pages at the top level of your docs rather than in a Tasks section.</p>
-<p>Each task should give the user</p>
-<ul>
-<li>The prerequisites for this task, if any (this can be specified at the top of a multi-task page if they&rsquo;re the same for all the page&rsquo;s tasks. &ldquo;All these tasks assume that you understand&mldr;.and that you have already&mldr;.").</li>
-<li>What this task accomplishes.</li>
-<li>Instructions for the task. If it involves editing a file, running a command, or writing code, provide code-formatted example snippets to show the user what to do! If there are multiple steps, provide them as a numbered list.</li>
-<li>If appropriate, links to related concept, tutorial, or example pages.</li>
-</ul>
+</div>
+<h2 id=domain>Domain</h2>
+<p>The domain project is a core dependency that all of your other projects will likely depend on. For the time being, you will use this project to store any Entity Framework entities you intend on using. You can also store Data Transfer Objects (DTOs) and any other abstractions (typically interfaces) that might be useful across your solution.</p>
+<h2 id=infrastructure>Infrastructure</h2>
+<p>Each folder has roughly the following structure:</p>
+<pre tabindex=0><code>+- Feature Name
+  +- Extensions
+  +- Models (any data models needed by the feature)
+  +- Seeding (holds any ISeeder classes in case this feature needs data to be seeded)
+  +- Services
+  Startup.cs (holds all the startup services and application configuration logic just for this feature)
+</code></pre><p>The most common services you will need (email, Hangfire, seeder, templates, etc) are in the Common folder. The remaining folders (Authentication, Identity, Persistence, etc) are all largely organized exactly the same as any folder in Common.</p>
+<p>The end goal is to try to keep as much of the code and supporting code that makes up one of these feature services in a single location.</p>
+<h3 id=startup>Startup</h3>
+<p>The Startup.cs should look familiar. Here is an example for Identity:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Startup</span>
+<span style=color:#000;font-weight:700>{</span>
+	<span style=color:#8f5902;font-style:italic>/// &lt;summary&gt;
+</span><span style=color:#8f5902;font-style:italic></span>	<span style=color:#8f5902;font-style:italic>///     Add custom identity user, roles, etc.
+</span><span style=color:#8f5902;font-style:italic></span>	<span style=color:#8f5902;font-style:italic>/// &lt;/summary&gt;
+</span><span style=color:#8f5902;font-style:italic></span>	<span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>ConfigureServices</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>IServiceCollection</span> <span style=color:#000>services</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>IConfiguration</span> <span style=color:#000>configuration</span><span style=color:#000;font-weight:700>)</span>
+	<span style=color:#000;font-weight:700>{</span>
+		<span style=color:#000>services</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>AddIdentity</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>ApplicationUser</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>ApplicationRole</span><span style=color:#000;font-weight:700>&gt;()</span>
+			<span style=color:#000;font-weight:700>.</span><span style=color:#000>AddEntityFrameworkStores</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>ApplicationDbContext</span><span style=color:#000;font-weight:700>&gt;()</span>
+			<span style=color:#000;font-weight:700>.</span><span style=color:#000>AddClaimsPrincipalFactory</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>ApplicationClaimsPrincipalFactory</span><span style=color:#000;font-weight:700>&gt;()</span>
+			<span style=color:#000;font-weight:700>.</span><span style=color:#000>AddDefaultTokenProviders</span><span style=color:#000;font-weight:700>();</span>
+	<span style=color:#000;font-weight:700>}</span>
+
+	<span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>Configure</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>IApplicationBuilder</span> <span style=color:#000>app</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>IConfiguration</span> <span style=color:#000>configuration</span><span style=color:#000;font-weight:700>)</span>
+	<span style=color:#000;font-weight:700>{</span>
+	<span style=color:#000;font-weight:700>}</span>
+<span style=color:#000;font-weight:700>}</span>
+</code></pre></div><h2 id=presentation>Presentation</h2>
 </div>
 <div class=td-content style=page-break-before:always>
 <h1 id=pg-63df3512151e5e5363841215e592bb87>2 - Data Persistence</h1>

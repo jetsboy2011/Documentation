@@ -15,23 +15,23 @@
 <link rel=icon type=image/png href=../../../favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=../../../favicons/android-192x192.png sizes=192x192>
 <title>Project Structure | RoverCore Docs</title>
-<meta name=description content="What can your user do with your project?
+<meta name=description content="The default boilerplate structure is organized into several projects.
 ">
 <meta property="og:title" content="Project Structure">
-<meta property="og:description" content="What can your user do with your project?
+<meta property="og:description" content="The default boilerplate structure is organized into several projects.
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="/Documentation/docs/fundamentals/projectstructure/"><meta property="article:section" content="docs">
 <meta property="article:published_time" content="2017-01-05T00:00:00+00:00">
-<meta property="article:modified_time" content="2022-02-14T12:53:05-05:00"><meta property="og:site_name" content="RoverCore Docs">
+<meta property="article:modified_time" content="2022-02-18T12:04:24-05:00"><meta property="og:site_name" content="RoverCore Docs">
 <meta itemprop=name content="Project Structure">
-<meta itemprop=description content="What can your user do with your project?
+<meta itemprop=description content="The default boilerplate structure is organized into several projects.
 "><meta itemprop=datePublished content="2017-01-05T00:00:00+00:00">
-<meta itemprop=dateModified content="2022-02-14T12:53:05-05:00">
-<meta itemprop=wordCount content="292">
+<meta itemprop=dateModified content="2022-02-18T12:04:24-05:00">
+<meta itemprop=wordCount content="228">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Project Structure">
-<meta name=twitter:description content="What can your user do with your project?
+<meta name=twitter:description content="The default boilerplate structure is organized into several projects.
 ">
 <link rel=preload href=../../../scss/main.min.209ee91954d0f2f182770e6c71011a5580360636bcf2a9bcf7f1c3da478784ff.css as=style>
 <link href=../../../scss/main.min.209ee91954d0f2f182770e6c71011a5580360636bcf2a9bcf7f1c3da478784ff.css rel=stylesheet integrity>
@@ -286,6 +286,17 @@
 <a href=https://github.com/rovercore/rovercore/issues/new class=td-page-meta--project-issue target=_blank rel=noopener><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
 <a id=print href=../../../Documentation/docs/fundamentals/_print/><i class="fa fa-print fa-fw"></i> Print entire section</a>
 </div>
+<div class=td-toc><nav id=TableOfContents>
+<ul>
+<li><a href=#domain>Domain</a></li>
+<li><a href=#infrastructure>Infrastructure</a>
+<ul>
+<li><a href=#startup>Startup</a></li>
+</ul>
+</li>
+<li><a href=#presentation>Presentation</a></li>
+</ul>
+</nav></div>
 <div class="taxonomy taxonomy-terms-cloud taxo-tags">
 <h5 class=taxonomy-title>Tag Cloud</h5>
 <ul class=taxonomy-terms>
@@ -325,23 +336,48 @@
 </nav>
 <div class=td-content>
 <h1>Project Structure</h1>
-<div class=lead>What can your user do with your project?</div>
+<div class=lead>The default boilerplate structure is organized into several projects.</div>
 <header class=article-meta>
 </header>
-<div class="pageinfo pageinfo-primary">
-<p>This is a placeholder page that shows you how to use this template site.</p>
+<div class=row>
+<div class=col>
+<img src=../../../docs/fundamentals/structure.png>
 </div>
-<p>Think about your project’s features and use cases. Use these to choose your core tasks. Each granular use case (enable x, configure y) should have a corresponding tasks page or tasks page section. Users should be able to quickly refer to your core tasks when they need to find out how to do one specific thing, rather than having to look for the instructions in a bigger tutorial or example. Think of your tasks pages as a cookbook with different procedures your users can combine to create something more substantial.</p>
-<p>You can give each task a page, or you can group related tasks together in a page, such as tasks related to a particular feature. As well as grouping related tasks in single pages, you can also group task pages in nested folders with an index page as an overview, as seen in this example site. Or if you have a small docset like the <a href=https://docsy.dev/docs/>Docsy User Guide</a> with no Tutorials or Concepts pages, consider adding your feature-specific pages at the top level of your docs rather than in a Tasks section.</p>
-<p>Each task should give the user</p>
-<ul>
-<li>The prerequisites for this task, if any (this can be specified at the top of a multi-task page if they&rsquo;re the same for all the page&rsquo;s tasks. &ldquo;All these tasks assume that you understand&mldr;.and that you have already&mldr;.").</li>
-<li>What this task accomplishes.</li>
-<li>Instructions for the task. If it involves editing a file, running a command, or writing code, provide code-formatted example snippets to show the user what to do! If there are multiple steps, provide them as a numbered list.</li>
-<li>If appropriate, links to related concept, tutorial, or example pages.</li>
-</ul>
+</div>
+<h2 id=domain>Domain</h2>
+<p>The domain project is a core dependency that all of your other projects will likely depend on. For the time being, you will use this project to store any Entity Framework entities you intend on using. You can also store Data Transfer Objects (DTOs) and any other abstractions (typically interfaces) that might be useful across your solution.</p>
+<h2 id=infrastructure>Infrastructure</h2>
+<p>Each folder has roughly the following structure:</p>
+<pre tabindex=0><code>+- Feature Name
+  +- Extensions
+  +- Models (any data models needed by the feature)
+  +- Seeding (holds any ISeeder classes in case this feature needs data to be seeded)
+  +- Services
+  Startup.cs (holds all the startup services and application configuration logic just for this feature)
+</code></pre><p>The most common services you will need (email, Hangfire, seeder, templates, etc) are in the Common folder. The remaining folders (Authentication, Identity, Persistence, etc) are all largely organized exactly the same as any folder in Common.</p>
+<p>The end goal is to try to keep as much of the code and supporting code that makes up one of these feature services in a single location.</p>
+<h3 id=startup>Startup</h3>
+<p>The Startup.cs should look familiar. Here is an example for Identity:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>class</span> <span style=color:#000>Startup</span>
+<span style=color:#000;font-weight:700>{</span>
+	<span style=color:#8f5902;font-style:italic>/// &lt;summary&gt;
+</span><span style=color:#8f5902;font-style:italic></span>	<span style=color:#8f5902;font-style:italic>///     Add custom identity user, roles, etc.
+</span><span style=color:#8f5902;font-style:italic></span>	<span style=color:#8f5902;font-style:italic>/// &lt;/summary&gt;
+</span><span style=color:#8f5902;font-style:italic></span>	<span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>ConfigureServices</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>IServiceCollection</span> <span style=color:#000>services</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>IConfiguration</span> <span style=color:#000>configuration</span><span style=color:#000;font-weight:700>)</span>
+	<span style=color:#000;font-weight:700>{</span>
+		<span style=color:#000>services</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>AddIdentity</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>ApplicationUser</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>ApplicationRole</span><span style=color:#000;font-weight:700>&gt;()</span>
+			<span style=color:#000;font-weight:700>.</span><span style=color:#000>AddEntityFrameworkStores</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>ApplicationDbContext</span><span style=color:#000;font-weight:700>&gt;()</span>
+			<span style=color:#000;font-weight:700>.</span><span style=color:#000>AddClaimsPrincipalFactory</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>ApplicationClaimsPrincipalFactory</span><span style=color:#000;font-weight:700>&gt;()</span>
+			<span style=color:#000;font-weight:700>.</span><span style=color:#000>AddDefaultTokenProviders</span><span style=color:#000;font-weight:700>();</span>
+	<span style=color:#000;font-weight:700>}</span>
+
+	<span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>void</span> <span style=color:#000>Configure</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>IApplicationBuilder</span> <span style=color:#000>app</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>IConfiguration</span> <span style=color:#000>configuration</span><span style=color:#000;font-weight:700>)</span>
+	<span style=color:#000;font-weight:700>{</span>
+	<span style=color:#000;font-weight:700>}</span>
+<span style=color:#000;font-weight:700>}</span>
+</code></pre></div><h2 id=presentation>Presentation</h2>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified February 14, 2022: <a href=https://github.com/rovercore/documentation/commit/b2753286e061766f52d8764de3199359454618bb>Updated getting started directions (b275328)</a>
+Last modified February 18, 2022: <a href=https://github.com/rovercore/documentation/commit/1b069a2e848ffbcf6d9e2b5af2f637417be9c783>Adding Layered Architecture and Project Structure descriptions (1b069a2)</a>
 </div>
 </div>
 </main>

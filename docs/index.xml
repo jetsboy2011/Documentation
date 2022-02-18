@@ -147,18 +147,42 @@ If you need to ensure certain services are available to your &lt;code>Startup&lt
 &lt;h2 id="what-is-seeding-data">What is seeding data?&lt;/h2>
 &lt;h2 id="why-would-i-seed-data">Why would I seed data?&lt;/h2>
 &lt;h2 id="how-do-i-seed-data">How do I seed data?&lt;/h2></description></item><item><title>Docs: Using JWT - JSON Web Tokens</title><link>/Documentation/docs/tutorials/jwt/</link><pubDate>Wed, 04 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/tutorials/jwt/</guid><description/></item><item><title>Docs: Project Structure</title><link>/Documentation/docs/fundamentals/projectstructure/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>/Documentation/docs/fundamentals/projectstructure/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>This is a placeholder page that shows you how to use this template site.&lt;/p>
+&lt;div class="row">
+&lt;div class="col">
+&lt;img src="../docs/fundamentals/structure.png">
 &lt;/div>
-&lt;p>Think about your project’s features and use cases. Use these to choose your core tasks. Each granular use case (enable x, configure y) should have a corresponding tasks page or tasks page section. Users should be able to quickly refer to your core tasks when they need to find out how to do one specific thing, rather than having to look for the instructions in a bigger tutorial or example. Think of your tasks pages as a cookbook with different procedures your users can combine to create something more substantial.&lt;/p>
-&lt;p>You can give each task a page, or you can group related tasks together in a page, such as tasks related to a particular feature. As well as grouping related tasks in single pages, you can also group task pages in nested folders with an index page as an overview, as seen in this example site. Or if you have a small docset like the &lt;a href="https://docsy.dev/docs/">Docsy User Guide&lt;/a> with no Tutorials or Concepts pages, consider adding your feature-specific pages at the top level of your docs rather than in a Tasks section.&lt;/p>
-&lt;p>Each task should give the user&lt;/p>
-&lt;ul>
-&lt;li>The prerequisites for this task, if any (this can be specified at the top of a multi-task page if they&amp;rsquo;re the same for all the page&amp;rsquo;s tasks. &amp;ldquo;All these tasks assume that you understand&amp;hellip;.and that you have already&amp;hellip;.&amp;quot;).&lt;/li>
-&lt;li>What this task accomplishes.&lt;/li>
-&lt;li>Instructions for the task. If it involves editing a file, running a command, or writing code, provide code-formatted example snippets to show the user what to do! If there are multiple steps, provide them as a numbered list.&lt;/li>
-&lt;li>If appropriate, links to related concept, tutorial, or example pages.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: MVC - Model View Controller</title><link>/Documentation/docs/concepts/mvc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/concepts/mvc/</guid><description>
+&lt;/div>
+&lt;h2 id="domain">Domain&lt;/h2>
+&lt;p>The domain project is a core dependency that all of your other projects will likely depend on. For the time being, you will use this project to store any Entity Framework entities you intend on using. You can also store Data Transfer Objects (DTOs) and any other abstractions (typically interfaces) that might be useful across your solution.&lt;/p>
+&lt;h2 id="infrastructure">Infrastructure&lt;/h2>
+&lt;p>Each folder has roughly the following structure:&lt;/p>
+&lt;pre tabindex="0">&lt;code>+- Feature Name
++- Extensions
++- Models (any data models needed by the feature)
++- Seeding (holds any ISeeder classes in case this feature needs data to be seeded)
++- Services
+Startup.cs (holds all the startup services and application configuration logic just for this feature)
+&lt;/code>&lt;/pre>&lt;p>The most common services you will need (email, Hangfire, seeder, templates, etc) are in the Common folder. The remaining folders (Authentication, Identity, Persistence, etc) are all largely organized exactly the same as any folder in Common.&lt;/p>
+&lt;p>The end goal is to try to keep as much of the code and supporting code that makes up one of these feature services in a single location.&lt;/p>
+&lt;h3 id="startup">Startup&lt;/h3>
+&lt;p>The Startup.cs should look familiar. Here is an example for Identity:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">static&lt;/span> &lt;span style="color:#204a87;font-weight:bold">class&lt;/span> &lt;span style="color:#000">Startup&lt;/span>
+&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">/// &amp;lt;summary&amp;gt;
+&lt;/span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#8f5902;font-style:italic">/// Add custom identity user, roles, etc.
+&lt;/span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#8f5902;font-style:italic">/// &amp;lt;/summary&amp;gt;
+&lt;/span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">static&lt;/span> &lt;span style="color:#204a87;font-weight:bold">void&lt;/span> &lt;span style="color:#000">ConfigureServices&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">IServiceCollection&lt;/span> &lt;span style="color:#000">services&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">IConfiguration&lt;/span> &lt;span style="color:#000">configuration&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;span style="color:#000">services&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddIdentity&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">ApplicationUser&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">ApplicationRole&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;()&lt;/span>
+&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddEntityFrameworkStores&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">ApplicationDbContext&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;()&lt;/span>
+&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddClaimsPrincipalFactory&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">ApplicationClaimsPrincipalFactory&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;()&lt;/span>
+&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddDefaultTokenProviders&lt;/span>&lt;span style="color:#000;font-weight:bold">();&lt;/span>
+&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">static&lt;/span> &lt;span style="color:#204a87;font-weight:bold">void&lt;/span> &lt;span style="color:#000">Configure&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">IApplicationBuilder&lt;/span> &lt;span style="color:#000">app&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">IConfiguration&lt;/span> &lt;span style="color:#000">configuration&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="presentation">Presentation&lt;/h2></description></item><item><title>Docs: MVC - Model View Controller</title><link>/Documentation/docs/concepts/mvc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/concepts/mvc/</guid><description>
 &lt;h2 id="what-is-a-model-view-controller">What is a Model View Controller?&lt;/h2>
 &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra justo vitae risus suscipit, sed ornare purus faucibus. Sed aliquet orci in nulla varius, eu blandit orci euismod. Suspendisse sit amet mollis justo. Ut accumsan mi elit, quis commodo turpis fermentum nec. Fusce fermentum dictum mollis. Nam vel odio consequat, faucibus erat laoreet, pulvinar urna. Etiam mi eros, aliquam ac quam non, auctor feugiat sem. Vivamus vestibulum purus sed ligula dictum consequat.&lt;/p>
 &lt;p>Ut non turpis nisl. Vestibulum aliquet vel velit et ultricies. Integer sem elit, convallis in commodo eu, efficitur sit amet risus. In bibendum lorem non felis lacinia efficitur. Quisque imperdiet fringilla pretium. Pellentesque sodales quam mi, eu finibus ex pulvinar quis. Sed a finibus diam. Pellentesque ultrices non purus vel vehicula. Cras eget massa ut lectus molestie laoreet. Suspendisse rutrum nisi at laoreet vulputate.&lt;/p>
@@ -193,9 +217,46 @@ If you need to ensure certain services are available to your &lt;code>Startup&lt
 &lt;/ul>
 &lt;p>As you see with the above diagram, the arrows always point inward towards the core. This is because each layer depends on an inner layer to function. The Core layer is intended to be as free of dependencies as possible as it is typical that all projects will depend on the Core layer.&lt;/p>
 &lt;h3 id="presentation-layer">Presentation Layer&lt;/h3>
-&lt;p>The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application. Whether the interface is html-based, an API, or even a mobile app, there are a myriad of ways that your data can be presented to the user. Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers. As you progress you may decide to push business logic to another layer entirely.&lt;/p>
+&lt;p>The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application. Whether the interface is html-based, an API, or even a mobile app, there are a myriad of ways that your data can be presented to the user.&lt;/p>
+&lt;p>Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers. As you progress you may decide to push business logic to another layer entirely.&lt;/p>
+&lt;p>Presentation Layer types&lt;/p>
+&lt;ul>
+&lt;li>Controllers&lt;/li>
+&lt;li>Custom Filters&lt;/li>
+&lt;li>Custom Middleware&lt;/li>
+&lt;li>Views&lt;/li>
+&lt;li>ViewModels&lt;/li>
+&lt;li>Startup&lt;/li>
+&lt;/ul>
 &lt;h3 id="infrastructure-layer">Infrastructure Layer&lt;/h3>
+&lt;p>The Infrastructure project typically includes data access implementations. In a typical ASP.NET Core web application, these implementations include the Entity Framework (EF) DbContext, any EF Core Migration objects that have been defined, and data access implementation classes. The most common way to abstract data access implementation code is through the use of the &lt;a href="https://deviq.com/design-patterns/repository-pattern">Repository design pattern&lt;/a>.&lt;/p>
+&lt;p>The Infrastructure layer contains supporting services for the Presentation layer. This includes services such as:&lt;/p>
+&lt;ul>
+&lt;li>Database&lt;/li>
+&lt;li>Cache&lt;/li>
+&lt;li>Logging&lt;/li>
+&lt;li>Email&lt;/li>
+&lt;li>Templates&lt;/li>
+&lt;li>Configuration&lt;/li>
+&lt;/ul>
+&lt;p>In many of the above architectures you would typically create services that provide a way to manipulate the data entities stored in the database in the Infrastructure layer. The business logic itself would typically be put into a fourth project (typically named Application) and these data manipulation services would be injected into any Application layer service that might need it through dependency injection.&lt;/p>
+&lt;p>For this project, you can decide what you want to do. The beginning approach would be to simply add any supporting services your application needs inside the Infrastructure project. The services you create in Infrastructure can then be used in any controller in the web project that you want.&lt;/p>
 &lt;h3 id="core-layer">Core Layer&lt;/h3>
+&lt;p>The core layer includes projects (like Domain) that have no dependencies on the other application layers. The core holds entities, services, and interfaces. These interfaces include abstractions for operations that will be performed using Infrastructure, such as data access, file system access, network calls, etc. Sometimes services or interfaces defined at this layer will need to work with non-entity types that have no dependencies on UI or Infrastructure. These can be defined as simple Data Transfer Objects (DTOs).&lt;/p>
+&lt;p>Application Core types&lt;/p>
+&lt;ul>
+&lt;li>Entities (business model classes that are persisted)&lt;/li>
+&lt;li>Aggregates (groups of entities)&lt;/li>
+&lt;li>Interfaces&lt;/li>
+&lt;li>Domain Services&lt;/li>
+&lt;li>Specifications&lt;/li>
+&lt;li>Custom Exceptions and Guard Clauses&lt;/li>
+&lt;li>Domain Events and Handlers&lt;/li>
+&lt;/ul>
+&lt;h2 id="references">References&lt;/h2>
+&lt;blockquote>
+&lt;p>The preceding text contains excerpts that are creative-commons licensed from Microsoft. The full article can be found &lt;a href="https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures">here&lt;/a>.&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="more-reading">More Reading&lt;/h2>
 &lt;p>&lt;a href="https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures">Common Web Application Architectures&lt;/a>&lt;/p></description></item><item><title>Docs: Authentication</title><link>/Documentation/docs/concepts/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/concepts/authentication/</guid><description>
 &lt;h2 id="authentication-overview">Authentication Overview&lt;/h2>
