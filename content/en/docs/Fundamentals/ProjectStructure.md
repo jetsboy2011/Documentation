@@ -5,21 +5,58 @@ linkTitle: "Project Structure"
 weight: 10
 date: 2017-01-05
 description: >
-  What can your user do with your project?
+  The default boilerplate structure is organized into several projects.
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+<div class="row">
+<div class="col">
+<img src="/docs/fundamentals/structure.png">
+</div>
+</div>
 
-Think about your project’s features and use cases. Use these to choose your core tasks. Each granular use case (enable x, configure y) should have a corresponding tasks page or tasks page section. Users should be able to quickly refer to your core tasks when they need to find out how to do one specific thing, rather than having to look for the instructions in a bigger tutorial or example. Think of your tasks pages as a cookbook with different procedures your users can combine to create something more substantial.
+## Domain
+The domain project is a core dependency that all of your other projects will likely depend on. For the time being, you will use this project to store any Entity Framework entities you intend on using.  You can also store Data Transfer Objects (DTOs) and any other abstractions (typically interfaces) that might be useful across your solution.
 
-You can give each task a page, or you can group related tasks together in a page, such as tasks related to a particular feature. As well as grouping related tasks in single pages, you can also group task pages in nested folders with an index page as an overview, as seen in this example site. Or if you have a small docset like the [Docsy User Guide](https://docsy.dev/docs/) with no Tutorials or Concepts pages, consider adding your feature-specific pages at the top level of your docs rather than in a Tasks section. 
+## Infrastructure
 
-Each task should give the user
+Each folder has roughly the following structure:
+```
++- Feature Name
+  +- Extensions
+  +- Models (any data models needed by the feature)
+  +- Seeding (holds any ISeeder classes in case this feature needs data to be seeded)
+  +- Services
+  Startup.cs (holds all the startup services and application configuration logic just for this feature)
+```
 
-* The prerequisites for this task, if any (this can be specified at the top of a multi-task page if they're the same for all the page's tasks. "All these tasks assume that you understand....and that you have already....").
-* What this task accomplishes.
-* Instructions for the task. If it involves editing a file, running a command, or writing code, provide code-formatted example snippets to show the user what to do! If there are multiple steps, provide them as a numbered list.
-* If appropriate, links to related concept, tutorial, or example pages.
+The most common services you will need (email, Hangfire, seeder, templates, etc) are in the Common folder.  The remaining folders (Authentication, Identity, Persistence, etc) are all largely organized exactly the same as any folder in Common.
+
+The end goal is to try to keep as much of the code and supporting code that makes up one of these feature services in a single location. 
+
+### Startup
+
+The Startup.cs should look familiar.  Here is an example for Identity:
+
+```csharp
+public static class Startup
+{
+	/// <summary>
+	///     Add custom identity user, roles, etc.
+	/// </summary>
+	public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
+	{
+		services.AddIdentity<ApplicationUser, ApplicationRole>()
+			.AddEntityFrameworkStores<ApplicationDbContext>()
+			.AddClaimsPrincipalFactory<ApplicationClaimsPrincipalFactory>()
+			.AddDefaultTokenProviders();
+	}
+
+	public static void Configure(IApplicationBuilder app, IConfiguration configuration)
+	{
+	}
+}
+```
+
+
+## Presentation
 

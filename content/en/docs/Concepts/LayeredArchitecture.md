@@ -41,13 +41,51 @@ As you see with the above diagram, the arrows always point inward towards the co
 
 ### Presentation Layer
 
-The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application.  Whether the interface is html-based, an API, or even a mobile app, there are a myriad of ways that your data can be presented to the user.  Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers.  As you progress you may decide to push business logic to another layer entirely. 
+The presentation layer is closest to the end user, and contains the actual user interface they have to interact with your application.  Whether the interface is html-based, an API, or even a mobile app, there are a myriad of ways that your data can be presented to the user.  
+
+Ideally you would not place a lot of the business logic (decisions about what happens to data when it is stored or outputted) in this layer, but as a beginner it may be easier for you to begin your journey placing these coding decisions in your controllers.  As you progress you may decide to push business logic to another layer entirely. 
+
+Presentation Layer types
+- Controllers
+- Custom Filters
+- Custom Middleware
+- Views
+- ViewModels
+- Startup
 
 ### Infrastructure Layer
 
+The Infrastructure project typically includes data access implementations. In a typical ASP.NET Core web application, these implementations include the Entity Framework (EF) DbContext, any EF Core Migration objects that have been defined, and data access implementation classes. The most common way to abstract data access implementation code is through the use of the [Repository design pattern](https://deviq.com/design-patterns/repository-pattern).
+
+The Infrastructure layer contains supporting services for the Presentation layer. This includes services such as:
+
+- Database
+- Cache
+- Logging
+- Email
+- Templates
+- Configuration
+
+In many of the above architectures you would typically create services that provide a way to manipulate the data entities stored in the database in the Infrastructure layer.  The business logic itself would typically be put into a fourth project (typically named Application) and these data manipulation services would be injected into any Application layer service that might need it through dependency injection.
+
+For this project, you can decide what you want to do.  The beginning approach would be to simply add any supporting services your application needs inside the Infrastructure project.  The services you create in Infrastructure can then be used in any controller in the web project that you want.
+
 ### Core Layer
 
+The core layer includes projects (like Domain) that have no dependencies on the other application layers.  The core holds entities, services, and interfaces. These interfaces include abstractions for operations that will be performed using Infrastructure, such as data access, file system access, network calls, etc. Sometimes services or interfaces defined at this layer will need to work with non-entity types that have no dependencies on UI or Infrastructure. These can be defined as simple Data Transfer Objects (DTOs). 
 
+Application Core types
+- Entities (business model classes that are persisted)
+- Aggregates (groups of entities)
+- Interfaces
+- Domain Services
+- Specifications
+- Custom Exceptions and Guard Clauses
+- Domain Events and Handlers
+
+## References
+
+> The preceding text contains excerpts that are creative-commons licensed from Microsoft.  The full article can be found [here](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures).
 
 ## More Reading
 
