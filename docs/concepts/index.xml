@@ -172,4 +172,8 @@ If you need to ensure certain services are available to your &lt;code>Startup&lt
 &lt;h3 id="jwt-json-web-token">JWT (JSON Web token)&lt;/h3>
 &lt;p>Ut non turpis nisl. Vestibulum aliquet vel velit et ultricies. Integer sem elit, convallis in commodo eu, efficitur sit amet risus. In bibendum lorem non felis lacinia efficitur. Quisque imperdiet fringilla pretium. Pellentesque sodales quam mi, eu finibus ex pulvinar quis. Sed a finibus diam. Pellentesque ultrices non purus vel vehicula. Cras eget massa ut lectus molestie laoreet. Suspendisse rutrum nisi at laoreet vulputate.&lt;/p>
 &lt;h3 id="other-third-party-external-providers">Other Third-Party External Providers&lt;/h3>
-&lt;p>&lt;a href="https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers">https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>&lt;a href="https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers">https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&lt;/a>&lt;/p></description></item><item><title>Docs: Authentication</title><link>/Documentation/docs/concepts/identity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/concepts/identity/</guid><description>
+&lt;h2 id="identity">Identity&lt;/h2>
+&lt;h2 id="references">References&lt;/h2></description></item><item><title>Docs: Authentication</title><link>/Documentation/docs/concepts/dto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/concepts/dto/</guid><description>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;h2 id="references">References&lt;/h2></description></item></channel></rss>

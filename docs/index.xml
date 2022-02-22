@@ -272,7 +272,11 @@ Startup.cs (holds all the startup services and application configuration logic j
 &lt;h3 id="jwt-json-web-token">JWT (JSON Web token)&lt;/h3>
 &lt;p>Ut non turpis nisl. Vestibulum aliquet vel velit et ultricies. Integer sem elit, convallis in commodo eu, efficitur sit amet risus. In bibendum lorem non felis lacinia efficitur. Quisque imperdiet fringilla pretium. Pellentesque sodales quam mi, eu finibus ex pulvinar quis. Sed a finibus diam. Pellentesque ultrices non purus vel vehicula. Cras eget massa ut lectus molestie laoreet. Suspendisse rutrum nisi at laoreet vulputate.&lt;/p>
 &lt;h3 id="other-third-party-external-providers">Other Third-Party External Providers&lt;/h3>
-&lt;p>&lt;a href="https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers">https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&lt;/a>&lt;/p></description></item><item><title>Docs: Alerts</title><link>/Documentation/docs/theme/components/alerts/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/Documentation/docs/theme/components/alerts/</guid><description>
+&lt;p>&lt;a href="https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers">https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers&lt;/a>&lt;/p></description></item><item><title>Docs: Authentication</title><link>/Documentation/docs/concepts/identity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/concepts/identity/</guid><description>
+&lt;h2 id="identity">Identity&lt;/h2>
+&lt;h2 id="references">References&lt;/h2></description></item><item><title>Docs: Authentication</title><link>/Documentation/docs/concepts/dto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/Documentation/docs/concepts/dto/</guid><description>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;h2 id="references">References&lt;/h2></description></item><item><title>Docs: Alerts</title><link>/Documentation/docs/theme/components/alerts/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/Documentation/docs/theme/components/alerts/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
 &lt;/div></description></item><item><title>Docs: Avatars</title><link>/Documentation/docs/theme/components/avatars/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/Documentation/docs/theme/components/avatars/</guid><description>
@@ -2244,12 +2248,6 @@ Publish
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
 &lt;/div></description></item><item><title>Docs: Timelines</title><link>/Documentation/docs/theme/components/timelines/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/Documentation/docs/theme/components/timelines/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
-&lt;/div></description></item><item><title>Docs: Toasts</title><link>/Documentation/docs/theme/components/toasts/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/Documentation/docs/theme/components/toasts/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
-&lt;/div></description></item><item><title>Docs: Tooltips</title><link>/Documentation/docs/theme/components/tooltips/</link><pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate><guid>/Documentation/docs/theme/components/tooltips/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>This is a placeholder page. Replace it with your own content.&lt;/p>
 &lt;/div></description></item></channel></rss>
