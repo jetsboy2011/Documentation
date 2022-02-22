@@ -88,5 +88,5 @@ Application Core types
 > The preceding text contains excerpts that are creative-commons licensed from Microsoft.  The full article can be found [here](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures).
 
 ## More Reading
-
+a
 [Common Web Application Architectures](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures)
